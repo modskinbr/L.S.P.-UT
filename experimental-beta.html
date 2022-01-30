@@ -1,0 +1,329 @@
+<html lang="pt">
+<head>
+    <style type="text/css">
+        [uib-typeahead-popup].dropdown-menu {
+            display: block;
+        }
+    </style>
+    <style type="text/css">
+        .uib-time input {
+            width: 50px;
+        }
+    <style type="text/css">
+        [uib-tooltip-popup].tooltip.top-left > .tooltip-arrow, [uib-tooltip-popup].tooltip.top-right > .tooltip-arrow, [uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow, [uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow, [uib-tooltip-popup].tooltip.left-top > .tooltip-arrow, [uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow, [uib-tooltip-popup].tooltip.right-top > .tooltip-arrow, [uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow, [uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow, [uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow, [uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow, [uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow, [uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow, [uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow, [uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow, [uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow, [uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow, [uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow, [uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow, [uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow, [uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow, [uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow, [uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow, [uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow, [uib-popover-popup].popover.top-left > .arrow, [uib-popover-popup].popover.top-right > .arrow, [uib-popover-popup].popover.bottom-left > .arrow, [uib-popover-popup].popover.bottom-right > .arrow, [uib-popover-popup].popover.left-top > .arrow, [uib-popover-popup].popover.left-bottom > .arrow, [uib-popover-popup].popover.right-top > .arrow, [uib-popover-popup].popover.right-bottom > .arrow, [uib-popover-html-popup].popover.top-left > .arrow, [uib-popover-html-popup].popover.top-right > .arrow, [uib-popover-html-popup].popover.bottom-left > .arrow, [uib-popover-html-popup].popover.bottom-right > .arrow, [uib-popover-html-popup].popover.left-top > .arrow, [uib-popover-html-popup].popover.left-bottom > .arrow, [uib-popover-html-popup].popover.right-top > .arrow, [uib-popover-html-popup].popover.right-bottom > .arrow, [uib-popover-template-popup].popover.top-left > .arrow, [uib-popover-template-popup].popover.top-right > .arrow, [uib-popover-template-popup].popover.bottom-left > .arrow, [uib-popover-template-popup].popover.bottom-right > .arrow, [uib-popover-template-popup].popover.left-top > .arrow, [uib-popover-template-popup].popover.left-bottom > .arrow, [uib-popover-template-popup].popover.right-top > .arrow, [uib-popover-template-popup].popover.right-bottom > .arrow {
+            top: auto;
+            bottom: auto;
+            left: auto;
+            right: auto;
+            margin: 0;
+        }
+
+        [uib-popover-popup].popover, [uib-popover-html-popup].popover, [uib-popover-template-popup].popover {
+            display: block !important;
+        }
+    </style>
+    <style type="text/css">
+        .uib-datepicker-popup.dropdown-menu {
+            display: block;
+            float: none;
+            margin: 0;
+        }
+
+        .uib-button-bar {
+            padding: 10px 9px 2px;
+        }
+    </style>
+    <style type="text/css">
+        .uib-position-measure {
+            display: block !important;
+            visibility: hidden !important;
+            position: absolute !important;
+            top: -9999px !important;
+            left: -9999px !important;
+        }
+
+        .uib-position-scrollbar-measure {
+            position: absolute !important;
+            top: -9999px !important;
+            width: 50px !important;
+            height: 50px !important;
+            overflow: scroll !important;
+        }
+
+        .uib-position-body-scrollbar-measure {
+            overflow: scroll !important;
+        }
+    </style>
+    <style type="text/css">
+        .uib-datepicker .uib-title {
+            width: 100%;
+        }
+
+        .uib-day button, .uib-month button, .uib-year button {
+            min-width: 100%;
+        }
+
+        .uib-left, .uib-right {
+            width: 100%
+        }
+    </style>
+    <style type="text/css">
+        .ng-animate.item:not(.left):not(.right) {
+            -webkit-transition: 0s ease-in-out left;
+            transition: 0s ease-in-out left
+        }
+    </style>
+    <style type="text/css">
+        @charset "UTF-8";
+
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide:not(.ng-hide-animate) {
+            display: none !important;
+        }
+
+        ng\:form {
+            display: block;
+        }
+
+        .ng-animate-shim {
+            visibility: hidden;
+        }
+
+        .ng-anchor {
+            position: absolute;
+        }
+    </style>
+    <title>Experimental (BETA) ModSkin | L.S.P. UT</title>
+    <link rel="icon" href="/L.S.P.-UT/image/256x256.ico">
+    <link rel="shortcut icon" href="/L.S.P.-UT/image/256x256.ico">
+    <link rel="canonical" href="http://modskinbr.github.io/L.S.P.-UT/index.html">
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="L.S.P. UT Equipe">
+    <meta name="description" content="Experimente as atualizaçoes que iram sair antes mesmo, a comunidade tem acesso a Experimentais!">
+    <meta name="keywords" content="lol,Download mod skin lol,mod skin pro,lsput,lsp,lolskin,modskin">
+    <meta property="og:title" content="Experimental (BETA) ModSkin LoL 2022 | L.S.P. UT">
+    <meta property="og:site_name" content="modskinbr">
+    <meta property="og:url" content="http://modskinbr.github.io/L.S.P.-UT/index.html">
+    <meta property="og:description" content="Experimente as atualizaçoes que iram sair antes mesmo, a comunidade tem acesso a Experimentais!">
+    <meta property="og:type" content="article">
+    <meta name="googlebot" content="index, follow">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" defer="">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" defer="">
+    <link rel="stylesheet" href="/css/my-template.css?c=5" defer="">
+    <script type="text/javascript" src="https://app.widgetpack.com/widget/comment/bootstrap?id=26352&amp;chan=%2Fp%2Fdownload-mod-skin-2020-chn&amp;sort=desc&amp;callback=wpac_753803867" async=""></script>
+    <script type="text/javascript" src="https://embed.widgetpack.com/widget/js/comment_pt.js?v=1488759785645" async=""></script>
+    <link rel="stylesheet" type="text/css" href="https://embed.widgetpack.com/widget/css/comment.css?v=1488759785645">
+</head>
+<body ng-controller="appVLCtrl" class="ng-scope">
+    <style>
+        body {
+            background-color: #222;
+            color: #e1e1e1;
+        }
+        .h2, h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 30px auto 30px auto;
+    padding: 5px;
+    background-color: #5489b3;         
+    border-radius: 10px;
+    color: #ffffff;
+        }
+    </style>
+
+    <nav class="navbar navbar-inverse navbar-config navbar-static-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <img src="/L.S.P.-UT/image/256x256.ico" width="50" height="50" align="left">
+                <a class="navbar-brand">L.S.P. UT</a>
+            </div>
+
+            <div class="">
+            </div>
+            <div class="navbar-collapse collapse" uib-collapse="!collapseMenu" aria-expanded="false" aria-hidden="true" style="height: 0px;">
+                <ul class="nav navbar-nav" itemscope="" itemtype="http://www.schema.org/SiteNavigationElement">
+                    <li itemprop="name">
+                        <a itemprop="url" href="/L.S.P.-UT/index.html"><i class="fa fa-cloud-download"></i> Inicio</a>
+                    </li>
+                    <li itemprop="name">
+                        <a itemprop="url" href="/L.S.P.-UT/atualizaçoes.html"><i class="fa fa-wrench"></i> Experimental (BETA)</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </nav>
+    <div class="container">
+        <div class="content">
+            <div class="row">
+                <div class="col-sm-8" ng-hide="searchString">
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <img src="https://imgur.com/hCSoztG.png">
+                    </div>
+                    <div style="margin-top:10px"></div>
+
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <span itemprop="headline" content="Boas Vindas ao Experimental (BETA)"></span>
+                            <h2 class="detail-title">Boas Vindas ao Experimental (BETA)</h2>
+                        </div>
+                    </div>
+
+                    <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList" style="background-color: #333;">
+                        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="https://discord.gg/6FbvJy3rY8">
+                                <span itemprop="name" style="color: #54b376;">Acesso ao Discord</span>
+                            </a>
+                            <meta itemprop="position" content="1">
+                        </li>
+                    </ol>
+
+                    <div id="wpac-rating"></div>
+                    <script type="text/javascript">
+                        wpac_init = window.wpac_init || [];
+                        wpac_init.push({ widget: 'Rating', id: 33566 });
+                        (function () {
+                            if ('WIDGETPACK_LOADED' in window) return;
+                            WIDGETPACK_LOADED = true;
+                            var mc = document.createElement('script');
+                            mc.type = 'text/javascript';
+                            mc.async = true;
+                            mc.src = 'https://embed.widgetpack.com/widget.js';
+                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+                        })();
+                    </script>
+
+                    <div class="row">
+                        <div class="col-lg-12 my-text-content">
+                            <span itemprop="description">
+                                O L.S.P UT é um ModSkin rápido e prático, fácil de usar e ainda te garante cromas e skins que não estão disponíveis no modskin original. Tem como base o suporte ao usuário no nosso discord! Com um uso muito simples, o programa lhe dá uma quantidade imensa de conteúdo.
+                            </span>
+                        </div>
+                    </div>
+                    <br>
+                    <style>
+                        .my-text-content img {
+                            max-height: 282px;
+                        }
+                    </style>
+                    <div class="row">
+                        <div class="col-lg-12 my-text-content">
+<span itemprop="articleBody">
+                                Deixamos bem claro que nosso app é brasileiro, as atualizações são feitas pela nossa parte, mas sim nosso aplicativo funciona em outros clientes como: Filipinas, América do Norte, Brasil, Europa, Rússia… E muitos outros países.
+                                <h2>Como usar?</h2>
+                                — 1 . Faça o Download.<br>
+                                — 2 . Abra seu LoL.<br>
+                                — 3 . Extraia o arquivo winrar.<br>
+                                — 4 . Abra o Instalador.<br>
+                                — 5 . Deixe instalando, pode demorar alguns segundos.<br>
+                                — 6 . Selecione uma skin e comece a jogar.<br>
+                                E agora basta ser feliz e jogar com sua nova skin!<br>
+                                <h2>Bugs Comuns</h2><div><i class="fa fa-bug" text="red" style="color: red;"></i><b> Primeiro Bug<b><br>Este bug ocorre quando a instalação é bem sucedida, porem quando abre o launcher aparece para atualizar.<br>Este erro é muito comum quando alguém vem do lol skin para o nosso!
+<br>
+<br>
+Para arrumar basta seguir estes passos:<br>— 1 . Feche o ModSkin ( Caso esteja aberto )<br>
+— 2 . Abra seu Explorador de Arquivos<br>— 3 . Procure pelo seu disco local C:\<br>— 4 . Apague a pasta Fraps
+<br>
+— 5 . Refaça a instalação novamente!
+<br><br><img src="https://imgur.com/hCSoztG.png">
+</div>
+<br>
+                                Nosso principal objetivo é aumentar a disponibilidade de conteúdo, com uma quantidade maior de cromas e skins de campeões que não estão disponíveis no mod skin original.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <span class="my-app">
+                                <h2>Como remover o ModSkin?</h2>
+                                O programa normalmente fica localizado no seu disco local C:\<br>
+                                Para remover o app, basta apagar a pasta Fraps.
+                                <h2>Baixar ModSkin</h2>
+                                <center id="center_download">
+                                    <center>
+                                        <style>
+                                            c {
+                                                color: green;
+                                                border-radius: 12px;
+                                                background-color: palegreen;
+                                                padding: 10px;
+                                            }
+                                        </style>
+                                        <c>Versão 6.1.5</c>
+                                        <a id="link_download3" href="https://download843.mediafire.com/ujmmuyz99wng/wvkgtbjw19ss8bp/Istalador+%2812.2%29.rar" target="_blank">
+                                            <button style="min-width: 350px;margin: 20px;background-color: cadetblue;color: darkslategrey;" type="button" class="btn my-btn" id="name_button_download3">
+                                                <span class="glyphicon glyphicon-save"></span> Baixar Última Versão
+                                            </button>
+                                        </a>
+                                        <center>
+                                            <script>
+                                                var linkdownload = document.getElementById("link_download3");
+                                                var name_button_download = document.getElementById("name_button_download3");
+                                                var randomstring = Math.random().toString(36).slice(-8);
+
+                                                var link1 = "";
+                                                var link2 = "";
+                                                var link3 = "";
+                                                var numRand;
+                                                var waiting = 5;
+                                                var myVar = setInterval(function () {
+                                                    clearTimeout(myVar)
+                                                    return;
+                                                    waiting--;
+                                                    linkdownload.href = "";
+                                                    name_button_download.innerHTML = 'Aguarde <b style="color:white">' + waiting + '</b> segundos<br>';
+                                                    numRand = Math.floor((Math.random() * 5) + 1);
+                                                    if (waiting <= 0) {
+
+                                                        linkdownload.href = link1 + numRand + numRand;
+                                                        if (numRand == 1 || numRand == 3 || numRand == 5 || numRand == 7) {
+                                                            linkdownload.href = link2 + numRand + numRand;
+                                                        } else if (numRand == 4 || numRand == 6 || numRand == 8 || numRand == 2) {
+
+                                                            linkdownload.href = link3 + numRand + numRand;
+
+                                                        }
+
+
+                                                        name_button_download.innerHTML = '<span class="glyphicon glyphicon-save"></span> Abaixar a Ultima Versao';
+                                                        clearTimeout(myVar);
+                                                    }
+                                                }, 1000);
+                                                function adserror() {
+                                                    clearTimeout(myVar);
+                                                    var center_download = document.getElementById("center_download");
+                                                    center_download.innerHTML = '<br><b style="font-size:18px">Por favor, desabilite “Adblock” em “meu site” para baixar ModSkin assim como contribuir para nos apoiar melhor ^^ (instruções abaixo).</b><br><br><img class="img-responsive center-block" src="http://modskinpro.com/image/adblock.jpg">';;
+                                                }
+                                            </script> <br>
+                                        </center>
+                                        <div class="alert alert-warning">
+                                            Entre em contato via discord para obter suporte em caso de bugs e erros! : <a href="https://discord.gg/6FbvJy3rY8" target="_blank">Click Aqui</a>
+                                            <br><b>Este app é seguro e não causa banimentos, a menos que seja reportado!
+                                        </div>
+                                    </center>
+                                </center>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            &#xFEFF;
+        </div>
+
+        <footer class="footer" style="min-height: 50px;">
+            <div class="container">
+                2020 - 2022 modskinbr.github.io | L.S.P. UT
+            </div>
+        </footer><div class="wp-modal-login wp-modal-cnt wpac"><div class="wp-modal" style="display:none;top:0!important"><div class="wp-modal-dialog"><div class="wp-modal-content"><div class="wp-modal-header"><button type="button" class="wp-close">×</button><div class="wp-modal-title"> inicie sessão com o ou registe-se</div></div><div class="wp-clear"></div><div class="wp-modal-body"><div class="wp-l"><div class="wp-authbox"><div class="wp-auth-sso"></div><div class="wp-auth-social"></div></div></div></div></div></div></div></div><iframe name="easyXDM_default3864_provider" id="easyXDM_default3864_provider" src="https://embed.widgetpack.com/widget/xdm/index.html?xdm_e=http%3A%2F%2Fleagueskin.net&amp;xdm_c=default3864&amp;xdm_p=1" frameborder="0" style="position:absolute!important;top:-2000px!important;left:0!important;"></iframe><textarea style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 400; font-style: normal; letter-spacing: normal; line-height: 18px; text-transform: none; word-spacing: 0px; text-indent: 0px; position: absolute !important; inset: -999px auto auto 0px !important; border: 0px !important; padding: 0px !important; box-sizing: content-box !important; overflow-wrap: break-word !important; height: 0px !important; min-height: 0px !important; overflow-x: hidden !important; overflow-y: hidden; transition: none 0s ease 0s !important; width: 666px;"></textarea>
+</body>
+</html>
