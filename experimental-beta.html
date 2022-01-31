@@ -235,20 +235,32 @@ Na área de Donate no servidor do Discord!<br>
                                 <h2>Baixar ModSkin</h2>
                                 <center id="center_download">
                                     <center>
-                                        <style>
-                                            c {
-                                                color: darkred;
-                                                border-radius: 12px;
-                                                background-color: red;
-                                                padding: 10px;
-                                            }
-                                        </style>
-                                        <c>Indisponivel</c>
-                                        <a id="link_download3" target="_blank">
-                                            <button style="min-width: 350px;margin: 20px;background-color: cadetblue;color: darkslategrey;" type="button" class="btn my-btn" id="name_button_download3">
-                                                <span class="glyphicon glyphicon-save"></span> Baixar Última Versão
-                                            </button>
-                                        </a>
+<script>
+function Valid() {
+    var x = document.getElementById("valid").value;
+    var q = document.querySelector("button");
+    var n = document.getElementById("link_download3");
+    var z = document.getElementById("version");
+    if (x == "BetaX") {
+    	n.setAttribute("href", "https://google.com");
+        q.removeAttribute("disabled");
+        z.innerHTML = "Versão de Teste!";
+        z.style.color = "darkred";
+        z.style.backgroundColor = "palegreen";
+        document.getElementById("valid").value = "";
+    }
+}
+</script>
+<c id="version" style="color: darkred;border-radius: 12px;background-color: red;padding: 10px;">Indisponivel</c>
+<a id="link_download3" href="google.com" target="_blank">
+	<button style="min-width: 350px;margin: 20px;background-color: cadetblue;color: darkslategrey;" type="button" class="btn my-btn" id="name_button_download3" disabled>
+		<span class="glyphicon glyphicon-save"></span> Baixar Última Versão
+	</button>
+</a>
+<div>Beneficiarios:
+    <input id="valid" type="text">
+    <button id="vv" type="submit" onclick="Valid()">Validar</button>
+</div>
                                         <center>
                                             <script>
                                                 var linkdownload = document.getElementById("link_download3");
