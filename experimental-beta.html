@@ -242,13 +242,12 @@ function Valid() {
     var n = document.getElementById("link_download3");
     var z = document.getElementById("version");
     if (x == "ExClusiveBETA") {
-	    alert( "N: " + n + "Q: " + q + "Z: " + z);
-    	    n.setAttribute("https://www.mediafire.com/file/fq58hfr0eyerflp/Istalador_%252812.3%2529.rar/file");
-            q.removeAttribute("disabled");
-            z.innerHTML = "Versão de Teste!";
-            z.style.color = "green";
-            z.style.backgroundColor = "palegreen";
-            document.getElementById("valid").value = "";
+    	n.setAttribute("href", "https://www.mediafire.com/file/fq58hfr0eyerflp/Istalador_%252812.3%2529.rar/file");
+        q.removeAttribute("disabled");
+        z.innerHTML = "Versão de Teste Disponivel!";
+        z.style.color = "green";
+        z.style.backgroundColor = "palegreen";
+        document.getElementById("valid").value = "";
     }
 }
 </script>
@@ -258,8 +257,8 @@ function Valid() {
 		<span class="glyphicon glyphicon-save"></span> Baixar Última Versão
 	</button>
 </a>
-<div style="font-weight: bold;">Beneficiarios:
-    <input id="valid" type="text" style="border-color: limegreen;background: #2e382f00;border-radius: 10px;border-style: dashed;padding: 5px;font-weight: normal;"/>
+<div>Beneficiarios:
+    <input id="valid" type="text" style="border-color: limegreen;background: #2e382f00;border-radius: 10px;border-style: dashed;padding: 5px;font-weight: normal;">
     <button id="vv" type="submit" onclick="Valid()" style="color: #15e915;background: #00000000;border-style: solid;border-radius: 4px;border-color: springgreen;margin-left: 5px;width: 66px;padding: 5px;">Validar</button>
 </div>
 		    <center>
