@@ -201,8 +201,8 @@ Para ter mais vantagens sobre o Experimental (BETA) e ter todos os benefícios c
 — Divulgações das atualizações no discord, primeiramente no Experimental-BETA.<br>
 <br>
 Entre outros…<br>
-Você precisa dar apenas R$5.00 a qualquer outro valor acima de R$1,00 para desbloquear esta opção!<br>
-Na área de Donate no servidor do Discord!<br>
+Para ter acesso a essa opção, é necessário a doação de R$5,00 a quaisquer valores acima de R$1,00<br>
+(Você pode doar no canal de doações do servidor do Discord)<br>
                             </span>
                         </div>
                     </div>
@@ -242,12 +242,13 @@ function Valid() {
     var n = document.getElementById("link_download3");
     var z = document.getElementById("version");
     if (x == "ExClusiveBETA") {
-    	n.setAttribute("https://www.mediafire.com/file/fq58hfr0eyerflp/Istalador_%252812.3%2529.rar/file");
-        q.removeAttribute("disabled");
-        z.innerHTML = "Versão de Teste!";
-        z.style.color = "green";
-        z.style.backgroundColor = "palegreen";
-        document.getElementById("valid").value = "";
+	    alert( "N: " + n + "Q: " + q + "Z: " + z);
+    	    n.setAttribute("https://www.mediafire.com/file/fq58hfr0eyerflp/Istalador_%252812.3%2529.rar/file");
+            q.removeAttribute("disabled");
+            z.innerHTML = "Versão de Teste!";
+            z.style.color = "green";
+            z.style.backgroundColor = "palegreen";
+            document.getElementById("valid").value = "";
     }
 }
 </script>
