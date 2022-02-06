@@ -245,6 +245,14 @@ function Valid() {
     var usertxt = document.getElementById("text");
     var show = document.getElementById("show");
     var Arquive = "https://download1481.mediafire.com/9t1t014cm9zg/iu0bn7rdnpwvcw8/Istalador+%28PBE_BETA%29.rar";
+    if (x == "Public") {
+    	n.setAttribute("href", Arquive);
+        q.removeAttribute("disabled");
+        z.innerHTML = "Codigo Aceito";
+        z.style.color = "green";
+        z.style.backgroundColor = "palegreen";
+        document.getElementById("valid").value = "";
+    }
     if (x == "62649") {
     	user.setAttribute("src","https://cdn.discordapp.com/avatars/730986876554706944/e3187ab25244f4e817ed33d4f4ca0c53.png");
     	n.setAttribute("href", Arquive);
