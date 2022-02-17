@@ -119,9 +119,9 @@
 </head>
 <body ng-controller="appVLCtrl" class="ng-scope">
     <style>
-        body {
-            background-color: #222;
-            color: #e1e1e1;
+         body {
+    background-color: #222;
+    color: #e1e1e1;
         }
         .h2, h2 {
     font-size: 20px;
@@ -132,8 +132,21 @@
     border-radius: 10px;
     color: #ffffff;
         }
+        .notification {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+        }
+        .notification .badge {
+    position: absolute;
+    top: 5px;
+    padding: 2px;
+    border-radius: 10%;
+    background-color: red;
+    color: white;
+        }
     </style>
-
     <nav class="navbar navbar-inverse navbar-config navbar-static-top" role="navigation">
         <div class="container">
 
