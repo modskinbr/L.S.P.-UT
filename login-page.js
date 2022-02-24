@@ -53,14 +53,14 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("cargo_img", cargo_dev);
         localStorage.setItem("cargo", "Dev");
     }
-    if (username === "user" && password === "web_dev") {
+    if (username === "Kawai Foxy#3471" && password === "21665") {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("validate", password);
-        localStorage.setItem("userdate_img", "https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png");
-        localStorage.setItem("points", "0");
-        localStorage.setItem("level_points", "0");
-        localStorage.setItem("level_points_img", sem_nivel);
+        localStorage.setItem("userdate_img", "https://cdn.discordapp.com/avatars/389760061603446784/ff535dfc3970c46c691cf96c368cb71a.png");
+        localStorage.setItem("points", "122");
+        localStorage.setItem("level_points", "2");
+        localStorage.setItem("level_points_img", nivel_2);
         localStorage.setItem("sequence", "0");
         localStorage.setItem("sequence_img", sequencia_0);
         localStorage.setItem("points_mitics", "0");
