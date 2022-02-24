@@ -56,6 +56,16 @@ loginButton.addEventListener("click", (e) => {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("validate", password);
+        localStorage.setItem("userdate_img", "https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png");
+        localStorage.setItem("points", "0");
+        localStorage.setItem("level_points", "0");
+        localStorage.setItem("level_points_img", sem_nivel);
+        localStorage.setItem("sequence", "0");
+        localStorage.setItem("sequence_img", sequencia_0);
+        localStorage.setItem("points_mitics", "0");
+        localStorage.setItem("ranked_mitico_img", sem_ranked);
+        localStorage.setItem("cargo_img", cargo_supp);
+        localStorage.setItem("cargo", "user");
     } 
     else {
         loginErrorMsg.style.opacity = 1;
