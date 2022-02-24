@@ -8,10 +8,10 @@ mostrar.addEventListener("click", (e) => {
     e.preventDefault();
     const visibled = pop.style.visibility;
 
-    if (visibled == hidden) {
+    if (visibled == "hidden") {
         pop.style.visibility = "visible";
     }
-    if (visibled == visible) {
+    if (visibled == "visible") {
         pop.style.visibility = "hidden";
     }
 })
