@@ -72,7 +72,7 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("imune", "hidden");
         localStorage.setItem("risco", "hidden");
         localStorage.setItem("cargo_img", cargo_supp);
-        localStorage.setItem("cargo", "user");
+        localStorage.setItem("cargo", "Supp");
     } 
     else {
         loginErrorMsg.style.opacity = 1;
