@@ -29,7 +29,8 @@ var cargo_supp = "https://cdn.discordapp.com/emojis/946447648464994405.png?size=
 var cargo_tester = "https://cdn.discordapp.com/emojis/946447648062337034.png?size=80";
 var cargo_corretor = "https://cdn.discordapp.com/emojis/946447647982645278.png?size=80";
 var cargo_designer = "https://cdn.discordapp.com/emojis/946447647886159963.png?size=80";
-
+var imune = "hidden";
+var risco = "hidden";
 
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
@@ -50,6 +51,8 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("points_mitics", "0");
         localStorage.setItem("ranked_mitico_img", sem_ranked);
         localStorage.setItem("ranked_mitico", "Sem Ranked");
+        localStorage.setItem("imune", "visible");
+        localStorage.setItem("risco", "hidden");
         localStorage.setItem("cargo_img", cargo_dev);
         localStorage.setItem("cargo", "Dev");
     }
@@ -66,6 +69,8 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("points_mitics", "0");
         localStorage.setItem("ranked_mitico_img", sem_ranked);
         localStorage.setItem("ranked_mitico", "Sem Ranked");
+        localStorage.setItem("imune", "hidden");
+        localStorage.setItem("risco", "hidden");
         localStorage.setItem("cargo_img", cargo_supp);
         localStorage.setItem("cargo", "user");
     } 
