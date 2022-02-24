@@ -14,7 +14,7 @@ mostrar.addEventListener("click", (e) => {
     if (visibled == visible) {
         pop.style.visibility = "hidden";
     }
-}
+})
 
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
