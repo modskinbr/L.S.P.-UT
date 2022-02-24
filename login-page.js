@@ -15,7 +15,7 @@ var sequencia_1 = "https://cdn.discordapp.com/emojis/945769435183083570.png?size
 var sequencia_2 = "https://cdn.discordapp.com/emojis/945769435497648238.png?size=80";
 var sequencia_3 = "https://cdn.discordapp.com/emojis/945769435552165958.png?size=80";
 var sequencia_4 = "https://cdn.discordapp.com/emojis/945769585024593920.png?size=80";
-var sem_ranked = "https://cdn.discordapp.com/emojis/946445227609165925.webp?size=80";
+var sem_ranked = "https://cdn.discordapp.com/emojis/946445227609165925.png?size=80";
 var ranked_bronze = "https://cdn.discordapp.com/emojis/945787021534851092.png?size=80";
 var ranked_prata = "https://cdn.discordapp.com/emojis/945787021086052422.png?size=80";
 var ranked_ouro = "https://cdn.discordapp.com/emojis/945787019622252604.png?size=80";
