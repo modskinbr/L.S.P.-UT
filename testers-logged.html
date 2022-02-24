@@ -20,7 +20,7 @@
   <body id="body" style="visibility: hidden">
     <style>
 .popup .popuptext {
-    visibility: visible;
+    visibility: hidden;
     width: 300px;
     height: 330px;
     color: #fff;
@@ -101,9 +101,7 @@
               </script>
               <script>
 function hidden() {
-  var popup = document.getElementById("Pop");
-  popup.style.visibility("hidden");
-}
+  document.getElementById("Pop").style.visibility = "hidden";}
 </script>
               </script>
               <a style="padding: 15px 15px;color: #999999;" id="logged" onclick="hidden()">
