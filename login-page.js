@@ -1,6 +1,19 @@
 const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
+const mostrar = document.getElementById("logged")
+const pop = document.getElementById("Pop");
+
+mostrar.addEventListener("click", (e) => {
+    const visibled = pop.style.visibility;
+
+    if (visibled == hidden) {
+        pop.style.visibility = "visible";
+    }
+    if (visibled == visible) {
+        pop.style.visibility = "hidden";
+    }
+}
 
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
