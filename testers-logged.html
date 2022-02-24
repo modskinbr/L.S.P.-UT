@@ -21,13 +21,6 @@
 
   <body id="body" style="visibility: hidden">
     <style>
-      .popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-/* The actual popup (appears on top) */
 .popup .popuptext {
     visibility: visible;
     width: 300px;
@@ -50,7 +43,6 @@
 
 /* Popup arrow */
 .popup .popuptext::after {
-  content: "";
   position: absolute;
   top: 100%;
   left: 50%;
@@ -85,18 +77,13 @@
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">EXP-Beta</a>
+          <a class="navbar-brand" href="testers-logged.html">EXP-Beta</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav side-nav">
-            <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li class="active"><a><i class="fa fa-dashboard"></i> Painel</a></li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right navbar-user">
