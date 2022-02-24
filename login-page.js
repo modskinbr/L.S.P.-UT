@@ -5,6 +5,7 @@ const mostrar = document.getElementById("logged")
 const pop = document.getElementById("Pop");
 
 mostrar.addEventListener("click", (e) => {
+    e.preventDefault();
     const visibled = pop.style.visibility;
 
     if (visibled == hidden) {
