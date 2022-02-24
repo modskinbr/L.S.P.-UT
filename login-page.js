@@ -51,12 +51,12 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("points_mitics", "0");
         localStorage.setItem("ranked_mitico_img", sem_ranked);
         localStorage.setItem("ranked_mitico", "Sem Ranked");
-        localStorage.setItem("imune", "");
+        localStorage.setItem("imune", "revert");
         localStorage.setItem("risco", "hidden");
         localStorage.setItem("cargo_img", cargo_dev);
         localStorage.setItem("cargo", "Dev");
     }
-    if (username === "Kawai Foxy#3471" && password === "21665") {
+    else if (username === "Kawai Foxy#3471" && password === "21665") {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("validate", password);
