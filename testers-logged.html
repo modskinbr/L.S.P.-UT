@@ -91,8 +91,6 @@
               const user = localStorage["userdate"];
                 if (localStorage.getItem("validate") == null) {
                   alert("Voce esta acessando uma pagina invalida!")
-                  alert("Validate: " + localStorage["validate"])
-                  alert("Userdate: " + localStorage["userdate"])
                 } else {
                   document.getElementById("logged").innerHTML= user;
                   document.getElementById("body").style.visibility = "visible";
@@ -100,11 +98,18 @@
               }
               </script>
               <script>
-function hidden() {
-  document.getElementById("Pop").style.visibility = "hidden";}
-</script>
+              function mostrar() {
+                const pop = document.getElementById("Pop");
+                const visibled = pop.style.visibility;
+                
+                if (visibled == hidden) {
+                pop.style.visibility = "visible";
+              }
+                if (visibled == visible) {
+                pop.style.visibility = "hidden";
+              }
               </script>
-              <a style="padding: 15px 15px;color: #999999;" id="logged" onclick="hidden()">
+              <a style="padding: 15px 15px;color: #999999;" id="logged" onclick="mostrar()">
               </a>
             </li>
         <li>
