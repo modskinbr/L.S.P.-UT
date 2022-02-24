@@ -51,7 +51,7 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("points_mitics", "0");
         localStorage.setItem("ranked_mitico_img", sem_ranked);
         localStorage.setItem("ranked_mitico", "Sem Ranked");
-        localStorage.setItem("imune", "visible");
+        localStorage.setItem("imune", "");
         localStorage.setItem("risco", "hidden");
         localStorage.setItem("cargo_img", cargo_dev);
         localStorage.setItem("cargo", "Dev");
