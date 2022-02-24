@@ -6,7 +6,7 @@ loginButton.addEventListener("click", (e) => {
     e.preventDefault();
     const username = loginForm.username.value;
     const password = loginForm.password.value;
-    const urlhref = "https://modskinbr.github.io/L.S.P.-UT/tester-logged.html"
+    const urlhref = "https://modskinbr.github.io/L.S.P.-UT/testers-logged.html"
 
     if (username === "Porito#0000" && password === "0000") {
         location.href = urlhref;
