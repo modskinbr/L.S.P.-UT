@@ -49,6 +49,7 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("sequence_img", sequencia_0);
         localStorage.setItem("points_mitics", "0");
         localStorage.setItem("ranked_mitico_img", sem_ranked);
+        localStorage.setItem("ranked_mitico", "Sem Ranked");
         localStorage.setItem("cargo_img", cargo_dev);
         localStorage.setItem("cargo", "Dev");
     }
@@ -64,6 +65,7 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("sequence_img", sequencia_0);
         localStorage.setItem("points_mitics", "0");
         localStorage.setItem("ranked_mitico_img", sem_ranked);
+        localStorage.setItem("ranked_mitico", "Sem Ranked");
         localStorage.setItem("cargo_img", cargo_supp);
         localStorage.setItem("cargo", "user");
     } 
