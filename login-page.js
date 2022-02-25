@@ -74,6 +74,24 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("cargo_img", cargo_supp);
         localStorage.setItem("cargo", "Supp");
     } 
+    else if (username === "' gece ✪#9960" && password === "94545") {
+        location.href = urlhref;
+        localStorage.setItem("userdate", username);
+        localStorage.setItem("validate", password);
+        localStorage.setItem("userdate_img", "https://cdn.discordapp.com/avatars/536698625338900527/e88962486f4cc2675d43d325e343a7d8.png");
+        localStorage.setItem("points", "125");
+        localStorage.setItem("level_points", "2");
+        localStorage.setItem("level_points_img", nivel_2);
+        localStorage.setItem("sequence", "0");
+        localStorage.setItem("sequence_img", sequencia_0);
+        localStorage.setItem("points_mitics", "0");
+        localStorage.setItem("ranked_mitico_img", sem_ranked);
+        localStorage.setItem("ranked_mitico", "Sem Ranked");
+        localStorage.setItem("imune", "hidden");
+        localStorage.setItem("risco", "hidden");
+        localStorage.setItem("cargo_img", cargo_mod);
+        localStorage.setItem("cargo", "Mod");
+    } 
     else {
         loginErrorMsg.style.opacity = 1;
         localStorage.clear();
