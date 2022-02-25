@@ -135,6 +135,7 @@ i {
               const cargo = localStorage["cargo"];
               const risco_show = localStorage["risco"];
               const imune_show = localStorage["imune"];
+              const winner = localStorage["winner"];
                 if (localStorage.getItem("validate") == null) {
                   alert("Voce esta acessando uma pagina invalida!")
                 } else {
@@ -154,6 +155,7 @@ i {
                   document.getElementById("body").style.visibility = "visible";
                   document.getElementById("risco").style.visibility = risco_show;
                   document.getElementById("imune").style.visibility = imune_show;
+                  document.getElementById("winner").innerHTML = winner
                 }
               }
               </script>
@@ -263,12 +265,6 @@ i {
                   </div>
                   <div class="col-xs-6 text-right">
                     <p style="font-size: 30px;">02/02</p>
-                    <script>
-                      window.onload = function() {
-                        const winner = localStorage["winner"];
-                        document.getElementById("winner").innerHTML = winner
-                      }
-                      </script>
                     <p id="winner"></p>
                   </div>
                 </div>
