@@ -190,8 +190,8 @@ i {
                     <i class="fa fa-comments fa-5x"></i>
                   </div>
                   <div class="col-xs-6 text-right">
-                    <p class="announcement-heading">---</p>
-                    <p class="announcement-text">----</p>
+                    <p >---</p>
+                    <p >----</p>
                   </div>
                 </div>
               </div>
@@ -214,8 +214,8 @@ i {
                     <i class="fa fa-check fa-5x"></i>
                   </div>
                   <div class="col-xs-6 text-right">
-                    <p class="announcement-heading">---</p>
-                    <p class="announcement-text">---</p>
+                    <p >---</p>
+                    <p >---</p>
                   </div>
                 </div>
               </div>
@@ -238,8 +238,8 @@ i {
                     <i class="fa fa-tasks fa-5x"></i>
                   </div>
                   <div class="col-xs-6 text-right">
-                    <p class="announcement-heading">---</p>
-                    <p class="announcement-text">---</p>
+                    <p >---</p>
+                    <p >---</p>
                   </div>
                 </div>
               </div>
@@ -259,11 +259,17 @@ i {
               <div class="panel-heading">
                 <div class="row">
                   <div class="col-xs-6">
-                    <i class="fa fa-comments fa-5x"></i>
+                    <i class="fa fa-trophy fa-5x"></i>
                   </div>
                   <div class="col-xs-6 text-right">
-                    <p class="announcement-heading">---</p>
-                    <p class="announcement-text">---</p>
+                    <p style="font-size: 30px;">02/02</p>
+                    <script>
+                      window.onload = function() {
+                        const winner = localStorage["winner"];
+                        document.getElementById("winner").innerHTML = winner
+                      }
+                      </script>
+                    <p id="winner"></p>
                   </div>
                 </div>
               </div>
