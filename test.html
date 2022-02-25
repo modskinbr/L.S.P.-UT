@@ -7,8 +7,20 @@ jQuery(document).ready(function() {
   jQuery("spam.timeago").timeago();
 });
 </script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+  jQuery("abbr.timeago").timeago();
+});
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+  jQuery("time.timeago").timeago();
+});
+</script>
 </head>
 <body>
 <spam class="timeago" title="2022-02-24T20:20:20Z">Error</spam>
+<abbr class="timeago" title="2022-02-24T20:20:20Z">Error</abbr>
+<time class="timeago" title="2022-02-24T20:20:20Z">Error</time>
 </body>
 </html>
