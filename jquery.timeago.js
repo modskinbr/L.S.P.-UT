@@ -8,6 +8,7 @@
   }
 }(function (jQuery) {
   // Brazilian Portuguese 
+  jQuery.timeago.settings.cutoff = 1000*60*60*24;
   jQuery.timeago.settings.strings = {
      prefixAgo: "há",
      prefixFromNow: "em",
