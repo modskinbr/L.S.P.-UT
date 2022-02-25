@@ -1,6 +1,3 @@
-jQuery(document).ready(function() {
-  jQuery("time.timeago").timeago();
-});
 (function (factory) {
   if (typeof define === 'function' && define.amd) {
     define(['jquery'], factory);
