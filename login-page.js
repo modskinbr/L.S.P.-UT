@@ -2,7 +2,10 @@ const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
 
+localStorage.setItem("read","1");
 localStorage.setItem("winner", "fehtheworld#9360");
+localStorage.setItem("msg_title", "Testando novas formas de notificiar o publico!");
+localStorage.setItem("msg_box", "Apenas uma mensagem de testes, Mas gostaria de agradecer por voce estar aqui!");
 
 var sem_nivel = "https://cdn.discordapp.com/emojis/946445227609165925.png?size=80";
 var nivel_1 = "https://cdn.discordapp.com/emojis/945768989198532708.png?size=80";
