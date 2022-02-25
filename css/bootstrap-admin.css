@@ -5756,7 +5756,8 @@ a.list-group-item.active:focus .list-group-item-text {
 
 .panel-footer {
   padding: 10px 15px;
-  background-color: #f5f5f5;
+  color: white;
+  background-color: #222222;
   border-top: 1px solid #222222;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -5789,7 +5790,7 @@ a.list-group-item.active:focus .list-group-item-text {
 }
 
 .panel-default {
-  border-color: #dddddd;
+  border-color: #222222;
 }
 
 .panel-default > .panel-heading {
@@ -5899,7 +5900,7 @@ a.list-group-item.active:focus .list-group-item-text {
 }
 
 .panel-info {
-  border-color: #bce8f1;
+  border-color: #222222;
 }
 
 .panel-info > .panel-heading {
@@ -5913,11 +5914,11 @@ a.list-group-item.active:focus .list-group-item-text {
 }
 
 .panel-info > .panel-heading > .dropdown .caret {
-  border-color: #3a87ad transparent;
+  border-color: #222222 transparent;
 }
 
 .panel-info > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #bce8f1;
+  border-bottom-color: #222222;
 }
 
 .well {
