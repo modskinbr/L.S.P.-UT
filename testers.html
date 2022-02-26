@@ -231,7 +231,6 @@ function closemsg() {
               const cargo = localStorage["cargo"];
               const risco_show = localStorage["risco"];
               const imune_show = localStorage["imune"];
-              const winner = localStorage["winner"];
                 if (localStorage.getItem("validate") == null) {
                   alert("Voce esta acessando uma pagina invalida!")
                 } else {
@@ -251,7 +250,6 @@ function closemsg() {
                   document.getElementById("body").style.visibility = "visible";
                   document.getElementById("risco").style.visibility = risco_show;
                   document.getElementById("imune").style.visibility = imune_show;
-                  document.getElementById("winner").innerHTML = winner
                 }
               }
               </script>
