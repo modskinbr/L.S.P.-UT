@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt">
-  <head>
-  <script defer src="login-page.js"></script>
+<html lang="pt"><head>
+  <script defer="" src="login-page.js"></script>
     <link href="css/bootstrap-admin.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
@@ -37,10 +36,8 @@ i {
  }
 </style>
 <div id="body" style="
-    z-index: 2000;
-    visibility: visible;
     background: black;
-    color: navajowhite;
+    color: #f3f3f3;
     position: fixed;
     width: -webkit-fill-available;
     height: -webkit-fill-available;
@@ -52,50 +49,51 @@ i {
     font-family: cursive;
     margin-top: -50px;
 "><div>
-<p id="text_con"></p>
+<p id="text_con" style="
+    background-color: #232222;
+    border-radius: 50px;
+">Terminando...</p>
 <div style="
-    background: gray;
+    background: #3f3e3e;
     border-radius: 10px;
     width: 300px;
     height: 300px;
 ">
-     <img src="https://modskinbr.github.io/L.S.P.-UT/image/256x256.ico" style="width: 64px;"><h6 class="loader"></h6><p>Validando Informaçoes</p>
- <p>Aguarde um Momento...</p><i class="fa fa-user"></i><p id="name_user"></p></div>
+     <img src="https://modskinbr.github.io/L.S.P.-UT/image/256x256.ico" style="width: 64px;"><h6 class="loader" style="
+"></h6><p>Validando Informaçoes</p>
+ <p>Aguarde um Momento...</p><i class="fa fa-user" style="
+    color: lightseagreen;
+"></i><p id="name_user"></p></div>
 </div></div>
               <script>
- let timeout;
+let timeout;
 mF();
 function mF() {
-  document.getElementById("text_con").innerText = "Validando...";
-  timeout = setTimeout(profile, 1000);
+document.getElementById("text_con").innerText = "Validando...";
+timeout = setTimeout(profile, 5000);
 }
- const user = localStorage["userdate"];
- const valir = localStorage["validate"];
-
+const user = localStorage["userdate"];
+const valir = localStorage["validate"];
 function profile() {
 if ( valir == null ) {
-  document.getElementById("text_con").innerText = "Voce esta acessando uma pagina invalida!";
-  document.getElementById("name_user").innerText = "Redirecionando...";
-  timeout = setTimeout(back, 5000);
- } else {
-  document.getElementById("text_con").innerText = "Verificado!";
-  timeout = setTimeout(tF, 1000);
- }
+document.getElementById("text_con").innerText = "Voce esta acessando uma pagina invalida!";
+document.getElementById("name_user").innerText = "Invalido";
+} else {
+document.getElementById("text_con").innerText = "Verificado!";
+timeout = setTimeout(tF, 5000);
 }
-
-function back() {
-  location.href = "https://modskinbr.github.io/L.S.P.-UT/experimental-beta.html";
 }
 
 function tF() {
-  document.getElementById("text_con").innerText = "Terminando...";
-  document.getElementById("name_user").innerText = user;
-  timeout = setTimeout(endx, 1000);
+document.getElementById("text_con").innerText = "Terminando...";
+document.getElementById("name_user").innerText = user;
+timeout = setTimeout(endx, 5000);
 }
 
 function endx() {
-  location.href = "https://modskinbr.github.io/L.S.P.-UT/testers-logged.html";
+location.href = "https://modskinbr.github.io/L.S.P.-UT/testers-logged.html";
 }
               </script>
-  </body>
-</html>
+  
+
+</body></html>
