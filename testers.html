@@ -96,7 +96,7 @@ function readnot() {
 	if (localStorage["read"] > 0); {
 	    document.getElementById("msgs").innerText = localStorage["read"] + " Notificaçoes";
 	    }
-	else if (localStorage["read"] == 0); {
+	if (localStorage["read"] == 0); {
             document.getElementById("msgs").innerText = "Nenhuma Notificação";
             }
 }
