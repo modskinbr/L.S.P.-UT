@@ -91,18 +91,6 @@ i {
       </style>
 	  
 	 <script>
-readnot();
-function readnot() {
-	const read = localStorage["read"];
-	const not = document.getElementById("notifications");
-        alert(not + read);
-        if ( read > 0 ) {
-        not.innerText = read + " Novas Mensagens";
-        }
-        else if ( read == 0 ) {
-        not.innerText = "Nenhuma Nova Mensagem";
-        }
-}
 function openmsg() {
 	const title = localStorage["msg_title"];
 	const box = localStorage["msg_box"];
@@ -206,6 +194,20 @@ function closemsg() {
               </ul>
             </li>
             <li>
+	 <script>
+readnot();
+function readnot() {
+	const read = localStorage["read"];
+	const not = document.getElementById("notifications");
+        alert(not + read);
+        if ( read > 0 ) {
+        not.innerText = read + " Novas Mensagens";
+        }
+        else if ( read == 0 ) {
+        not.innerText = "Nenhuma Nova Mensagem";
+        }
+}
+		    </script>
                         <script>
       function showing() {
         const pop = document.getElementById("popstyle");
