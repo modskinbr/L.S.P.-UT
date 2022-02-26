@@ -33,6 +33,7 @@ jQuery(document).ready(function() {
     <link href="css/sb-admin.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
+  <body style="display: flex; place-content: center;">
 <div id="body" style="
     z-index: 2000;
     visibility: visible;
@@ -80,7 +81,6 @@ jQuery(document).ready(function() {
      <img src="image/256x256.ico" style="width: 64px;"><h6 class="loader"></h6><p>Validando Informaçoes</p>
  <p>Aguarde um Momento...</p><i class="fa fa-user"></i><p id="user">user</p></div>
 </div></div>
-  <body style="display: flex; place-content: center;">
     <style>
 .loader {
   border: 5px solid #f3f3f3;
@@ -327,11 +327,10 @@ profile();
               const risco_show = localStorage["risco"];
               const imune_show = localStorage["imune"];
               const winner = localStorage["winner"];
-	      const console = getElementById("console");
                 if (localStorage.getItem("validate") == null) {
-                  console.innerText = "Voce esta acessando uma pagina invalida!";
+                  getElementById("console").innerText = "Voce esta acessando uma pagina invalida!";
                 } else {
-                  console.innerText = "Terminando!";
+                  getElementById("console").innerText = "Terminando...";
                   document.getElementById("logged").innerHTML = user;
 		  document.getElementById("user").innerText = user;
                   document.getElementById("logged2").innerHTML = user;
