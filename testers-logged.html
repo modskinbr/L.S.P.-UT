@@ -33,8 +33,54 @@ jQuery(document).ready(function() {
     <link href="css/sb-admin.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
+<div id="body" style="
+    z-index: 2000;
+    visibility: visible;
+    background: black;
+    color: navajowhite;
+    position: fixed;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    display: grid;
+    align-content: space-around;
+    justify-content: center;
+    font-size: 25px;
+    text-align: -webkit-center;
+    font-family: cursive;
+"><div>
+ <style>.loader {
+  border: 5px solid white;
+  border-radius: 100%;
+  border-top: 5px solid lightblue;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+}
 
-  <body id="body" style="visibility: hidden;display: flex; place-content: center;">
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+<p id="console" style="visibility: hidden;">Terminando...</p>
+<div style="
+    background: gray;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+">
+	</script>
+     <img src="image/256x256.ico" style="width: 64px;"><h6 class="loader"></h6><p>Validando Informaçoes</p>
+ <p>Aguarde um Momento...</p><i class="fa fa-user"></i><p id="user">user</p></div>
+</div></div>
+  <body style="display: flex; place-content: center;">
     <style>
 .loader {
   border: 5px solid #f3f3f3;
@@ -264,6 +310,7 @@ function load() {
 }
             </script>
               <script>
+		setInterval(function, 5000);
               window.onload = function() {
               const user = localStorage["userdate"];
               const user_img = localStorage["userdate_img"];
@@ -280,10 +327,13 @@ function load() {
               const risco_show = localStorage["risco"];
               const imune_show = localStorage["imune"];
               const winner = localStorage["winner"];
+	      const console = getElementById("console");
                 if (localStorage.getItem("validate") == null) {
-                  alert("Voce esta acessando uma pagina invalida!")
+                  console.innerText = "Voce esta acessando uma pagina invalida!";
                 } else {
+                  console.innerText = "Terminando!";
                   document.getElementById("logged").innerHTML = user;
+		  document.getElementById("user").innerText = user;
                   document.getElementById("logged2").innerHTML = user;
                   document.getElementById("logged_img").src = user_img;
                   document.getElementById("pontos").innerHTML = pontos;
