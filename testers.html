@@ -91,12 +91,17 @@ i {
       </style>
 	  
 	 <script>
+load();
+function load() {
+	const title = localStorage["msg_title"];
+	document.getElementById("not_title1").innerText = title;
+	document.getElementById("not_title2").innerText = title;
+}
 function openmsg() {
 	const title = localStorage["msg_title"];
 	const box = localStorage["msg_box"];
 	const pop = document.getElementById("msg_content");
 	document.getElementById("msg_title").innerHTML = title;
-	document.getElementById("not_title1").innerText = title;
 	document.getElementById("msg_box").innerHTML = box;
 	pop.style.visibility = "visible";
 }
@@ -105,7 +110,6 @@ function openmsg2() {
 	const box = localStorage["msg_box2"];
 	const pop = document.getElementById("msg_content");
 	document.getElementById("msg_title").innerHTML = title;
-	document.getElementById("not_title2").innerText = title;
 	document.getElementById("msg_box").innerHTML = box;
 	pop.style.visibility = "visible";
 }
