@@ -77,7 +77,9 @@ const valir = localStorage["validate"];
 function profile() {
 if ( valir == null ) {
 document.getElementById("text_con").innerText = "Voce esta acessando uma pagina invalida!";
-document.getElementById("name_user").innerText = "Invalido";
+document.getElementById("name_user").innerText = "Redirecionando...";
+document.getElementById("body").style.width = "510px";
+document.getElementById("body").style.height = "42px";
 } else {
 document.getElementById("text_con").innerText = "Verificado!";
 timeout = setTimeout(tF, 5000);
