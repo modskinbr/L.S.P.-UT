@@ -208,9 +208,10 @@ function readnot() {
 }
 load();
 function load() {
-	const title = localStorage["msg_title"];
-	document.getElementById("not_title1").innerText = title;
-	document.getElementById("not_title2").innerText = title;
+	const title1 = localStorage["msg_title"];
+	const title2 = localStorage["msg_title2"];
+	document.getElementById("not_title1").innerText = title1;
+	document.getElementById("not_title2").innerText = title2;
 }
 
 		    </script>
