@@ -93,11 +93,12 @@ i {
 	 <script>
 readnot();
 function readnot() {
-	if (localStorage["read"] > 0); {
-	    document.getElementById("notifications").innerText = localStorage["read"] + " Notificaçoes";
+	const read = localStorage.getItem["read"];
+	if (read > 0); {
+	    document.getElementById("notifications").innerHTML = read + " Notificaçoes";
 	    }
-	if (localStorage["read"] == 0); {
-            document.getElementById("notifications").innerText = "Nenhuma Notificação";
+	if (read == 0); {
+            document.getElementById("notifications").innerHTML = "Nenhuma Notificação";
             }
 }
 function openmsg() {
