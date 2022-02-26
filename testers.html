@@ -109,8 +109,11 @@ function openmsg2() {
 }
 function read() {
 	const not = document.getElementById("notifications");
+	const not_box = document.getElementById("not_box");
 	localStorage.setItem("read","0");
 	not.innerText = "Nenhuma Nova Mensagem" ;
+	not_box.style.backgroundColor = "#ffffff";
+	
 }
 function closemsg() {
 	const pop = document.getElementById("msg_content");
@@ -173,7 +176,7 @@ function closemsg() {
               <ul class="dropdown-menu">
                 <li class="dropdown-header" id="notifications">!</li>
                 <li class="message-preview">
-                  <a onclick="openmsg()" >
+                  <a id="not_box" onclick="openmsg()" >
                     <span class="avatar"><img style="width: 17px;margin-right: -10px;border-radius: 100%;"src="https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png"></span>
                     <span class="name">Porito:</span>
                     <span class="message" id="not_title1">A msg!</span>
@@ -182,7 +185,7 @@ function closemsg() {
                 </li>
                 <li class="divider"></li>
                 <li class="message-preview">
-                  <a onclick="openmsg2()" >
+                  <a id="not_box" onclick="openmsg2()" >
                     <span class="avatar"><img style="width: 17px;margin-right: -10px;border-radius: 100%;"src="https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png"></span>
                     <span class="name">Porito:</span>
                     <span class="message" id="not_title2">A msg!</span>
@@ -199,11 +202,14 @@ readnot();
 function readnot() {
 	const read = localStorage["read"];
 	const not = document.getElementById("notifications");
+	const not_box = document.getElementById("not_box");
         if ( read > 0 ) {
         not.innerText = read + " Novas Mensagens";
+	not_box.style.backgroundColor = "#c3e9ff";
         }
         else if ( read == 0 ) {
         not.innerText = "Nenhuma Nova Mensagem";
+	not_box.style.backgroundColor = "#ffffff";
         }
 }
 load();
