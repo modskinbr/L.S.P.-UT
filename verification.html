@@ -78,13 +78,35 @@ const valir = localStorage["validate"];
 function profile() {
 if ( valir == null ) {
 document.getElementById("text_con").innerText = "Voce esta acessando uma pagina invalida!";
-document.getElementById("name_user").innerText = "Redirecionando...";
+document.getElementById("name_user").innerText = "Redirecionando... (5s)";
 document.getElementById("text_con").style.width = "510px";
 document.getElementById("text_con").style.height = "42px";
+timeout = setTimeout(time4, 1000);
 } else {
 document.getElementById("text_con").innerText = "Verificado!";
 timeout = setTimeout(tF, 5000);
 }
+}
+
+function time4(){
+document.getElementById("name_user").innerText = "Redirecionando... (4s)";
+timeout = setTimeout(time3, 1000);
+}
+function time3(){
+document.getElementById("name_user").innerText = "Redirecionando... (3s)";
+timeout = setTimeout(time2, 1000);
+}
+function time2(){
+document.getElementById("name_user").innerText = "Redirecionando... (2s)";
+timeout = setTimeout(time1, 1000);
+}
+function time1(){
+document.getElementById("name_user").innerText = "Redirecionando... (1s)";
+timeout = setTimeout(time0, 1000);
+}
+function time0(){
+document.getElementById("name_user").innerText = "Redirecionando... (0s)";
+location.href = "https://modskinbr.github.io/L.S.P.-UT/experimental-beta.html";
 }
 
 function tF() {
