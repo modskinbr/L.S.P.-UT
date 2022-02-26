@@ -63,33 +63,38 @@ i {
  <p>Aguarde um Momento...</p><i class="fa fa-user"></i><p id="name_user"></p></div>
 </div></div>
               <script>
-let timeout;
+ let timeout;
 mF();
 function mF() {
-document.getElementById("text_con").innerText = "Validando...";
-timeout = setTimeout(profile, 1000);
+  document.getElementById("text_con").innerText = "Validando...";
+  timeout = setTimeout(profile, 1000);
 }
-const user = localStorage["userdate"];
-const valir = localStorage["validate"];
+ const user = localStorage["userdate"];
+ const valir = localStorage["validate"];
+
 function profile() {
 if ( valir == null ) {
-document.getElementById("text_con").innerText = "Voce esta acessando uma pagina invalida!";
-document.getElementById("name_user").innerText = "Invalido";
-} else {
-document.getElementById("text_con").innerText = "Verificado!";
-timeout = setTimeout(tF, 1000);
+  document.getElementById("text_con").innerText = "Voce esta acessando uma pagina invalida!";
+  document.getElementById("name_user").innerText = "Redirecionando...";
+  timeout = setTimeout(back, 5000);
+ } else {
+  document.getElementById("text_con").innerText = "Verificado!";
+  timeout = setTimeout(tF, 1000);
+ }
 }
+
+function back() {
+  location.href = "https://modskinbr.github.io/L.S.P.-UT/experimental-beta.html";
 }
 
 function tF() {
-document.getElementById("text_con").innerText = "Terminando...";
-document.getElementById("name_user").innerText = user;
-timeout = setTimeout(endx, 1000);
+  document.getElementById("text_con").innerText = "Terminando...";
+  document.getElementById("name_user").innerText = user;
+  timeout = setTimeout(endx, 1000);
 }
 
 function endx() {
-alert("loaded");
-//location.href = "https://modskinbr.github.io/L.S.P.-UT/testers-logged.html";
+  location.href = "https://modskinbr.github.io/L.S.P.-UT/testers-logged.html";
 }
               </script>
   </body>
