@@ -34,6 +34,7 @@ jQuery(document).ready(function() {
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
   <body style="display: flex; place-content: center;">
+
 <div id="body" style="
     z-index: 2000;
     visibility: visible;
@@ -50,39 +51,18 @@ jQuery(document).ready(function() {
     font-family: cursive;
     margin-top: -50px;
 "><div>
- <style>.loader {
-  border: 5px solid white;
-  border-radius: 100%;
-  border-top: 5px solid lightblue;
-  width: 20px;
-  height: 20px;
-  -webkit-animation: spin 1s linear infinite; /* Safari */
-  animation: spin 1s linear infinite;
-}
-
-/* Safari */
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-</style>
-<p id="text_con" style="visibility: hidden;">Terminando...</p>
+<p id="text_con"></p>
 <div style="
     background: gray;
     border-radius: 10px;
     width: 300px;
     height: 300px;
 ">
-	</script>
-     <img src="image/256x256.ico" style="width: 64px;"><h6 class="loader"></h6><p>Validando Informaçoes</p>
+     <img src="https://modskinbr.github.io/L.S.P.-UT/image/256x256.ico" style="width: 64px;"><h6 class="loader"></h6><p>Validando Informaçoes</p>
  <p>Aguarde um Momento...</p><i class="fa fa-user"></i><p id="name_user"></p></div>
 </div></div>
-    <style>
+
+<style>
 .loader {
   border: 5px solid #f3f3f3;
   border-radius: 100%;
@@ -311,47 +291,63 @@ function load() {
 }
             </script>
               <script>
-profile();
-         function profile() {
-              const user = localStorage["userdate"];
-              const user_img = localStorage["userdate_img"];
-              const pontos = localStorage["points"];
-              const nivel_pontos = localStorage["level_points"];
-              const nivel_pontos_img = localStorage["level_points_img"];
-              const sequencia = localStorage["sequence"];
-              const sequencia_img = localStorage["sequence_img"];
-              const pontos_miticos = localStorage["points_mitics"];
-              const ranked_mitico_img = localStorage["ranked_mitico_img"];
-              const ranked_mitico = localStorage["ranked_mitico"];
-              const cargo_img = localStorage["cargo_img"];
-              const cargo = localStorage["cargo"];
-              const risco_show = localStorage["risco"];
-              const imune_show = localStorage["imune"];
-              const winner = localStorage["winner"];
-                if (localStorage.getItem("validate") == null) {
-                  document.getElementById("text_con").innerText = "Voce esta acessando uma pagina invalida!";
-                } else {
-                  document.getElementById("text_con").innerText = "Terminando...";
-                  document.getElementById("logged").innerHTML = user;
-		  document.getElementById("name_user").innerText = user;
-                  document.getElementById("logged2").innerHTML = user;
-                  document.getElementById("logged_img").src = user_img;
-                  document.getElementById("pontos").innerHTML = pontos;
-                  document.getElementById("nivel_pontos_img").src = nivel_pontos_img;
-                  document.getElementById("nivel_pontos").innerHTML = nivel_pontos;
-                  document.getElementById("sequencia_img").src = sequencia_img;
-                  document.getElementById("sequencia").innerHTML = sequencia;
-                  document.getElementById("pontos_miticos").innerHTML = pontos_miticos;
-                  document.getElementById("ranked_mitico_img").src = ranked_mitico_img;
-                  document.getElementById("ranked_mitico").innerHTML = ranked_mitico;
-                  document.getElementById("cargo_img").src = cargo_img;
-                  document.getElementById("cargo_nome").innerHTML = cargo;
-                  document.getElementById("body").style.visibility = "visible";
-                  document.getElementById("risco").style.visibility = risco_show;
-                  document.getElementById("imune").style.visibility = imune_show;
-                  document.getElementById("winner").innerHTML = winner
-                }
-              }
+let timeout;
+mF();
+function mF() {
+document.getElementById("text_con").innerText = "Validando...";
+timeout = setTimeout(profile, 1000);
+}
+const user = localStorage["userdate"];
+const user_img = localStorage["userdate_img"];
+const pontos = localStorage["points"];
+const nivel_pontos = localStorage["level_points"];
+const nivel_pontos_img = localStorage["level_points_img"];
+const sequencia = localStorage["sequence"];
+const sequencia_img = localStorage["sequence_img"];
+const pontos_miticos = localStorage["points_mitics"];
+const ranked_mitico_img = localStorage["ranked_mitico_img"];
+const ranked_mitico = localStorage["ranked_mitico"];
+const cargo_img = localStorage["cargo_img"];
+const cargo = localStorage["cargo"];
+const risco_show = localStorage["risco"];
+const imune_show = localStorage["imune"];
+const winner = localStorage["winner"];
+const valir = localStorage["validate"];
+function profile() {
+if ( valir == null ) {
+document.getElementById("text_con").innerText = "Voce esta acessando uma pagina invalida!";
+document.getElementById("name_user").innerText = "Invalido";
+} else {
+document.getElementById("text_con").innerText = "Verificado!";
+document.getElementById("logged").innerHTML = user;
+document.getElementById("logged2").innerHTML = user;
+document.getElementById("logged_img").src = user_img;
+document.getElementById("pontos").innerHTML = pontos;
+document.getElementById("nivel_pontos_img").src = nivel_pontos_img;
+document.getElementById("nivel_pontos").innerHTML = nivel_pontos;
+document.getElementById("sequencia_img").src = sequencia_img;
+document.getElementById("sequencia").innerHTML = sequencia;
+document.getElementById("pontos_miticos").innerHTML = pontos_miticos;
+document.getElementById("ranked_mitico_img").src = ranked_mitico_img;
+document.getElementById("ranked_mitico").innerHTML = ranked_mitico;
+document.getElementById("cargo_img").src = cargo_img;
+document.getElementById("cargo_nome").innerHTML = cargo;
+document.getElementById("risco").style.visibility = risco_show;
+document.getElementById("imune").style.visibility = imune_show;
+document.getElementById("winner").innerText = winner;
+timeout = setTimeout(tF, 1000);
+}
+}
+
+function tF() {
+document.getElementById("text_con").innerText = "Terminando...";
+document.getElementById("name_user").innerText = user;
+timeout = setTimeout(endx, 1000);
+}
+
+function endx() {
+document.getElementById("body").style.visibility = "hidden";
+}
               </script>
               <a style="padding: 15px 15px;color: #999999;" id="logged" onclick="showing()"></a>
               <div class="popup">
