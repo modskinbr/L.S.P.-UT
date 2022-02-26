@@ -91,12 +91,6 @@ i {
       </style>
 	  
 	 <script>
-load();
-function load() {
-	const title = localStorage["msg_title"];
-	document.getElementById("not_title1").innerText = title;
-	document.getElementById("not_title2").innerText = title;
-}
 function openmsg() {
 	const title = localStorage["msg_title"];
 	const box = localStorage["msg_box"];
@@ -212,6 +206,13 @@ function readnot() {
         not.innerText = "Nenhuma Nova Mensagem";
         }
 }
+load();
+function load() {
+	const title = localStorage["msg_title"];
+	document.getElementById("not_title1").innerText = title;
+	document.getElementById("not_title2").innerText = title;
+}
+
 		    </script>
                         <script>
       function showing() {
