@@ -93,42 +93,45 @@ i {
 	 <script>
 readnot();
 function readnot() {
-	const read = localStorage.getItem["read"];
-	if (read > 0); {
-	    document.getElementById("notifications").innerHTML = read + " Notificaçoes";
-	    }
-	if (read == 0); {
-            document.getElementById("notifications").innerHTML = "Nenhuma Notificação";
-            }
+	const read = localStorage["read"];
+	const not = document.getElementById("notifications");
+        
+        if ( read > 0) {
+        not.innerText = read + " Novas Mensagens";
+        }
+        else if ( read == 0 ) {
+        not.innerText = "Nenhuma Nova Mensagem";
+        }
 }
 function openmsg() {
 	const title = localStorage["msg_title"];
 	const box = localStorage["msg_box"];
-	const popmsg1 = document.getElementById("msg");
+	const pop = document.getElementById("msg_content");
 	document.getElementById("msg_title").innerHTML = title;
 	document.getElementById("msg_box").innerHTML = box;
-	popmsg1.style.visibility = "visible";
+	pop.style.visibility = "visible";
 }
 function openmsg2() {
 	const title = localStorage["msg_title2"];
 	const box = localStorage["msg_box2"];
-	const popmsg1 = document.getElementById("msg");
+	const pop = document.getElementById("msg_content");
 	document.getElementById("msg_title").innerHTML = title;
 	document.getElementById("msg_box").innerHTML = box;
-	popmsg1.style.visibility = "visible";
+	pop.style.visibility = "visible";
 }
 function read() {
+	const not = document.getElementById("notifications");
 	localStorage.setItem("read","0");
-	document.getElementById("msgs").innerText = localStorage["read"] + " Notificaçoes" ;
+	not.innerText = "Nenhuma Nova Mensagem" ;
 }
 function closemsg() {
-	const popmsg1 = document.getElementById("msg");
-	popmsg1.style.visibility = "hidden";
+	const pop = document.getElementById("msg_content");
+	pop.style.visibility = "hidden";
 }
 </script>
  
 	 
-<div id="msg" class="popuptext" style="
+<div id="msg_content" class="popuptext" style="
     visibility: hidden;
     max-width: 600px;
     height: 349px;
