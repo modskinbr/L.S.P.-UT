@@ -264,7 +264,7 @@ function load() {
 }
             </script>
               <script>
-windows.onload = function profile() {
+window.onload = function profile() {
 		const user = localStorage["userdate"];
 		const user_img = localStorage["userdate_img"];
 		const pontos = localStorage["points"];
@@ -282,7 +282,7 @@ windows.onload = function profile() {
 		const winner = localStorage["winner"];
 		const valir = localStorage["validate"];
 	if ( valir == null ) {
-		location.href = "https://modskinbr.github.io/L.S.P.-UT/experimental-beta.html";
+		location.href = "https://modskinbr.github.io/L.S.P.-UT/verification.html";
 	} else {
 		document.getElementById("logged").innerHTML = user;
 		document.getElementById("logged2").innerHTML = user;
