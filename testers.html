@@ -94,27 +94,26 @@ i {
 readnot();
 function readnot() {
 	if (localStorage["read"] > 0); {
-	    document.getElementById("msgs").innerText = localStorage["read"] + " Notificaçoes";
+	    document.getElementById("notifications").innerText = localStorage["read"] + " Notificaçoes";
 	    }
 	if (localStorage["read"] == 0); {
-            document.getElementById("msgs").innerText = "Nenhuma Notificação";
+            document.getElementById("notifications").innerText = "Nenhuma Notificação";
             }
 }
 function openmsg() {
 	const title = localStorage["msg_title"];
 	const box = localStorage["msg_box"];
+	const popmsg1 = document.getElementById("msg");
 	document.getElementById("msg_title").innerHTML = title;
 	document.getElementById("msg_box").innerHTML = box;
-	document.getElementById("msg");
-	const popmsg1 = document.getElementById("msg");
 	popmsg1.style.visibility = "visible";
 }
 function openmsg2() {
 	const title = localStorage["msg_title2"];
 	const box = localStorage["msg_box2"];
+	const popmsg1 = document.getElementById("msg");
 	document.getElementById("msg_title").innerHTML = title;
 	document.getElementById("msg_box").innerHTML = box;
-	const popmsg1 = document.getElementById("msg");
 	popmsg1.style.visibility = "visible";
 }
 function read() {
@@ -178,9 +177,9 @@ function closemsg() {
 
           <ul class="nav navbar-nav navbar-right navbar-user">
             <li class="dropdown messages-dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages<b class="caret"></b></a>
+              <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Mensagens<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li class="dropdown-header" id="msgs"></li>
+                <li class="dropdown-header" id="notifications">!</li>
                 <li class="message-preview">
                   <a onclick="openmsg()" >
                     <span class="avatar"><img style="width: 17px;margin-right: -10px;border-radius: 100%;"src="https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png"></span>
