@@ -310,8 +310,13 @@ function load() {
 }
             </script>
               <script>
-		setInterval(function, 5000);
-              window.onload = function() {
+timed();
+let timeout;
+function timed() {
+  timeout = setTimeout(profile, 3000);
+}
+profile();
+         function profile() {
               const user = localStorage["userdate"];
               const user_img = localStorage["userdate_img"];
               const pontos = localStorage["points"];
