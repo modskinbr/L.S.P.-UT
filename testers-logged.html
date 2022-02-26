@@ -80,7 +80,7 @@ jQuery(document).ready(function() {
 ">
 	</script>
      <img src="image/256x256.ico" style="width: 64px;"><h6 class="loader"></h6><p>Validando Informaçoes</p>
- <p>Aguarde um Momento...</p><i class="fa fa-user"></i><p id="user">user</p></div>
+ <p>Aguarde um Momento...</p><i class="fa fa-user"></i><p id="name_user"></p></div>
 </div></div>
     <style>
 .loader {
@@ -333,7 +333,7 @@ profile();
                 } else {
                   document.getElementById("text_con").innerText = "Terminando...";
                   document.getElementById("logged").innerHTML = user;
-		  document.getElementById("user").innerText = user;
+		  document.getElementById("name_user").innerText = user;
                   document.getElementById("logged2").innerHTML = user;
                   document.getElementById("logged_img").src = user_img;
                   document.getElementById("pontos").innerHTML = pontos;
