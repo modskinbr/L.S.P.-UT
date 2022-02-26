@@ -96,6 +96,7 @@ function openmsg() {
 	const box = localStorage["msg_box"];
 	const pop = document.getElementById("msg_content");
 	document.getElementById("msg_title").innerHTML = title;
+	document.getElementById("not_title1").innerHTML = title;
 	document.getElementById("msg_box").innerHTML = box;
 	pop.style.visibility = "visible";
 }
@@ -104,6 +105,7 @@ function openmsg2() {
 	const box = localStorage["msg_box2"];
 	const pop = document.getElementById("msg_content");
 	document.getElementById("msg_title").innerHTML = title;
+	document.getElementById("not_title2").innerHTML = title;
 	document.getElementById("msg_box").innerHTML = box;
 	pop.style.visibility = "visible";
 }
@@ -176,7 +178,7 @@ function closemsg() {
                   <a onclick="openmsg()" >
                     <span class="avatar"><img style="width: 17px;margin-right: -10px;border-radius: 100%;"src="https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png"></span>
                     <span class="name">Porito:</span>
-                    <span class="message" id="msg_title">A msg!</span>
+                    <span class="message" id="not_title1">A msg!</span>
                     <span class="timeago" title="2022-02-25T14:36:00-03:00"><i class="fa fa-clock-o"></i></span>
                   </a>
                 </li>
@@ -185,7 +187,7 @@ function closemsg() {
                   <a onclick="openmsg2()" >
                     <span class="avatar"><img style="width: 17px;margin-right: -10px;border-radius: 100%;"src="https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png"></span>
                     <span class="name">Porito:</span>
-                    <span class="message" id="msg_title2">A msg!</span>
+                    <span class="message" id="not_title2">A msg!</span>
                     <span class="timeago" title="2022-02-25T19:38:00-03:00"><i class="fa fa-clock-o"></i></span>
                   </a>
                 </li>
