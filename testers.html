@@ -89,6 +89,45 @@ i {
   to {opacity:1 ;}
 }
       </style>
+	  
+	 <script>
+readnot();
+function readnot() {
+	if (localStorage["read"] > 0); {
+	    document.getElementById("msgs").innerText = localStorage["read"] + " Notificaçoes";
+	    }
+	else if (localStorage["read"] == 0); {
+            document.getElementById("msgs").innerText = "Nenhuma Notificação";
+            }
+}
+function openmsg() {
+	const title = localStorage["msg_title"];
+	const box = localStorage["msg_box"];
+	document.getElementById("msg_title").innerHTML = title;
+	document.getElementById("msg_box").innerHTML = box;
+	document.getElementById("msg");
+	const popmsg1 = document.getElementById("msg");
+	popmsg1.style.visibility = "visible";
+}
+function openmsg2() {
+	const title = localStorage["msg_title2"];
+	const box = localStorage["msg_box2"];
+	document.getElementById("msg_title").innerHTML = title;
+	document.getElementById("msg_box").innerHTML = box;
+	const popmsg1 = document.getElementById("msg");
+	popmsg1.style.visibility = "visible";
+}
+function read() {
+	localStorage.setItem("read","0");
+	document.getElementById("msgs").innerText = localStorage["read"] + " Notificaçoes" ;
+}
+function closemsg() {
+	const popmsg1 = document.getElementById("msg");
+	popmsg1.style.visibility = "hidden";
+}
+</script>
+ 
+	 
 <div id="msg" class="popuptext" style="
     visibility: hidden;
     max-width: 600px;
@@ -225,44 +264,6 @@ i {
         </div><!-- /.navbar-collapse -->
       </nav>
 <div id="page-wrapper">
-
-<script>
-readnot();
-function readnot() {
-	if (localStorage["read"] > 0); {
-	    document.getElementById("msgs").innerText = localStorage["read"] + " Notificaçoes";
-	    }
-	else if (localStorage["read"] == 0); {
-            document.getElementById("msgs").innerText = "Nenhuma Notificação";
-            }
-}
-function openmsg() {
-	const title = localStorage["msg_title"];
-	const box = localStorage["msg_box"];
-	document.getElementById("msg_title").innerHTML = title;
-	document.getElementById("msg_box").innerHTML = box;
-	document.getElementById("msg");
-	const popmsg1 = document.getElementById("msg");
-	popmsg1.style.visibility = "visible";
-}
-function openmsg2() {
-	const title = localStorage["msg_title2"];
-	const box = localStorage["msg_box2"];
-	document.getElementById("msg_title").innerHTML = title;
-	document.getElementById("msg_box").innerHTML = box;
-	const popmsg1 = document.getElementById("msg");
-	popmsg1.style.visibility = "visible";
-}
-function read() {
-	localStorage.setItem("read","0");
-	document.getElementById("msgs").innerText = localStorage["read"] + " Notificaçoes" ;
-}
-function closemsg() {
-	const popmsg1 = document.getElementById("msg");
-	popmsg1.style.visibility = "hidden";
-}
-</script>
-
 
         <div class="row">
           <div class="col-lg-12">
