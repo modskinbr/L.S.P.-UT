@@ -48,6 +48,7 @@ jQuery(document).ready(function() {
     font-size: 25px;
     text-align: -webkit-center;
     font-family: cursive;
+    margin-top: -50px;
 "><div>
  <style>.loader {
   border: 5px solid white;
@@ -70,7 +71,7 @@ jQuery(document).ready(function() {
   100% { transform: rotate(360deg); }
 }
 </style>
-<p id="console" style="visibility: hidden;">Terminando...</p>
+<p id="text_con" style="visibility: hidden;">Terminando...</p>
 <div style="
     background: gray;
     border-radius: 10px;
@@ -328,9 +329,9 @@ profile();
               const imune_show = localStorage["imune"];
               const winner = localStorage["winner"];
                 if (localStorage.getItem("validate") == null) {
-                  getElementById("console").innerText = "Voce esta acessando uma pagina invalida!";
+                  getElementById("text_con").innerText = "Voce esta acessando uma pagina invalida!";
                 } else {
-                  getElementById("console").innerText = "Terminando...";
+                  getElementById("text_con").innerText = "Terminando...";
                   document.getElementById("logged").innerHTML = user;
 		  document.getElementById("user").innerText = user;
                   document.getElementById("logged2").innerHTML = user;
