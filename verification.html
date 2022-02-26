@@ -2,7 +2,8 @@
 <html lang="pt"><head>
   <script defer="" src="login-page.js"></script>
     <link href="css/bootstrap-admin.css" rel="stylesheet">
-
+    <link rel="icon" href="/L.S.P.-UT/image/tester.ico">
+    <title>Verificação</title>
     <!-- Add custom CSS here -->
     <link href="css/sb-admin.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -35,7 +36,7 @@ i {
     text-align: center;
  }
 </style>
-<div id="body" style="
+<div style="
     background: black;
     color: #f3f3f3;
     position: fixed;
@@ -78,8 +79,8 @@ function profile() {
 if ( valir == null ) {
 document.getElementById("text_con").innerText = "Voce esta acessando uma pagina invalida!";
 document.getElementById("name_user").innerText = "Redirecionando...";
-document.getElementById("body").style.width = "510px";
-document.getElementById("body").style.height = "42px";
+document.getElementById("text_con").style.width = "510px";
+document.getElementById("text_con").style.height = "42px";
 } else {
 document.getElementById("text_con").innerText = "Verificado!";
 timeout = setTimeout(tF, 5000);
