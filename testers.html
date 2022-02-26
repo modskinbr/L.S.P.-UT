@@ -174,7 +174,7 @@ function closemsg() {
 
           <ul class="nav navbar-nav navbar-right navbar-user">
             <li class="dropdown messages-dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Mensagens<b class="caret"></b></a>
+              <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Mensagens<spam class="badge" id="not_count" style="margin: 0px 0px 0px 10px;"></spam><b class="caret"> </b></a>
               <ul class="dropdown-menu">
                 <li class="dropdown-header" id="notifications">!</li>
                 <li class="message-preview">
@@ -182,7 +182,7 @@ function closemsg() {
                     <span class="avatar"><img style="width: 17px;margin-right: -10px;border-radius: 100%;"src="https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png"></span>
                     <span class="name">Porito:</span>
                     <span class="message" id="not_title1">A msg!</span>
-                    <span class="timeago" title="2022-02-25T14:36:00-03:00"><i class="fa fa-clock-o"></i></span>
+                    <i class="fa fa-clock-o"><abbr class="timeago" title="2022-02-25T14:36:00-03:00"></abbr></i>
                   </a>
                 </li>
                 <li class="divider"></li>
@@ -191,7 +191,7 @@ function closemsg() {
                     <span class="avatar"><img style="width: 17px;margin-right: -10px;border-radius: 100%;"src="https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png"></span>
                     <span class="name">Porito:</span>
                     <span class="message" id="not_title2">A msg!</span>
-                    <span class="timeago" title="2022-02-25T19:38:00-03:00"><i class="fa fa-clock-o"></i></span>
+                    <i class="fa fa-clock-o"><abbr class="timeago" title="2022-02-25T14:36:00-03:00"></abbr></i>
                   </a>
                 </li>
                 <li class="divider"></li>
@@ -203,6 +203,7 @@ function closemsg() {
 readnot();
 function readnot() {
 	const read = localStorage["read"];
+	const not_count document.getElementById("not_count");
 	const not = document.getElementById("notifications");
 	const not_box = document.getElementById("not_box");
 	const not_box2 = document.getElementById("not_box2");
@@ -210,6 +211,7 @@ function readnot() {
         not.innerText = read + " Novas Mensagens";
 	not_box.style.backgroundColor = "#c3e9ff";
 	not_box2.style.backgroundColor = "#c3e9ff";
+	not_count = read;
         }
         else if ( read == 0 ) {
         not.innerText = "Nenhuma Nova Mensagem";
