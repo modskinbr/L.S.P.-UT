@@ -329,9 +329,9 @@ profile();
               const imune_show = localStorage["imune"];
               const winner = localStorage["winner"];
                 if (localStorage.getItem("validate") == null) {
-                  getElementById("text_con").innerText = "Voce esta acessando uma pagina invalida!";
+                  document.getElementById("text_con").innerText = "Voce esta acessando uma pagina invalida!";
                 } else {
-                  getElementById("text_con").innerText = "Terminando...";
+                  document.getElementById("text_con").innerText = "Terminando...";
                   document.getElementById("logged").innerHTML = user;
 		  document.getElementById("user").innerText = user;
                   document.getElementById("logged2").innerHTML = user;
