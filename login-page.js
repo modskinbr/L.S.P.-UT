@@ -48,7 +48,7 @@ loginButton.addEventListener("click", (e) => {
     if (username === "Porito#0000" && password === "0000") {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
-        localStorage.setItem("user_name", "Lucas";
+        localStorage.setItem("user_name", "Lucas");
         localStorage.setItem("validate", password);
         localStorage.setItem("userdate_img", "https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png");
         localStorage.setItem("points", "Imune");
@@ -67,7 +67,7 @@ loginButton.addEventListener("click", (e) => {
     else if (username === "Kawai Foxy#3471" && password === "21665") {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
-        localStorage.setItem("user_name", "Raguem";
+        localStorage.setItem("user_name", "Raguem");
         localStorage.setItem("validate", password);
         localStorage.setItem("userdate_img", "https://cdn.discordapp.com/avatars/389760061603446784/ff535dfc3970c46c691cf96c368cb71a.png");
         localStorage.setItem("points", "122");
