@@ -108,7 +108,7 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("user_name", "Matheus");
         localStorage.setItem("validate", password);
         localStorage.setItem("userdate_img", "https://cdn.discordapp.com/avatars/426436991064735765/abfcbdc160a01b3377e9ad0d9bf88a4d.png");
-        localStorage.setItem("points", "100);
+        localStorage.setItem("points", "100");
         localStorage.setItem("level_points", "1");
         localStorage.setItem("level_points_img", nivel_1);
         localStorage.setItem("sequence", "0");
