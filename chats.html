@@ -1,0 +1,501 @@
+  <!DOCTYPE html>
+<html lang="pt">
+  <head>
+<link rel="icon" href="/L.S.P.-UT/image/tester.ico">
+    <script defer src="login-page.js"></script>
+<script src="jquery-3.6.0.min.js" type="text/javascript"></script>
+<script src="jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+  jQuery("spam.timeago").timeago();
+});
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+  jQuery("abbr.timeago").timeago();
+});
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+  jQuery("time.timeago").timeago();
+});
+</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Painel - Tester</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap-admin.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+
+  <body id="body" style="visibility: hidden;display: flex; place-content: center;">
+    <style>
+.loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 100%;
+  border-top: 5px solid gray;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+i {
+    width: 20px;
+    height: 15px;
+    text-align: center;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.popup .popuptext {
+    width: 300px;
+    height: 350px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 4px;
+    margin-left: -194px;
+    display: flex;
+    flex-direction: column;
+    background-color: #373741;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding: 10px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+      </style>
+	  
+	 <script>
+function openmsg() {
+	const title = localStorage["msg_title"];
+	const box = localStorage["msg_box"];
+	const pop = document.getElementById("msg_content");
+	document.getElementById("msg_title").innerHTML = title;
+	document.getElementById("msg_box").innerHTML = box;
+	pop.style.visibility = "visible";
+}
+function openmsg2() {
+	const title = localStorage["msg_title2"];
+	const box = localStorage["msg_box2"];
+	const pop = document.getElementById("msg_content");
+	document.getElementById("msg_title").innerHTML = title;
+	document.getElementById("msg_box").innerHTML = box;
+	pop.style.visibility = "visible";
+}
+function read() {
+	const not = document.getElementById("notifications");
+	const not_box = document.getElementById("not_box");
+	const not_box2 = document.getElementById("not_box2");
+	localStorage.setItem("read","0");
+	not.innerText = "Nenhuma Nova Mensagem" ;
+	not_box.removeAttribute("style")
+	not_box2.removeAttribute("style")
+	
+}
+function closemsg() {
+	const pop = document.getElementById("msg_content");
+	pop.style.visibility = "hidden";
+}
+</script>
+ 
+	 
+<div id="msg_content" class="popuptext" style="
+    visibility: hidden;
+    max-width: 600px;
+    height: 349px;
+    color: #fff;
+    border-radius: 12px;
+    position: fixed;
+    z-index: 1100;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-style: solid;
+    padding: 10px;
+    margin-block: 37px;
+    border-color: #222222;
+"><div style="font-size: 10px;"><i class="fa fa-bell" style="width: 122px;background-color: #24484c;border-radius: 68px;padding: 6px 7px;height: 19px;text-align: start;"> Central de Notificações</i><i class="fa fa-times" onclick="closemsg()" style="width: 20px;background-color: #b94a48;border-radius: 100%;margin-left: 396px;padding: 6px 7px;height: 20px;"></i></div><div><div style="
+    background-color: #0b555c;
+    width: 540px;
+    height: 61px;
+    padding: 5px 8px;
+    margin-top: 5px;
+    border-radius: 10px;
+"><c style="font-size: 22px;margin-left: auto;" id="msg_title">!</c><div style="font-size: 10px;"><img src="https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png" style="
+    width: 20px;
+    border-radius: 100%;
+"> Por Porito#0000</div></div><div style="
+    background-color: #5e9b9b;
+    width: 540px;
+    height: 231px;
+    border-radius: 10px;
+    margin-top: 8px;
+"><div style="width: 539px;padding: 10px;"><c style="font-size: 15px;" id="msg_box">Text Here!</c></div></div></div></div>
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand">EXP-Beta</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav side-nav">
+            <li><a href="testers-logged.html"><i class="fa fa-dashboard"></i> Painel</a></li>
+	    <li class="active"><a><i class="fa fa-bug"></i> Bug Report</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right navbar-user">
+            <li class="dropdown messages-dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Mensagens<spam class="badge" id="not_count" style="margin: 0px 0px 0px 10px;"></spam><b class="caret"> </b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header" id="notifications">!</li>
+                <li class="message-preview">
+                  <a id="not_box" onclick="openmsg()" >
+                    <span class="avatar"><img style="width: 17px;margin-right: -10px;border-radius: 100%;"src="https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png"></span>
+                    <span class="name">Porito:</span>
+                    <span class="message" id="not_title1">A msg!</span>
+                    <i class="fa fa-clock-o"><abbr class="timeago" title="2022-02-25T14:36:00-03:00" style="white-space: nowrap;margin-left: 5px;text-decoration-line: none;"></abbr></i>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li class="message-preview">
+                  <a id="not_box2" onclick="openmsg2()" >
+                    <span class="avatar"><img style="width: 17px;margin-right: -10px;border-radius: 100%;"src="https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png"></span>
+                    <span class="name">Porito:</span>
+                    <span class="message" id="not_title2">A msg!</span>
+                    <i class="fa fa-clock-o"><abbr class="timeago" title="2022-02-25T14:36:00-03:00" style="white-space: nowrap;margin-left: 5px;text-decoration-line: none;"></abbr></i>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li><a onclick="read()">Marcar como Lido</a></li>
+              </ul>
+            </li>
+            <li>
+	 <script>
+readnot();
+function readnot() {
+	const read = localStorage["read"];
+	const not_count = document.getElementById("not_count");
+	const not = document.getElementById("notifications");
+	const not_box = document.getElementById("not_box");
+	const not_box2 = document.getElementById("not_box2");
+        if ( read > 0 ) {
+        not.innerText = read + " Novas Mensagens";
+	not_box.style.backgroundColor = "#c3e9ff";
+	not_box2.style.backgroundColor = "#c3e9ff";
+	not_count.innerText = read;
+        }
+        else if ( read == 0 ) {
+        not.innerText = "Nenhuma Nova Mensagem";
+	not_box.removeAttribute("style")
+	not_box2.removeAttribute("style")
+        }
+}
+load();
+function load() {
+	const title1 = localStorage["msg_title"];
+	const title2 = localStorage["msg_title2"];
+	document.getElementById("not_title1").innerText = title1;
+	document.getElementById("not_title2").innerText = title2;
+}
+
+		    </script>
+                        <script>
+      function showing() {
+        const pop = document.getElementById("popstyle");
+        const visibled = pop.style.visibility;
+        if (visibled == "hidden") {
+        pop.style.visibility = "visible";
+        }
+        if (visibled == "visible") {
+        pop.style.visibility = "hidden";
+        }
+}
+            </script>
+              <script>
+              window.onload = function() {
+              const user = localStorage["userdate"];
+              const user_img = localStorage["userdate_img"];
+              const pontos = localStorage["points"];
+              const nivel_pontos = localStorage["level_points"];
+              const nivel_pontos_img = localStorage["level_points_img"];
+              const sequencia = localStorage["sequence"];
+              const sequencia_img = localStorage["sequence_img"];
+              const pontos_miticos = localStorage["points_mitics"];
+              const ranked_mitico_img = localStorage["ranked_mitico_img"];
+              const ranked_mitico = localStorage["ranked_mitico"];
+              const cargo_img = localStorage["cargo_img"];
+              const cargo = localStorage["cargo"];
+              const risco_show = localStorage["risco"];
+              const imune_show = localStorage["imune"];
+                if (localStorage.getItem("validate") == null) {
+		location.href = "https://modskinbr.github.io/L.S.P.-UT/verification.html";
+                } else {
+                  document.getElementById("logged").innerHTML = user;
+                  document.getElementById("logged2").innerHTML = user;
+                  document.getElementById("logged_img").src = user_img;
+                  document.getElementById("pontos").innerHTML = pontos;
+                  document.getElementById("nivel_pontos_img").src = nivel_pontos_img;
+                  document.getElementById("nivel_pontos").innerHTML = nivel_pontos;
+                  document.getElementById("sequencia_img").src = sequencia_img;
+                  document.getElementById("sequencia").innerHTML = sequencia;
+                  document.getElementById("pontos_miticos").innerHTML = pontos_miticos;
+                  document.getElementById("ranked_mitico_img").src = ranked_mitico_img;
+                  document.getElementById("ranked_mitico").innerHTML = ranked_mitico;
+                  document.getElementById("cargo_img").src = cargo_img;
+                  document.getElementById("cargo_nome").innerHTML = cargo;
+                  document.getElementById("body").style.visibility = "visible";
+                  document.getElementById("risco").style.visibility = risco_show;
+                  document.getElementById("imune").style.visibility = imune_show;
+                }
+              }
+              </script>
+              <a style="padding: 15px 15px;color: #999999;" id="logged" onclick="showing()"></a>
+              <div class="popup">
+<div class="popuptext" id="popstyle" style="visibility: hidden;">
+	<div style="display: grid;grid-template-columns: repeat(3,90px);">
+		<div>
+			<div>
+				<div>
+					<discord>
+						<div>
+							<img style="width: 50px;border-radius: 14.5%;padding: 3px;background: #222222;" src="https://cdn.discordapp.com/emojis/945768879278411806.webp?size=80">
+						</div>
+					</discord>
+				</div>
+				<div>
+					<div>
+						<div>Pontos</div>
+						<div style="color: rgb(229 177 97);" id="pontos">100
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div>
+				<div>
+					<discord>
+						<div>
+							<img style="width: 50px;border-radius: 14.5%;padding: 3px;background: #222222;" id="nivel_pontos_img" src="https://cdn.discordapp.com/emojis/945768989198532708.webp?size=80">
+						</div>
+					</discord>
+				</div>
+				<div>
+					<div>
+						<div>Nivel de Pontos
+						</div>
+						<div style="color: rgb(12 223 135);" id="nivel_pontos">1
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div>
+				<div>
+					<discord>
+						<div>
+							<img style="width: 50px;border-radius: 14.5%;padding: 3px;background: #222222;" id="sequencia_img" src="https://cdn.discordapp.com/emojis/946444972356411472.webp?size=80">
+						</div>
+					</discord>
+				</div>
+				<div>
+					<div>
+						<div>Sequencia
+						</div>
+						<div style="color: rgb(66 139 202);" id="sequencia">0
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div>
+				<div>
+					<discord>
+						<div>
+							<img style="width: 50px;border-radius: 14.5%;padding: 3px;background: #222222;" src="https://cdn.discordapp.com/emojis/945801110889857064.webp?size=80">
+						</div>
+					</discord>
+				</div>
+				<div>
+					<div>
+						<div>Pontos Miticos
+						</div>
+						<div style="color: rgb(170 42 176);" id="pontos_miticos">0
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div>
+				<div>
+					<discord>
+						<div>
+							<img style="width: 50px;border-radius: 14.5%;padding: 3px;background: #222222;" id="ranked_mitico_img" src="https://cdn.discordapp.com/emojis/946445227609165925.webp?size=80">
+						</div>
+					</discord>
+				</div>
+				<div>
+					<div>
+						<div>Rank Mitico
+						</div>
+						<div style="color: rgb(185 74 72);" id="ranked_mitico">Sem
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div>
+				<div>
+					<discord>
+						<div>
+							<img style="width: 50px;border-radius: 14.5%;padding: 3px;background: #222222;" src="https://cdn.discordapp.com/emojis/946447648011993178.webp?size=80" id="cargo_img">
+						</div>
+					</discord>
+				</div>
+				<div>
+					<div>
+						<div>Cargo
+						</div>
+						<div style="color: rgb(251 0 255);" id="cargo_nome">Dev
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="visibility: hidden;" id="imune">
+			<div>
+				<div>
+					<discord>
+						<div>
+							<img style="width: 50px;border-radius: 14.5%;padding: 3px;background: #222222;" src="https://cdn.discordapp.com/emojis/945769665920118836.png?size=80">
+						</div>
+					</discord>
+				</div>
+				<div>
+					<div>
+						<div>Imunidade
+						</div>
+						<div style="color: rgb(241 207 163);">Sim
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div>
+				<div>
+					<discord>
+						<div>
+							<img style="width: 50px;border-radius: 14.5%;padding: 3px;background: #222222;" src="https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.webp?size=60" id="logged_img">
+						</div>
+					</discord>
+				</div>
+				<div>
+					<div>
+						<div>Membro
+						</div>
+						<div style="color: rgb(241 207 163);" id="logged2">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="visibility: hidden;" id="risco">
+			<div>
+				<div>
+					<discord>
+						<div>
+							<img style="width: 50px;border-radius: 14.5%;padding: 3px;background: #222222;" src="https://cdn.discordapp.com/emojis/945818005097570365.png?size=80">
+						</div>
+					</discord>
+				</div>
+				<div>
+					<div>
+						<div>Rebaixamento
+						</div>
+						<div style="color: rgb(253 141 141);">Em Risco!
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+function logout() {
+	localStorage.clear();
+	location.href = "https://modskinbr.github.io/L.S.P.-UT/experimental-beta.html";
+}
+	</script>
+<discord><div><div><div style="margin: 15px 0px 0px 0px;background: dimgray;border-radius: 57px;font-family: cursive;"><p onclick="logout()" style="color: white;">Sair</p></div></div></div></discord>		      </div>
+		    </div>
+          </div>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+  <iframe src="chats.php"></iframe>
+    <script src="js/bootstrap-admin.js"></script>
+
+    <!-- Page Specific Plugins -->
+    <script src="js/tablesorter/jquery.tablesorter.js"></script>
+    <script src="js/tablesorter/tables.js"></script>
+
+  </body>
+</html>
