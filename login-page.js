@@ -48,6 +48,7 @@ loginButton.addEventListener("click", (e) => {
     if (username === "Porito#0000" && password === "0000") {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
+        localStorage.setItem("user_name", "Lucas";
         localStorage.setItem("validate", password);
         localStorage.setItem("userdate_img", "https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png");
         localStorage.setItem("points", "Imune");
@@ -66,6 +67,7 @@ loginButton.addEventListener("click", (e) => {
     else if (username === "Kawai Foxy#3471" && password === "21665") {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
+        localStorage.setItem("user_name", "Raguem";
         localStorage.setItem("validate", password);
         localStorage.setItem("userdate_img", "https://cdn.discordapp.com/avatars/389760061603446784/ff535dfc3970c46c691cf96c368cb71a.png");
         localStorage.setItem("points", "122");
@@ -75,7 +77,7 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("sequence_img", sequencia_0);
         localStorage.setItem("points_mitics", "0");
         localStorage.setItem("ranked_mitico_img", sem_ranked);
-        localStorage.setItem("ranked_mitico", "Sem Ranked");
+        localStorage.setItem("ranked_mitico", "Sem");
         localStorage.setItem("imune", "hidden");
         localStorage.setItem("risco", "hidden");
         localStorage.setItem("cargo_img", cargo_supp);
@@ -84,6 +86,7 @@ loginButton.addEventListener("click", (e) => {
     else if (username === "' gece ✪#9960" && password === "94545") {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
+        localStorage.setItem("user_name", "Gabriel");
         localStorage.setItem("validate", password);
         localStorage.setItem("userdate_img", "https://cdn.discordapp.com/avatars/536698625338900527/e88962486f4cc2675d43d325e343a7d8.png");
         localStorage.setItem("points", "125");
@@ -93,11 +96,30 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("sequence_img", sequencia_0);
         localStorage.setItem("points_mitics", "0");
         localStorage.setItem("ranked_mitico_img", sem_ranked);
-        localStorage.setItem("ranked_mitico", "Sem Ranked");
+        localStorage.setItem("ranked_mitico", "Sem");
         localStorage.setItem("imune", "hidden");
         localStorage.setItem("risco", "hidden");
         localStorage.setItem("cargo_img", cargo_mod);
         localStorage.setItem("cargo", "Mod");
+    } 
+    else if (username === "༒𝐌𝐨𝐧𝐨༒#4930" && password === "34777") {
+        location.href = urlhref;
+        localStorage.setItem("userdate", username);
+        localStorage.setItem("user_name", "Matheus");
+        localStorage.setItem("validate", password);
+        localStorage.setItem("userdate_img", "https://cdn.discordapp.com/avatars/426436991064735765/abfcbdc160a01b3377e9ad0d9bf88a4d.png");
+        localStorage.setItem("points", "100);
+        localStorage.setItem("level_points", "1");
+        localStorage.setItem("level_points_img", nivel_1);
+        localStorage.setItem("sequence", "0");
+        localStorage.setItem("sequence_img", sequencia_0);
+        localStorage.setItem("points_mitics", "0");
+        localStorage.setItem("ranked_mitico_img", sem_ranked);
+        localStorage.setItem("ranked_mitico", "Sem");
+        localStorage.setItem("imune", "hidden");
+        localStorage.setItem("risco", "hidden");
+        localStorage.setItem("cargo_img", cargo_supp);
+        localStorage.setItem("cargo", "Supp");
     } 
     else {
         loginErrorMsg.style.opacity = 1;
