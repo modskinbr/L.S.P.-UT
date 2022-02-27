@@ -267,6 +267,7 @@ function load() {
               <script>
 window.onload = function profile() {
 		const user = localStorage["userdate"];
+		const usuario = localStorage["user_name"];
 		const user_img = localStorage["userdate_img"];
 		const pontos = localStorage["points"];
 		const nivel_pontos = localStorage["level_points"];
@@ -285,7 +286,7 @@ window.onload = function profile() {
 	if ( valir == null ) {
 		location.href = "https://modskinbr.github.io/L.S.P.-UT/verification.html";
 	} else {
-		document.getElementById("logged").innerHTML = user;
+		document.getElementById("logged").innerHTML = usuario;
 		document.getElementById("logged2").innerHTML = user;
 		document.getElementById("logged_img").src = user_img;
 		document.getElementById("pontos").innerHTML = pontos;
