@@ -73,7 +73,9 @@ function mF() {
 document.getElementById("text_con").innerText = "Validando...";
 timeout = setTimeout(profile, 5000);
 }
-const user = localStorage["userdate"];
+const en = localStorage["userdate"];
+const br = localStorage["user_name"];
+const user = en + " ID: " + br;
 const valir = localStorage["validate"];
 function profile() {
 if ( valir == null ) {
