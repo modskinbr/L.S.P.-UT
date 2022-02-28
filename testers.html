@@ -1,8 +1,8 @@
   <!DOCTYPE html>
 <html lang="pt">
   <head>
-<link rel="icon" href="/L.S.P.-UT/image/tester.ico">
     <script defer src="login-page.js"></script>
+<link rel="icon" href="/L.S.P.-UT/image/tester.ico">
 <script src="jquery-3.6.0.min.js" type="text/javascript"></script>
 <script src="jquery.timeago.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -34,9 +34,9 @@ jQuery(document).ready(function() {
     <link href="css/sb-admin.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
+  <body id="body" style="visibility: hidden; display: flex; place-content: center;">
 
-  <body id="body" style="visibility: hidden;display: flex; place-content: center;">
-    <style>
+<style>
 .loader {
   border: 5px solid #f3f3f3;
   border-radius: 100%;
@@ -61,13 +61,13 @@ i {
     width: 20px;
     height: 15px;
     text-align: center;
-}
+ }
 body::-webkit-scrollbar {
     display: none;
 }
 .popup .popuptext {
     width: 300px;
-    height: 350px;
+    height: 378px;
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -113,7 +113,51 @@ body::-webkit-scrollbar {
   to {opacity:1 ;}
 }
       </style>
-	  
+<style>
+.buttonchat {
+	background-color: darkred;
+    color: white;
+    border-radius: 20px;
+    margin: 18px
+}
+.fdds {
+    visibility: hidden;
+    border-radius: 12px;
+    position: fixed;
+    z-index: 1100;
+    display: flex;
+    flex-direction: column;
+    background-color: #010f0f;
+    border-style: solid;
+    padding: 10px;
+    margin-block: 37px;
+    border-color: #a2570f;
+}
+.fordms {
+	z-index: 2000;
+    background-color: #010f0f;
+    color: #c8a900;
+    font-family: cursive;
+    border-radius: 20px;
+    width: 400px;
+    height: 150px;
+    padding: 10px;
+    box-shadow: 0px 0px 0px 1px #a2570f;
+}
+.text {
+	text-align: center;
+}
+.url {
+	width: 300px;
+}
+form {
+	text-align: center;
+}
+pw {
+	text-align: center;
+}
+
+</style>
 	 <script>
 function openmsg() {
 	const title = localStorage["msg_title"];
@@ -180,32 +224,33 @@ function closemsg() {
     border-radius: 10px;
     margin-top: 8px;
 "><div style="width: 539px;padding: 10px;"><c style="font-size: 15px;" id="msg_box">Text Here!</c></div></div></div></div>
+    
     <div id="wrapper">
 
       <!-- Sidebar -->
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <a class="navbar-brand">EXP-Beta</a>
+          <a class="navbar-brand" href="testers-logged.html">EXP-Beta</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav side-nav">
-            <li><a href="testers-logged.html"><i class="fa fa-dashboard"></i> Painel</a></li>
-	    <li class="active"><a><i class="fa fa-bug"></i> Bug Report</a></li>
+            <li class="active"><a><i class="fa fa-dashboard"></i> Painel</a></li>
+      	    <li><a href="testers.html"><i class="fa fa-bug"></i> Bug Report</a></li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right navbar-user">
             <li class="dropdown messages-dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Mensagens<spam class="badge" id="not_count" style="margin: 0px 0px 0px 10px;"></spam><b class="caret"> </b></a>
+              <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Notificações<b class="caret"> </b></a>
               <ul class="dropdown-menu">
                 <li class="dropdown-header" id="notifications">!</li>
                 <li class="message-preview">
                   <a id="not_box" onclick="openmsg()" >
                     <span class="avatar"><img style="width: 17px;margin-right: -10px;border-radius: 100%;"src="https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png"></span>
                     <span class="name">Porito:</span>
-                    <span class="message" id="not_title1">A msg!</span>
+                    <span style="padding: 10px;" class="message" id="not_title1"></span>
                     <i class="fa fa-clock-o"><abbr class="timeago" title="2022-02-25T14:36:00-03:00" style="white-space: nowrap;margin-left: 5px;text-decoration-line: none;"></abbr></i>
                   </a>
                 </li>
@@ -214,12 +259,12 @@ function closemsg() {
                   <a id="not_box2" onclick="openmsg2()" >
                     <span class="avatar"><img style="width: 17px;margin-right: -10px;border-radius: 100%;"src="https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png"></span>
                     <span class="name">Porito:</span>
-                    <span class="message" id="not_title2">A msg!</span>
+                    <span style="padding: 10px;" class="message" id="not_title2"></span>
                     <i class="fa fa-clock-o"><abbr class="timeago" title="2022-02-25T14:36:00-03:00" style="white-space: nowrap;margin-left: 5px;text-decoration-line: none;"></abbr></i>
                   </a>
                 </li>
                 <li class="divider"></li>
-                <li><a onclick="read()">Marcar como Lido</a></li>
+                <li><a href="https://modskinbr.github.io/L.S.P.-UT/bate-papo.html" >Acessar Chat</a></li>
               </ul>
             </li>
             <li>
@@ -227,20 +272,12 @@ function closemsg() {
 readnot();
 function readnot() {
 	const read = localStorage["read"];
-	const not_count = document.getElementById("not_count");
 	const not = document.getElementById("notifications");
-	const not_box = document.getElementById("not_box");
-	const not_box2 = document.getElementById("not_box2");
         if ( read > 0 ) {
         not.innerText = read + " Novas Mensagens";
-	not_box.style.backgroundColor = "#c3e9ff";
-	not_box2.style.backgroundColor = "#c3e9ff";
-	not_count.innerText = read;
         }
         else if ( read == 0 ) {
         not.innerText = "Nenhuma Nova Mensagem";
-	not_box.removeAttribute("style")
-	not_box2.removeAttribute("style")
         }
 }
 load();
@@ -250,8 +287,7 @@ function load() {
 	document.getElementById("not_title1").innerText = title1;
 	document.getElementById("not_title2").innerText = title2;
 }
-
-		    </script>
+              </script>
                         <script>
       function showing() {
         const pop = document.getElementById("popstyle");
@@ -265,42 +301,46 @@ function load() {
 }
             </script>
               <script>
-              window.onload = function() {
-              const user = localStorage["userdate"];
-              const user_img = localStorage["userdate_img"];
-              const pontos = localStorage["points"];
-              const nivel_pontos = localStorage["level_points"];
-              const nivel_pontos_img = localStorage["level_points_img"];
-              const sequencia = localStorage["sequence"];
-              const sequencia_img = localStorage["sequence_img"];
-              const pontos_miticos = localStorage["points_mitics"];
-              const ranked_mitico_img = localStorage["ranked_mitico_img"];
-              const ranked_mitico = localStorage["ranked_mitico"];
-              const cargo_img = localStorage["cargo_img"];
-              const cargo = localStorage["cargo"];
-              const risco_show = localStorage["risco"];
-              const imune_show = localStorage["imune"];
-                if (localStorage.getItem("validate") == null) {
+window.onload = function profile() {
+		const user = localStorage["userdate"];
+		const usuario = localStorage["user_name"];
+		const user_img = localStorage["userdate_img"];
+		const pontos = localStorage["points"];
+		const nivel_pontos = localStorage["level_points"];
+		const nivel_pontos_img = localStorage["level_points_img"];
+		const sequencia = localStorage["sequence"];
+		const sequencia_img = localStorage["sequence_img"];
+		const pontos_miticos = localStorage["points_mitics"];
+		const ranked_mitico_img = localStorage["ranked_mitico_img"];
+		const ranked_mitico = localStorage["ranked_mitico"];
+		const cargo_img = localStorage["cargo_img"];
+		const cargo = localStorage["cargo"];
+		const risco_show = localStorage["risco"];
+		const imune_show = localStorage["imune"];
+		const winner = localStorage["winner"];
+		const valir = localStorage["validate"];
+	if ( valir == null ) {
 		location.href = "https://modskinbr.github.io/L.S.P.-UT/verification.html";
-                } else {
-                  document.getElementById("logged").innerHTML = user;
-                  document.getElementById("logged2").innerHTML = user;
-                  document.getElementById("logged_img").src = user_img;
-                  document.getElementById("pontos").innerHTML = pontos;
-                  document.getElementById("nivel_pontos_img").src = nivel_pontos_img;
-                  document.getElementById("nivel_pontos").innerHTML = nivel_pontos;
-                  document.getElementById("sequencia_img").src = sequencia_img;
-                  document.getElementById("sequencia").innerHTML = sequencia;
-                  document.getElementById("pontos_miticos").innerHTML = pontos_miticos;
-                  document.getElementById("ranked_mitico_img").src = ranked_mitico_img;
-                  document.getElementById("ranked_mitico").innerHTML = ranked_mitico;
-                  document.getElementById("cargo_img").src = cargo_img;
-                  document.getElementById("cargo_nome").innerHTML = cargo;
-                  document.getElementById("body").style.visibility = "visible";
-                  document.getElementById("risco").style.visibility = risco_show;
-                  document.getElementById("imune").style.visibility = imune_show;
-                }
-              }
+	} else {
+		document.getElementById("logged").innerHTML = usuario;
+		document.getElementById("logged2").innerHTML = user;
+		document.getElementById("logged_img").src = user_img;
+		document.getElementById("pontos").innerHTML = pontos;
+		document.getElementById("nivel_pontos_img").src = nivel_pontos_img;
+		document.getElementById("nivel_pontos").innerHTML = nivel_pontos;
+		document.getElementById("sequencia_img").src = sequencia_img;
+		document.getElementById("sequencia").innerHTML = sequencia;
+		document.getElementById("pontos_miticos").innerHTML = pontos_miticos;
+		document.getElementById("ranked_mitico_img").src = ranked_mitico_img;
+		document.getElementById("ranked_mitico").innerHTML = ranked_mitico;
+		document.getElementById("cargo_img").src = cargo_img;
+		document.getElementById("cargo_nome").innerHTML = cargo;
+		document.getElementById("body").style.visibility = "visible";
+		document.getElementById("risco").style.visibility = risco_show;
+		document.getElementById("imune").style.visibility = imune_show;
+		document.getElementById("winner").innerText = winner;
+	}
+}
               </script>
               <a style="padding: 15px 15px;color: #999999;" id="logged" onclick="showing()"></a>
               <div class="popup">
@@ -483,6 +523,7 @@ function logout() {
 	location.href = "https://modskinbr.github.io/L.S.P.-UT/experimental-beta.html";
 }
 	</script>
+<discord><div><div><div style="margin: -102px 0px 0px 147px;background: #031416;border-radius: 57px;font-family: cursive;width: 23px;height: 23px;"><i onclick="openForm()" style="color: white;" class="fa fa-upload"></i></div></div></div></discord>
 <discord><div><div><div style="margin: 15px 0px 0px 0px;background: dimgray;border-radius: 57px;font-family: cursive;"><p onclick="logout()" style="color: white;">Sair</p></div></div></div></discord>		      </div>
 		    </div>
           </div>
@@ -490,6 +531,25 @@ function logout() {
           </ul>
         </div><!-- /.navbar-collapse -->
       </nav>
+
+<script>
+function openForm(){
+  document.getElementById("mina-holder").style.visibility = "visible";
+}
+function closeForm() {
+  document.getElementById("mina-holder").style.visibility = "hidden";
+}
+function opensite() {
+location.href = "https://modskinbr.github.io/L.S.P.-UT/bate-papo.html"
+}
+</script>
+<div class="fdds" id="mina-holder">
+<button onclick="closeForm()" style="background-color: #010f0f;color: #c8a900;border-radius: 15px;border-style: ridge;border-color: #a2570f;margin-left: 398px;">X</button>
+<div class="fordms" style="text-align: center">
+Desculpamos! Mas nosso site é estatico, e não  pode receber arquivos de fora. Tudo oque esta vendo aqui é baixado pelo seu navegador. Então envie uma DM, ou utilize o campo de chat do servidor para trocar seu icone.<br>
+<button class="buttonchat" onclick="opensite()">Acessar Chat</button>
+</div>
+</div>
 <div id="page-wrapper">
 
         <div class="row">
