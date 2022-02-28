@@ -486,7 +486,11 @@ function logout() {
 	localStorage.clear();
 	location.href = "https://modskinbr.github.io/L.S.P.-UT/experimental-beta.html";
 }
+function uploadimage {
+	
+}
 	</script>
+<discord><div><div><div style="margin: -102px 0px 0px 147px;background: #031416;border-radius: 57px;font-family: cursive;width: 23px;height: 23px;"><i onclick="uploadimage()" style="color: white;" class="fa fa-upload"></i></div></div></div></discord>
 <discord><div><div><div style="margin: 15px 0px 0px 0px;background: dimgray;border-radius: 57px;font-family: cursive;"><p onclick="logout()" style="color: white;">Sair</p></div></div></div></discord>		      </div>
 		    </div>
           </div>
@@ -494,6 +498,25 @@ function logout() {
           </ul>
         </div><!-- /.navbar-collapse -->
       </nav>
+
+<script>
+function closeForm() {
+  document.getElementById("mina-holder").style.visibility = "hidden";
+}
+</script>
+<div id="mina-holder">
+<button onclick="closeForm()" style="background-color: #010f0f;color: #c8a900;border-radius: 15px;border-style: ridge;border-color: #a2570f;margin-left: 398px;">X</button>
+<form class="fordms" id="login-form" action="/action_page.php" method="">
+ <input type="checkbox" id="accept" name="concordar"><br>
+ <label for="checkbox">Aceitar Termos e Condiçoes</label><br><br>
+ <input type="text" class="text" id="text_user" name="text" required><br>
+ <label for="text">Discord ( Nome#0000 )</label><br><br>
+ <input type="url" class="url" name="linked"><br>
+ <label for="url">Url ( https://site.com/image/algo.png )</label><br><br>
+ <input type="submit" onclick"login()" value="Enviar" id="login-form-submit">
+</form>
+</div>
+
 
       <div id="page-wrapper">
 
