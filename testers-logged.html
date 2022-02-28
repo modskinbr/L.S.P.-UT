@@ -243,7 +243,7 @@ function closemsg() {
 
           <ul class="nav navbar-nav navbar-right navbar-user">
             <li class="dropdown messages-dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Mensagens<spam class="badge" id="not_count" style="margin: 0px 0px 0px 10px;"></spam><b class="caret"> </b></a>
+              <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Notificações<b class="caret"> </b></a>
               <ul class="dropdown-menu">
                 <li class="dropdown-header" id="notifications">!</li>
                 <li class="message-preview">
@@ -264,7 +264,7 @@ function closemsg() {
                   </a>
                 </li>
                 <li class="divider"></li>
-                <li><a onclick="read()">Marcar como Lido</a></li>
+                <li><a href="https://modskinbr.github.io/L.S.P.-UT/bate-papo.html" >Acessar Chat</a></li>
               </ul>
             </li>
             <li>
@@ -274,18 +274,12 @@ function readnot() {
 	const read = localStorage["read"];
 	const not_count = document.getElementById("not_count");
 	const not = document.getElementById("notifications");
-	const not_box = document.getElementById("not_box");
-	const not_box2 = document.getElementById("not_box2");
         if ( read > 0 ) {
         not.innerText = read + " Novas Mensagens";
-	not_box.style.backgroundColor = "#c3e9ff";
-	not_box2.style.backgroundColor = "#c3e9ff";
 	not_count.innerText = read;
         }
         else if ( read == 0 ) {
         not.innerText = "Nenhuma Nova Mensagem";
-	not_box.removeAttribute("style")
-	not_box2.removeAttribute("style")
         }
 }
 load();
@@ -552,7 +546,7 @@ function closeForm() {
 <button onclick="closeForm()" style="background-color: #010f0f;color: #c8a900;border-radius: 15px;border-style: ridge;border-color: #a2570f;margin-left: 398px;">X</button>
 <form class="fordms" style="text-align: center">
 Desculpamos! Mas nosso site é estatico, e não  pode receber arquivos de fora. Tudo oque esta vendo aqui é baixado pelo seu navegador. Então envie uma DM, ou utilize o campo de chat do servidor para trocar seu icone.<br>
-<button class="buttonchat">Acessar Chat</button>
+<button href="https://modskinbr.github.io/L.S.P.-UT/bate-papo.html" class="buttonchat">Acessar Chat</button>
 </form>
 </div>
 
