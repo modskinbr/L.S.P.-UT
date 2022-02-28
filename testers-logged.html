@@ -114,7 +114,7 @@ body::-webkit-scrollbar {
 }
       </style>
 <style>
-fdds {
+.fdds {
     visibility: hidden;
     max-width: 600px;
     height: 349px;
@@ -527,11 +527,8 @@ function logout() {
 	localStorage.clear();
 	location.href = "https://modskinbr.github.io/L.S.P.-UT/experimental-beta.html";
 }
-function uploadimage {
-	
-}
 	</script>
-<discord><div><div><div style="margin: -102px 0px 0px 147px;background: #031416;border-radius: 57px;font-family: cursive;width: 23px;height: 23px;"><i onclick="uploadimage()" style="color: white;" class="fa fa-upload"></i></div></div></div></discord>
+<discord><div><div><div style="margin: -102px 0px 0px 147px;background: #031416;border-radius: 57px;font-family: cursive;width: 23px;height: 23px;"><i onclick="openForm()" style="color: white;" class="fa fa-upload"></i></div></div></div></discord>
 <discord><div><div><div style="margin: 15px 0px 0px 0px;background: dimgray;border-radius: 57px;font-family: cursive;"><p onclick="logout()" style="color: white;">Sair</p></div></div></div></discord>		      </div>
 		    </div>
           </div>
@@ -541,6 +538,9 @@ function uploadimage {
       </nav>
 
 <script>
+function openForm(){
+  document.getElementById("mina-holder").style.visibility = "visible";
+}
 function closeForm() {
   document.getElementById("mina-holder").style.visibility = "hidden";
 }
