@@ -2,25 +2,6 @@ const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
 
-const ID05 = {
-  Nome: "Fernanda",
-  Imagem: "https://cdn.discordapp.com/avatars/153909794464464896/6bd98f2afd30e41427eb8ebb7e70b419.png",
-  Pontos: 135,
-  Level_Pontos: 3,
-  Pontos_Miticos: 0,
-  Sequencia: 1,
-  Level_Image: nivel_3,
-  Sequencia_Image: sequencia_1,
-  Ranked: sem,
-  Ranked_Image: sem_ranked,
-  Imune: falso,
-  Risco: falso,
-  Cargo: designer,
-  Cargo_Image: cargo_designer,
-};
-
-
-
 localStorage.setItem("read","2");
 localStorage.setItem("winner", "fehtheworld#9360");
 localStorage.setItem("msg_title", "Testando novas formas de notificiar o publico!");
@@ -55,8 +36,65 @@ var cargo_supp = "https://cdn.discordapp.com/emojis/946447648464994405.png?size=
 var cargo_tester = "https://cdn.discordapp.com/emojis/946447648062337034.png?size=80";
 var cargo_corretor = "https://cdn.discordapp.com/emojis/946447647982645278.png?size=80";
 var cargo_designer = "https://cdn.discordapp.com/emojis/946447647886159963.png?size=80";
-var imune = "hidden";
-var risco = "hidden";
+var vfalse = "hidden";
+var vtrue = "revert"
+var imune = "∾"
+var sem = "Sem";
+var prata = "Prata";
+var ouro = "Ouro";
+var platina = "Platina";
+var diamante = "Diamante";
+var mestre = "Mestre";
+var desafiante = "Desafiante";
+var dev = "Dev";
+var mod = "Mod";
+var supp = "Supp";
+var tester = "Tester"
+var corretor = "Corretor"
+var designer = "Designer"
+
+var url = "https://modskinbr.github.io/L.S.P.-UT/main/image/Profile/"
+
+const ID01 = {
+  Nome: "Lucas",
+  Imagem: url+"Porito.png",
+  Pontos: imune,
+  Level_Pontos: imune,
+  Pontos_Miticos: imune,
+  Sequencia: imune,
+  Level_Image: sem_nivel,
+  Sequencia_Image: sequencia_0,
+  Ranked: imune,
+  Ranked_Image: sem_ranked,
+  Imune: vtrue,
+  Risco: vfalse,
+  Cargo: dev,
+  Cargo_Image: cargo_dev,
+};
+const ID05 = {
+  Nome: "Fernanda",
+  Imagem: url+"Fehtheworld.png",
+  Pontos: 135,
+  Level_Pontos: 3,
+  Pontos_Miticos: 0,
+  Sequencia: 1,
+  Level_Image: nivel_3,
+  Sequencia_Image: sequencia_1,
+  Ranked: sem,
+  Ranked_Image: sem_ranked,
+  Imune: vfalse,
+  Risco: vfalse,
+  Cargo: designer,
+  Cargo_Image: cargo_designer,
+};
+
+
+
+
+
+
+
+
 
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
@@ -67,21 +105,21 @@ loginButton.addEventListener("click", (e) => {
     if (username == "Porito#0000" && password == "0000" || username == "Porito" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
-        localStorage.setItem("user_name", "Lucas");
         localStorage.setItem("validate", password);
-        localStorage.setItem("userdate_img", "https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png");
-        localStorage.setItem("points", "Imune");
-        localStorage.setItem("level_points", "Imune");
-        localStorage.setItem("level_points_img", sem_nivel);
-        localStorage.setItem("sequence", "Imune");
-        localStorage.setItem("sequence_img", sequencia_0);
-        localStorage.setItem("points_mitics", "Imune");
-        localStorage.setItem("ranked_mitico_img", sem_ranked);
-        localStorage.setItem("ranked_mitico", "Imune");
-        localStorage.setItem("imune", "revert");
-        localStorage.setItem("risco", "hidden");
-        localStorage.setItem("cargo_img", cargo_dev);
-        localStorage.setItem("cargo", "Dev");
+        localStorage.setItem("user_name", ID01.Nome);
+        localStorage.setItem("points", ID01.Pontos);
+        localStorage.setItem("level_points", ID01.Level_Pontos);
+        localStorage.setItem("sequence", ID01.Sequencia);
+        localStorage.setItem("points_mitics", ID01.Pontos_Miticos);
+        localStorage.setItem("ranked_mitico", ID01.Ranked);
+        localStorage.setItem("imune", ID01.Imune);
+        localStorage.setItem("risco", ID01.Risco);
+        localStorage.setItem("cargo", ID01.Cargo);
+        localStorage.setItem("userdate_img", ID01.Imagem);
+        localStorage.setItem("level_points_img", ID01.Level_Image);
+        localStorage.setItem("sequence_img", ID01.Sequencia_Image);
+        localStorage.setItem("ranked_mitico_img", ID01.Ranked_Image);
+        localStorage.setItem("cargo_img", ID01.Cargo_Image);
     }
     else if (username == "Kawai Foxy#3471" && password == "21665" || username == "Kawai Foxy" && password == "modskin" ) {
         location.href = urlhref;
