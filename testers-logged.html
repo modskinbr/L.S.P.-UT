@@ -250,7 +250,7 @@ function closemsg() {
                   <a id="not_box" onclick="openmsg()" >
                     <span class="avatar"><img style="width: 17px;margin-right: -10px;border-radius: 100%;"src="https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png"></span>
                     <span class="name">Porito:</span>
-                    <span class="message" id="not_title1">A msg!</span>
+                    <span class="message" id="not_title1"></span>
                     <i class="fa fa-clock-o"><abbr class="timeago" title="2022-02-25T14:36:00-03:00" style="white-space: nowrap;margin-left: 5px;text-decoration-line: none;"></abbr></i>
                   </a>
                 </li>
@@ -259,7 +259,7 @@ function closemsg() {
                   <a id="not_box2" onclick="openmsg2()" >
                     <span class="avatar"><img style="width: 17px;margin-right: -10px;border-radius: 100%;"src="https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png"></span>
                     <span class="name">Porito:</span>
-                    <span class="message" id="not_title2">A msg!</span>
+                    <span class="message" id="not_title2"></span>
                     <i class="fa fa-clock-o"><abbr class="timeago" title="2022-02-25T14:36:00-03:00" style="white-space: nowrap;margin-left: 5px;text-decoration-line: none;"></abbr></i>
                   </a>
                 </li>
@@ -272,11 +272,9 @@ function closemsg() {
 readnot();
 function readnot() {
 	const read = localStorage["read"];
-	const not_count = document.getElementById("not_count");
 	const not = document.getElementById("notifications");
         if ( read > 0 ) {
         not.innerText = read + " Novas Mensagens";
-	not_count.innerText = read;
         }
         else if ( read == 0 ) {
         not.innerText = "Nenhuma Nova Mensagem";
