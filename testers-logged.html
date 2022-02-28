@@ -243,11 +243,11 @@ function closemsg() {
 
           <ul class="nav navbar-nav navbar-right navbar-user">
             <li class="dropdown messages-dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Notificações<b class="caret"> </b></a>
+              <a class="dropdown-toggle" style="cursor: pointer;" data-toggle="dropdown"><i class="fa fa-bell"></i> Notificações<b class="caret"> </b></a>
               <ul class="dropdown-menu">
                 <li class="dropdown-header" id="notifications">!</li>
                 <li class="message-preview">
-                  <a id="not_box" onclick="openmsg()" >
+                  <a id="not_box" style="cursor: pointer;" onclick="openmsg()" >
                     <span class="avatar"><img style="width: 17px;margin-right: -10px;border-radius: 100%;"src="https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png"></span>
                     <span class="name">Porito:</span>
                     <span style="padding: 10px;" class="message" id="not_title1"></span>
@@ -256,7 +256,7 @@ function closemsg() {
                 </li>
                 <li class="divider"></li>
                 <li class="message-preview">
-                  <a id="not_box2" onclick="openmsg2()" >
+                  <a id="not_box2" style="cursor: pointer;" onclick="openmsg2()" >
                     <span class="avatar"><img style="width: 17px;margin-right: -10px;border-radius: 100%;"src="https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png"></span>
                     <span class="name">Porito:</span>
                     <span style="padding: 10px;" class="message" id="not_title2"></span>
@@ -342,7 +342,7 @@ window.onload = function profile() {
 	}
 }
               </script>
-              <a style="padding: 15px 15px;color: #999999;" id="logged" onclick="showing()"></a>
+              <a style="padding: 15px 15px;color: #999999;cursor: pointer;" id="logged" onclick="showing()"></a>
               <div class="popup">
 <div class="popuptext" id="popstyle" style="visibility: hidden;">
 	<div style="display: grid;grid-template-columns: repeat(3,90px);">
