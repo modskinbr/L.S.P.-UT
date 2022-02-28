@@ -64,6 +64,7 @@ const urlhref = "https://modskinbr.github.io/L.S.P.-UT/verification.html"
 // Url do Perfil //
 var url = "https://modskinbr.github.io/L.S.P.-UT/image/Profile/"
 
+
 // Perfis dos Usuarios! //
 const ID01 = {
   Nome: "Lucas",
@@ -146,7 +147,6 @@ const ID05 = {
   Cargo_Image: cargo_designer,
 };
 
-
 // Login //
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
@@ -223,7 +223,7 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("imune", ID04.Imune);
         localStorage.setItem("risco", ID04.Risco);
         localStorage.setItem("cargo", ID04.Cargo);
-        localStorage.setItem("userdate_img", ID05.Imagem);
+        localStorage.setItem("userdate_img", ID04.Imagem);
         localStorage.setItem("level_points_img", ID04.Level_Image);
         localStorage.setItem("sequence_img", ID04.Sequencia_Image);
         localStorage.setItem("ranked_mitico_img", ID04.Ranked_Image);
