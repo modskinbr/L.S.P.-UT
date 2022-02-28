@@ -2,6 +2,25 @@ const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
 
+const ID05 = {
+  Nome: "Fernanda",
+  Imagem: "https://cdn.discordapp.com/avatars/153909794464464896/6bd98f2afd30e41427eb8ebb7e70b419.png",
+  Pontos: 135,
+  Level_Pontos: 3,
+  Pontos_Miticos: 0,
+  Sequencia: 1,
+  Level_Image: nivel_3,
+  Sequencia_Image: sequencia_1,
+  Ranked: sem,
+  Ranked_Image: sem_ranked,
+  Imune: falso,
+  Risco: falso,
+  Cargo: designer,
+  Cargo_Image: cargo_designer,
+};
+
+
+
 localStorage.setItem("read","2");
 localStorage.setItem("winner", "fehtheworld#9360");
 localStorage.setItem("msg_title", "Testando novas formas de notificiar o publico!");
@@ -45,7 +64,7 @@ loginButton.addEventListener("click", (e) => {
     const password = loginForm.password.value;
     const urlhref = "https://modskinbr.github.io/L.S.P.-UT/verification.html"
 
-    if (username == "Porito#0000" && password == "0000" || username == "Porito" || password == "modskin" ) {
+    if (username == "Porito#0000" && password == "0000" || username == "Porito" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("user_name", "Lucas");
@@ -64,7 +83,7 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("cargo_img", cargo_dev);
         localStorage.setItem("cargo", "Dev");
     }
-    else if (username == "Kawai Foxy#3471" && password == "21665" || username == "Kawai Foxy" || "modskin" ) {
+    else if (username == "Kawai Foxy#3471" && password == "21665" || username == "Kawai Foxy" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("user_name", "Raguem");
@@ -83,7 +102,7 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("cargo_img", cargo_supp);
         localStorage.setItem("cargo", "Supp");
     } 
-    else if (username == "' gece ✪#9960" && password == "94545" || username == "Gece" || "modskin" ) {
+    else if (username == "' gece ✪#9960" && password == "94545" || username == "Gece" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("user_name", "Gabriel");
@@ -102,7 +121,7 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("cargo_img", cargo_mod);
         localStorage.setItem("cargo", "Mod");
     } 
-    else if (username == "༒𝐌𝐨𝐧𝐨༒#4930" && password == "34777" || username == "Mono" || "modskin" ) {
+    else if (username == "༒𝐌𝐨𝐧𝐨༒#4930" && password == "34777" || username == "Mono" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("user_name", "Matheus");
@@ -121,24 +140,24 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("cargo_img", cargo_supp);
         localStorage.setItem("cargo", "Supp");
     } 
-    else if (username == "fehtheworld#9360" && password == "52014" || username == "Fehtheworld" || "modskin" ) {
+    else if (username == "fehtheworld#9360" && password == "52014" || username == "Fehtheworld" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
-        localStorage.setItem("user_name", "Fernanda");
         localStorage.setItem("validate", password);
-        localStorage.setItem("userdate_img", "https://cdn.discordapp.com/avatars/153909794464464896/6bd98f2afd30e41427eb8ebb7e70b419.png");
-        localStorage.setItem("points", "135");
-        localStorage.setItem("level_points", "3");
-        localStorage.setItem("level_points_img", nivel_3);
-        localStorage.setItem("sequence", "1");
-        localStorage.setItem("sequence_img", sequencia_1);
-        localStorage.setItem("points_mitics", "0");
-        localStorage.setItem("ranked_mitico_img", sem_ranked);
-        localStorage.setItem("ranked_mitico", "Sem");
-        localStorage.setItem("imune", "hidden");
-        localStorage.setItem("risco", "hidden");
-        localStorage.setItem("cargo_img", cargo_designer);
-        localStorage.setItem("cargo", "Designer");
+        localStorage.setItem("user_name", ID05.Nome);
+        localStorage.setItem("points", ID05.Pontos);
+        localStorage.setItem("level_points", ID05.Level_Pontos);
+        localStorage.setItem("sequence", ID05.Sequencia);
+        localStorage.setItem("points_mitics", ID05.Pontos_Miticos);
+        localStorage.setItem("ranked_mitico", ID05.Ranked);
+        localStorage.setItem("imune", ID05.Imune);
+        localStorage.setItem("risco", ID05.Risco);
+        localStorage.setItem("cargo", ID05.Cargo);
+        localStorage.setItem("userdate_img", ID05.Imagem);
+        localStorage.setItem("level_points_img", ID05.Level_Image);
+        localStorage.setItem("sequence_img", ID05.Sequencia_Image);
+        localStorage.setItem("ranked_mitico_img", ID05.Ranked_Image);
+        localStorage.setItem("cargo_img", ID05.Cargo_Image);
     } 
     else {
         loginErrorMsg.style.opacity = 1;
