@@ -163,6 +163,22 @@ const ID06 = {
   Cargo: supp_ini,
   Cargo_Image: cargo_supp,
 };
+const ID07 = {
+  Nome: "Guilherme",
+  Imagem: url+"Buddha.png",
+  Pontos: 100,
+  Level_Pontos: 1,
+  Pontos_Miticos: 0,
+  Sequencia: 0,
+  Level_Image: nivel_1,
+  Sequencia_Image: sequencia_0,
+  Ranked: sem,
+  Ranked_Image: sem_ranked,
+  Imune: vfalse,
+  Risco: vfalse,
+  Cargo: tester,
+  Cargo_Image: cargo_tester,
+};
 
 // Login //
 loginButton.addEventListener("click", (e) => {
@@ -266,6 +282,25 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("cargo_img", ID05.Cargo_Image);
     } 
     else if (username == "Krap ♛#1541" && password == "17075" || username == "Krap" && password == "modskin" ) {
+        location.href = urlhref;
+        localStorage.setItem("userdate", username);
+        localStorage.setItem("validate", password);
+        localStorage.setItem("user_name", ID06.Nome);
+        localStorage.setItem("points", ID06.Pontos);
+        localStorage.setItem("level_points", ID06.Level_Pontos);
+        localStorage.setItem("sequence", ID06.Sequencia);
+        localStorage.setItem("points_mitics", ID06.Pontos_Miticos);
+        localStorage.setItem("ranked_mitico", ID06.Ranked);
+        localStorage.setItem("imune", ID06.Imune);
+        localStorage.setItem("risco", ID06.Risco);
+        localStorage.setItem("cargo", ID06.Cargo);
+        localStorage.setItem("userdate_img", ID06.Imagem);
+        localStorage.setItem("level_points_img", ID06.Level_Image);
+        localStorage.setItem("sequence_img", ID06.Sequencia_Image);
+        localStorage.setItem("ranked_mitico_img", ID06.Ranked_Image);
+        localStorage.setItem("cargo_img", ID06.Cargo_Image);
+    } 
+    else if (username == "Buddha#5046" && password == "49120" || username == "Buddha" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("validate", password);
