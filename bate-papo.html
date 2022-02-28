@@ -207,7 +207,7 @@ function closemsg() {
     padding: 10px;
     margin-block: 37px;
     border-color: #222222;
-"><div style="font-size: 10px;"><i class="fa fa-bell" style="width: 122px;background-color: #24484c;border-radius: 68px;padding: 6px 7px;height: 19px;text-align: start;"> Central de Notificações</i><i class="fa fa-times" onclick="closemsg()" style="width: 20px;background-color: #b94a48;border-radius: 100%;margin-left: 396px;padding: 6px 7px;height: 20px;"></i></div><div><div style="
+"><div style="font-size: 10px;"><i class="fa fa-bell" style="width: 122px;background-color: #24484c;border-radius: 68px;padding: 6px 7px;height: 19px;text-align: start;"> Central de Notificações</i><i class="fa fa-times" onclick="closemsg()" style="width: 20px;background-color: #b94a48;border-radius: 100%;margin-left: 396px;padding: 6px 7px;height: 20px;cursor: pointer;"></i></div><div><div style="
     background-color: #0b555c;
     width: 540px;
     height: 61px;
@@ -243,11 +243,11 @@ function closemsg() {
 
           <ul class="nav navbar-nav navbar-right navbar-user">
             <li class="dropdown messages-dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Notificações<b class="caret"> </b></a>
+              <a class="dropdown-toggle" style="cursor: pointer;" data-toggle="dropdown"><i class="fa fa-bell"></i> Notificações<b class="caret"> </b></a>
               <ul class="dropdown-menu">
                 <li class="dropdown-header" id="notifications">!</li>
                 <li class="message-preview">
-                  <a id="not_box" onclick="openmsg()" >
+                  <a id="not_box" style="cursor: pointer;" onclick="openmsg()" >
                     <span class="avatar"><img style="width: 17px;margin-right: -10px;border-radius: 100%;"src="https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png"></span>
                     <span class="name">Porito:</span>
                     <span style="padding: 10px;" class="message" id="not_title1"></span>
@@ -256,7 +256,7 @@ function closemsg() {
                 </li>
                 <li class="divider"></li>
                 <li class="message-preview">
-                  <a id="not_box2" onclick="openmsg2()" >
+                  <a id="not_box2" style="cursor: pointer;" onclick="openmsg2()" >
                     <span class="avatar"><img style="width: 17px;margin-right: -10px;border-radius: 100%;"src="https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png"></span>
                     <span class="name">Porito:</span>
                     <span style="padding: 10px;" class="message" id="not_title2"></span>
@@ -342,7 +342,7 @@ window.onload = function profile() {
 	}
 }
               </script>
-              <a style="padding: 15px 15px;color: #999999;" id="logged" onclick="showing()"></a>
+              <a style="padding: 15px 15px;color: #999999;cursor: pointer;" id="logged" onclick="showing()"></a>
               <div class="popup">
 <div class="popuptext" id="popstyle" style="visibility: hidden;">
 	<div style="display: grid;grid-template-columns: repeat(3,90px);">
@@ -523,8 +523,8 @@ function logout() {
 	location.href = "https://modskinbr.github.io/L.S.P.-UT/experimental-beta.html";
 }
 	</script>
-<discord><div><div><div style="margin: -102px 0px 0px 147px;background: #031416;border-radius: 57px;font-family: cursive;width: 23px;height: 23px;"><i onclick="openForm()" style="color: white;" class="fa fa-upload"></i></div></div></div></discord>
-<discord><div><div><div style="margin: 15px 0px 0px 0px;background: dimgray;border-radius: 57px;font-family: cursive;"><p onclick="logout()" style="color: white;">Sair</p></div></div></div></discord>		      </div>
+<discord><div><div><div style="margin: -102px 0px 0px 147px;background: #031416;border-radius: 57px;font-family: cursive;width: 23px;height: 23px;"><i onclick="openForm()" style="color: white;cursor: pointer;" class="fa fa-upload"></i></div></div></div></discord>
+<discord><div><div><div style="margin: 15px 0px 0px 0px;background: dimgray;border-radius: 57px;font-family: cursive;"><p onclick="logout()" style="color: white;cursor: pointer;">Sair</p></div></div></div></discord>		      </div>
 		    </div>
           </div>
             </li>
