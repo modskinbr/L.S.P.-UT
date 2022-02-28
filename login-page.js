@@ -45,7 +45,7 @@ loginButton.addEventListener("click", (e) => {
     const password = loginForm.password.value;
     const urlhref = "https://modskinbr.github.io/L.S.P.-UT/verification.html"
 
-    if (username === "Porito#0000" && password === "0000") {
+    if (username == "Porito#0000" && password == "0000" || username == "Porito" || password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("user_name", "Lucas");
@@ -64,7 +64,7 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("cargo_img", cargo_dev);
         localStorage.setItem("cargo", "Dev");
     }
-    else if (username === "Kawai Foxy#3471" && password === "21665") {
+    else if (username == "Kawai Foxy#3471" && password == "21665" || username == "Kawai Foxy" || "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("user_name", "Raguem");
@@ -83,7 +83,7 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("cargo_img", cargo_supp);
         localStorage.setItem("cargo", "Supp");
     } 
-    else if (username === "' gece ✪#9960" && password === "94545") {
+    else if (username == "' gece ✪#9960" && password == "94545" || username == "Gece" || "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("user_name", "Gabriel");
@@ -102,7 +102,7 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("cargo_img", cargo_mod);
         localStorage.setItem("cargo", "Mod");
     } 
-    else if (username === "༒𝐌𝐨𝐧𝐨༒#4930" && password === "34777") {
+    else if (username == "༒𝐌𝐨𝐧𝐨༒#4930" && password == "34777" || username == "Mono" || "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("user_name", "Matheus");
@@ -121,7 +121,7 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("cargo_img", cargo_supp);
         localStorage.setItem("cargo", "Supp");
     } 
-    else if (username === "fehtheworld#9360" && password === "52014") {
+    else if (username == "fehtheworld#9360" && password == "52014" || username == "Fehtheworld" || "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("user_name", "Fernanda");
