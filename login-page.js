@@ -56,6 +56,7 @@ var desafiante = "Desafiante";
 var dev = "Dev";
 var mod = "Mod";
 var supp = "Supp";
+var supp_ini = "Supp Ini.";
 var tester = "Tester"
 var corretor = "Corretor"
 var designer = "Designer"
@@ -145,6 +146,22 @@ const ID05 = {
   Risco: vfalse,
   Cargo: designer,
   Cargo_Image: cargo_designer,
+};
+const ID06 = {
+  Nome: "Gustavo",
+  Imagem: url+"Krap.png",
+  Pontos: 100,
+  Level_Pontos: 1,
+  Pontos_Miticos: 0,
+  Sequencia: 0,
+  Level_Image: nivel_1,
+  Sequencia_Image: sequencia_0,
+  Ranked: sem,
+  Ranked_Image: sem_ranked,
+  Imune: vfalse,
+  Risco: vfalse,
+  Cargo: supp_ini,
+  Cargo_Image: cargo_supp,
 };
 
 // Login //
@@ -247,6 +264,25 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("sequence_img", ID05.Sequencia_Image);
         localStorage.setItem("ranked_mitico_img", ID05.Ranked_Image);
         localStorage.setItem("cargo_img", ID05.Cargo_Image);
+    } 
+    else if (username == "Krap ♛#1541" && password == "17075" || username == "Krap" && password == "modskin" ) {
+        location.href = urlhref;
+        localStorage.setItem("userdate", username);
+        localStorage.setItem("validate", password);
+        localStorage.setItem("user_name", ID06.Nome);
+        localStorage.setItem("points", ID06.Pontos);
+        localStorage.setItem("level_points", ID06.Level_Pontos);
+        localStorage.setItem("sequence", ID06.Sequencia);
+        localStorage.setItem("points_mitics", ID06.Pontos_Miticos);
+        localStorage.setItem("ranked_mitico", ID06.Ranked);
+        localStorage.setItem("imune", ID06.Imune);
+        localStorage.setItem("risco", ID06.Risco);
+        localStorage.setItem("cargo", ID06.Cargo);
+        localStorage.setItem("userdate_img", ID06.Imagem);
+        localStorage.setItem("level_points_img", ID06.Level_Image);
+        localStorage.setItem("sequence_img", ID06.Sequencia_Image);
+        localStorage.setItem("ranked_mitico_img", ID06.Ranked_Image);
+        localStorage.setItem("cargo_img", ID06.Cargo_Image);
     } 
     else {
         loginErrorMsg.style.opacity = 1;
