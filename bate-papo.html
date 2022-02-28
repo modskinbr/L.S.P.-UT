@@ -113,7 +113,51 @@ body::-webkit-scrollbar {
   to {opacity:1 ;}
 }
       </style>
+<style>
+.buttonchat {
+	background-color: darkred;
+    color: white;
+    border-radius: 20px;
+    margin: 18px
+}
+.fdds {
+    visibility: hidden;
+    border-radius: 12px;
+    position: fixed;
+    z-index: 1100;
+    display: flex;
+    flex-direction: column;
+    background-color: #010f0f;
+    border-style: solid;
+    padding: 10px;
+    margin-block: 37px;
+    border-color: #a2570f;
+}
+.fordms {
+	z-index: 2000;
+    background-color: #010f0f;
+    color: #c8a900;
+    font-family: cursive;
+    border-radius: 20px;
+    width: 400px;
+    height: 150px;
+    padding: 10px;
+    box-shadow: 0px 0px 0px 1px #a2570f;
+}
+.text {
+	text-align: center;
+}
+.url {
+	width: 300px;
+}
+form {
+	text-align: center;
+}
+pw {
+	text-align: center;
+}
 
+</style>
 	 <script>
 function openmsg() {
 	const title = localStorage["msg_title"];
@@ -199,14 +243,14 @@ function closemsg() {
 
           <ul class="nav navbar-nav navbar-right navbar-user">
             <li class="dropdown messages-dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Mensagens<spam class="badge" id="not_count" style="margin: 0px 0px 0px 10px;"></spam><b class="caret"> </b></a>
+              <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Notificações<b class="caret"> </b></a>
               <ul class="dropdown-menu">
                 <li class="dropdown-header" id="notifications">!</li>
                 <li class="message-preview">
                   <a id="not_box" onclick="openmsg()" >
                     <span class="avatar"><img style="width: 17px;margin-right: -10px;border-radius: 100%;"src="https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png"></span>
                     <span class="name">Porito:</span>
-                    <span class="message" id="not_title1">A msg!</span>
+                    <span style="padding: 10px;" class="message" id="not_title1"></span>
                     <i class="fa fa-clock-o"><abbr class="timeago" title="2022-02-25T14:36:00-03:00" style="white-space: nowrap;margin-left: 5px;text-decoration-line: none;"></abbr></i>
                   </a>
                 </li>
@@ -215,12 +259,12 @@ function closemsg() {
                   <a id="not_box2" onclick="openmsg2()" >
                     <span class="avatar"><img style="width: 17px;margin-right: -10px;border-radius: 100%;"src="https://cdn.discordapp.com/avatars/730986876554706944/541dad7951a9572759e0b1ef8639e385.png"></span>
                     <span class="name">Porito:</span>
-                    <span class="message" id="not_title2">A msg!</span>
+                    <span style="padding: 10px;" class="message" id="not_title2"></span>
                     <i class="fa fa-clock-o"><abbr class="timeago" title="2022-02-25T14:36:00-03:00" style="white-space: nowrap;margin-left: 5px;text-decoration-line: none;"></abbr></i>
                   </a>
                 </li>
                 <li class="divider"></li>
-                <li><a onclick="read()">Marcar como Lido</a></li>
+                <li><a href="https://modskinbr.github.io/L.S.P.-UT/bate-papo.html" >Acessar Chat</a></li>
               </ul>
             </li>
             <li>
@@ -228,20 +272,12 @@ function closemsg() {
 readnot();
 function readnot() {
 	const read = localStorage["read"];
-	const not_count = document.getElementById("not_count");
 	const not = document.getElementById("notifications");
-	const not_box = document.getElementById("not_box");
-	const not_box2 = document.getElementById("not_box2");
         if ( read > 0 ) {
         not.innerText = read + " Novas Mensagens";
-	not_box.style.backgroundColor = "#c3e9ff";
-	not_box2.style.backgroundColor = "#c3e9ff";
-	not_count.innerText = read;
         }
         else if ( read == 0 ) {
         not.innerText = "Nenhuma Nova Mensagem";
-	not_box.removeAttribute("style")
-	not_box2.removeAttribute("style")
         }
 }
 load();
@@ -487,6 +523,7 @@ function logout() {
 	location.href = "https://modskinbr.github.io/L.S.P.-UT/experimental-beta.html";
 }
 	</script>
+<discord><div><div><div style="margin: -102px 0px 0px 147px;background: #031416;border-radius: 57px;font-family: cursive;width: 23px;height: 23px;"><i onclick="openForm()" style="color: white;" class="fa fa-upload"></i></div></div></div></discord>
 <discord><div><div><div style="margin: 15px 0px 0px 0px;background: dimgray;border-radius: 57px;font-family: cursive;"><p onclick="logout()" style="color: white;">Sair</p></div></div></div></discord>		      </div>
 		    </div>
           </div>
@@ -494,6 +531,25 @@ function logout() {
           </ul>
         </div><!-- /.navbar-collapse -->
       </nav>
+
+<script>
+function openForm(){
+  document.getElementById("mina-holder").style.visibility = "visible";
+}
+function closeForm() {
+  document.getElementById("mina-holder").style.visibility = "hidden";
+}
+function opensite() {
+location.href = "https://modskinbr.github.io/L.S.P.-UT/bate-papo.html"
+}
+</script>
+<div class="fdds" id="mina-holder">
+<button onclick="closeForm()" style="background-color: #010f0f;color: #c8a900;border-radius: 15px;border-style: ridge;border-color: #a2570f;margin-left: 398px;">X</button>
+<div class="fordms" style="text-align: center">
+Desculpamos! Mas nosso site é estatico, e não  pode receber arquivos de fora. Tudo oque esta vendo aqui é baixado pelo seu navegador. Então envie uma DM, ou utilize o campo de chat do servidor para trocar seu icone.<br>
+<button class="buttonchat" onclick="opensite()">Acessar Chat</button>
+</div>
+</div>
 
       <div id="page-wrapper">
         <div class="row">
