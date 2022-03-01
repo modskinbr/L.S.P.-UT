@@ -1722,7 +1722,7 @@ table th[class*="col-"] {
 }
 
 .table > tbody > tr > td.success {
-  background-color: 247603; 
+  background-color: #247603; 
 }
 
 .table > thead > tr > td.success,
