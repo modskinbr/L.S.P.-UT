@@ -1721,8 +1721,11 @@ table th[class*="col-"] {
   background-color: #f5f5f5;
 }
 
+.table > tbody > tr > td.success {
+  background-color: 247603; 
+}
+
 .table > thead > tr > td.success,
-.table > tbody > tr > td.success,
 .table > tfoot > tr > td.success,
 .table > thead > tr > th.success,
 .table > tbody > tr > th.success,
@@ -1743,8 +1746,11 @@ table th[class*="col-"] {
   background-color: #d0e9c6;
 }
 
+.table > tbody > tr > td.danger {
+  background-color: #720303;
+}
+
 .table > thead > tr > td.danger,
-.table > tbody > tr > td.danger,
 .table > tfoot > tr > td.danger,
 .table > thead > tr > th.danger,
 .table > tbody > tr > th.danger,
@@ -1765,8 +1771,10 @@ table th[class*="col-"] {
   background-color: #ebcccc;
 }
 
+.table > tbody > tr > td.warning {
+  background-color: #7e6a03;
+}
 .table > thead > tr > td.warning,
-.table > tbody > tr > td.warning,
 .table > tfoot > tr > td.warning,
 .table > thead > tr > th.warning,
 .table > tbody > tr > th.warning,
