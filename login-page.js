@@ -7,7 +7,7 @@ const loginErrorMsg = document.getElementById("login-error-msg");
 localStorage.setItem("read","2");
 
 // Ganhador do Mes //
-localStorage.setItem("winner", "fehtheworld#9360");
+localStorage.setItem("winner", "Em Manuntenção");
 
 // Mensagems //
 localStorage.setItem("msg_title", "Testando novas formas de notificiar o publico!");
