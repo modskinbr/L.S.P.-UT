@@ -283,57 +283,12 @@ Para arrumar basta seguir estes passos:<br>— 1 . Feche o ModSkin ( Caso esteja
                                                 padding: 10px;
                                             }
                                         </style>
-                                        <c>Versão 6.2.1</c>
-                                        <a id="link_download3" href="https://download1486.mediafire.com/ivbdnamqv92g/egqsvr85iu5rsy2/Istalador+%2812.4%29.rar" target="_blank">
+                                        <c>Versão 6.2.2</c>
+                                        <a id="link_download3" href="https://github.com/modskinbr/Lastests/releases/latest/download/Instalador.12.5.rar" target="_blank">
                                             <button style="min-width: 350px;margin: 20px;background-color: cadetblue;color: darkslategrey;" type="button" class="btn my-btn" id="name_button_download3">
                                                 <span class="glyphicon glyphicon-save"></span> Baixar Última Versão
                                             </button>
                                         </a>
-                                        <center>
-                                            <script>
-                                                var linkdownload = document.getElementById("link_download3");
-                                                var name_button_download = document.getElementById("name_button_download3");
-                                                var randomstring = Math.random().toString(36).slice(-8);
-
-                                                var link1 = "";
-                                                var link2 = "";
-                                                var link3 = "";
-                                                var numRand;
-                                                var waiting = 5;
-                                                var myVar = setInterval(function () {
-                                                    clearTimeout(myVar)
-                                                    return;
-                                                    waiting--;
-                                                    linkdownload.href = "";
-                                                    name_button_download.innerHTML = 'Aguarde <b style="color:white">' + waiting + '</b> segundos<br>';
-                                                    numRand = Math.floor((Math.random() * 5) + 1);
-                                                    if (waiting <= 0) {
-
-                                                        linkdownload.href = link1 + numRand + numRand;
-                                                        if (numRand == 1 || numRand == 3 || numRand == 5 || numRand == 7) {
-                                                            linkdownload.href = link2 + numRand + numRand;
-                                                        } else if (numRand == 4 || numRand == 6 || numRand == 8 || numRand == 2) {
-
-                                                            linkdownload.href = link3 + numRand + numRand;
-
-                                                        }
-
-
-                                                        name_button_download.innerHTML = '<span class="glyphicon glyphicon-save"></span> Abaixar a Ultima Versao';
-                                                        clearTimeout(myVar);
-                                                    }
-                                                }, 1000);
-                                                function adserror() {
-                                                    clearTimeout(myVar);
-                                                    var center_download = document.getElementById("center_download");
-                                                    center_download.innerHTML = '<br><b style="font-size:18px">Por favor, desabilite “Adblock” em “meu site” para baixar ModSkin assim como contribuir para nos apoiar melhor ^^ (instruções abaixo).</b><br><br><img class="img-responsive center-block" src="http://modskinpro.com/image/adblock.jpg">';;
-                                                }
-                                            </script> <br>
-                                        </center>
-                                        <div class="alert alert-warning">
-                                            Entre em contato via discord para obter suporte em caso de bugs e erros! : <a href="https://discord.gg/6FbvJy3rY8" target="_blank">Click Aqui</a>
-                                            <br><b>Este app é seguro e não causa banimentos, a menos que seja reportado!
-                                        </div>
                                     </center>
                                 </center>
                             </span>
