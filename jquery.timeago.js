@@ -219,4 +219,5 @@
   // fix for IE6 suckage
   document.createElement("abbr");
   document.createElement("time");
+  document.createElement("spam");
 }));
