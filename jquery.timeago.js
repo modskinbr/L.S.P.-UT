@@ -57,10 +57,10 @@
         hours: "%dh",
         day: "1d",
         days: "%dd",
-        month: "1 mes",
-        months: "%d mes",
-        year: "1 ano",
-        years: "%d anos",
+        month: "1M",
+        months: "%dM",
+        year: "1a",
+        years: "%da",
         wordSeparator: " ",
         numbers: []
       }
