@@ -7,7 +7,7 @@ const loginErrorMsg = document.getElementById("login-error-msg");
 localStorage.setItem("read","2");
 
 // Ganhador do Mes //
-localStorage.setItem("winner", "Em Manuntenção");
+localStorage.setItem("winner", "fehtheworld#9360");
 
 // Mensagems //
 localStorage.setItem("msg_title", "Testando novas formas de notificiar o publico!");
@@ -102,11 +102,11 @@ const ID02 = {
 const ID03 = {
   Nome: "Gabriel",
   Imagem: url+"Gece.png",
-  Pontos: 125,
-  Level_Pontos: 2,
+  Pontos: 131,
+  Level_Pontos: 3,
   Pontos_Miticos: 0,
   Sequencia: 0,
-  Level_Image: nivel_2,
+  Level_Image: nivel_3,
   Sequencia_Image: sequencia_0,
   Ranked: sem,
   Ranked_Image: sem_ranked,
@@ -118,7 +118,7 @@ const ID03 = {
 const ID04 = {
   Nome: "Matheus",
   Imagem: url+"Mono.png",
-  Pontos: 100,
+  Pontos: 101,
   Level_Pontos: 1,
   Pontos_Miticos: 0,
   Sequencia: 0,
@@ -136,10 +136,10 @@ const ID05 = {
   Imagem: url+"Fehtheworld.png",
   Pontos: 135,
   Level_Pontos: 3,
-  Pontos_Miticos: 0,
-  Sequencia: 1,
+  Pontos_Miticos: 1,
+  Sequencia: 2,
   Level_Image: nivel_3,
-  Sequencia_Image: sequencia_1,
+  Sequencia_Image: sequencia_2,
   Ranked: sem,
   Ranked_Image: sem_ranked,
   Imune: vfalse,
@@ -150,7 +150,7 @@ const ID05 = {
 const ID06 = {
   Nome: "Gustavo",
   Imagem: url+"Krap.png",
-  Pontos: 100,
+  Pontos: 108,
   Level_Pontos: 1,
   Pontos_Miticos: 0,
   Sequencia: 0,
@@ -178,6 +178,22 @@ const ID07 = {
   Risco: vfalse,
   Cargo: tester,
   Cargo_Image: cargo_tester,
+};
+const ID08 = {
+  Nome: "Vitor",
+  Imagem: url+"Trick.png",
+  Pontos: 102,
+  Level_Pontos: 1,
+  Pontos_Miticos: 0,
+  Sequencia: 0,
+  Level_Image: nivel_1,
+  Sequencia_Image: sequencia_0,
+  Ranked: sem,
+  Ranked_Image: sem_ranked,
+  Imune: vfalse,
+  Risco: vfalse,
+  Cargo: supp_ini,
+  Cargo_Image: cargo_supp,
 };
 
 // Login //
@@ -243,7 +259,7 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("ranked_mitico_img", ID03.Ranked_Image);
         localStorage.setItem("cargo_img", ID03.Cargo_Image);
     } 
-    else if (username == "༒𝐌𝐨𝐧𝐨༒#4930" && password == "34777" || username == "Mono" && password == "modskin" ) {
+    else if (username == "亗𝓟𝓲𝓮𝓬𝓴亗#4930" && password == "34777" || username == "Mono" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("validate", password);
