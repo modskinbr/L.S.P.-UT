@@ -339,20 +339,20 @@ loginButton.addEventListener("click", (e) => {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("validate", password);
-        localStorage.setItem("user_name", ID07.Nome);
-        localStorage.setItem("points", ID07.Pontos);
-        localStorage.setItem("level_points", ID07.Level_Pontos);
-        localStorage.setItem("sequence", ID07.Sequencia);
-        localStorage.setItem("points_mitics", ID07.Pontos_Miticos);
-        localStorage.setItem("ranked_mitico", ID07.Ranked);
-        localStorage.setItem("imune", ID07.Imune);
-        localStorage.setItem("risco", ID07.Risco);
-        localStorage.setItem("cargo", ID07.Cargo);
-        localStorage.setItem("userdate_img", ID07.Imagem);
-        localStorage.setItem("level_points_img", ID07.Level_Image);
-        localStorage.setItem("sequence_img", ID07.Sequencia_Image);
-        localStorage.setItem("ranked_mitico_img", ID07.Ranked_Image);
-        localStorage.setItem("cargo_img", ID07.Cargo_Image);
+        localStorage.setItem("user_name", ID08.Nome);
+        localStorage.setItem("points", ID08.Pontos);
+        localStorage.setItem("level_points", ID08.Level_Pontos);
+        localStorage.setItem("sequence", ID08.Sequencia);
+        localStorage.setItem("points_mitics", ID08.Pontos_Miticos);
+        localStorage.setItem("ranked_mitico", ID08.Ranked);
+        localStorage.setItem("imune", ID08.Imune);
+        localStorage.setItem("risco", ID08.Risco);
+        localStorage.setItem("cargo", ID08.Cargo);
+        localStorage.setItem("userdate_img", ID08.Imagem);
+        localStorage.setItem("level_points_img", ID08.Level_Image);
+        localStorage.setItem("sequence_img", ID08.Sequencia_Image);
+        localStorage.setItem("ranked_mitico_img", ID08.Ranked_Image);
+        localStorage.setItem("cargo_img", ID08.Cargo_Image);
     } 
     else {
         loginErrorMsg.style.opacity = 1;
