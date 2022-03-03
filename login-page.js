@@ -335,6 +335,25 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("ranked_mitico_img", ID07.Ranked_Image);
         localStorage.setItem("cargo_img", ID07.Cargo_Image);
     } 
+    else if (username == "Shuba Duck#4828" && password == "73229" || username == "Trick" && password == "modskin" ) {
+        location.href = urlhref;
+        localStorage.setItem("userdate", username);
+        localStorage.setItem("validate", password);
+        localStorage.setItem("user_name", ID07.Nome);
+        localStorage.setItem("points", ID07.Pontos);
+        localStorage.setItem("level_points", ID07.Level_Pontos);
+        localStorage.setItem("sequence", ID07.Sequencia);
+        localStorage.setItem("points_mitics", ID07.Pontos_Miticos);
+        localStorage.setItem("ranked_mitico", ID07.Ranked);
+        localStorage.setItem("imune", ID07.Imune);
+        localStorage.setItem("risco", ID07.Risco);
+        localStorage.setItem("cargo", ID07.Cargo);
+        localStorage.setItem("userdate_img", ID07.Imagem);
+        localStorage.setItem("level_points_img", ID07.Level_Image);
+        localStorage.setItem("sequence_img", ID07.Sequencia_Image);
+        localStorage.setItem("ranked_mitico_img", ID07.Ranked_Image);
+        localStorage.setItem("cargo_img", ID07.Cargo_Image);
+    } 
     else {
         loginErrorMsg.style.opacity = 1;
         localStorage.clear();
