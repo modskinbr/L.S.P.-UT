@@ -1,14 +1,32 @@
 <node>
   <patch>
-    <title>1</title>
-    <desc>Some Desc</desc>
+    <title>6.2.2</title>
+    <desc>
+        Novidades
+      - Heimeldinger
+      - Abelhianna
+      - Nunu e Mellump
+      - BZZZiggs
+      
+       Bug-Fixed
+      -- Chromas - 6.2.1 / 12.4 --
+      - Renata > Almirante
+      - Ekko > Fogolume
+      - Shen > Lâmina do Trovão
+      - Kassadin > Lâmina do Trovão
+      - Qiyana > Lâmina do Trovão
+    </desc>
   </patch>
   <patch>
-    <title>2</title>
-    <desc>Some Desc</desc>
+    <title>6.2.1</title>
+    <desc>
+      Some Desc
+    </desc>
   </patch>
   <patch>
-    <title>3</title>
-    <desc>Some Desc</desc>
+    <title>6.2.0</title>
+    <desc>
+      Some Desc
+    </desc>
   </patch>
 </node>
