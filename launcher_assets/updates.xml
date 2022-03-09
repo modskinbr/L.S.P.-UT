@@ -1,13 +1,13 @@
 <node>
   <patch>
     <title>6.2.2</title>
-<desc>Novidades
+<desc><font color = 'green'><b>Novidades</b></font>
  - Heimeldinger
  - Abelhianna
  - Nunu e Mellump
  - BZZZiggs
       
-Bugs Corrigidos ( Chromas )
+<font color = 'darkorange'><b>Bugs Corrigidos ( Chromas )</b></font>
  - Renata: Almirante
  - Ekko: Fogolume
  - Shen: Lâmina do Trovão
@@ -17,21 +17,21 @@ Bugs Corrigidos ( Chromas )
   </patch>
   <patch>
     <title>6.2.1</title>
-Novidades
+</desc>
+<font color = 'green'><b>Novidades</b></font>
  - Qiyana: Lâmina do Trovão
  - Kassadin: Lâmina do Trovão
  - Shen: Lâmina do Trovão
  - Ekko: Fogolume ( 2.0 )
  - Renata Glasc: Almirante
 
-Campeão Novo
+<font color = 'cadetblue'><b>Campeão Novo:</br></font>
  - Renata Glasc
 </desc>
   </patch>
   <patch>
     <title>6.2.0</title>
-</desc>
-Indisponivel
+<desc><font color = 'red'>Indisponivel</font>
 </desc>
   </patch>
 </node>
