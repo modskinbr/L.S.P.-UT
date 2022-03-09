@@ -1,8 +1,7 @@
 <node>
   <patch>
     <title>6.2.2</title>
-<desc>
-Novidades:
+<desc>Novidades:
  - Heimeldinger
  - Abelhianna
  - Nunu e Mellump
@@ -18,8 +17,7 @@ Bugs Corrigidos ( Chromas ):
   </patch>
   <patch>
     <title>6.2.1</title>
-<desc>
-Novidades:
+<desc>Novidades:
  - Qiyana: Lâmina do Trovão
  - Kassadin: Lâmina do Trovão
  - Shen: Lâmina do Trovão
@@ -32,8 +30,7 @@ Campeão Novo:
   </patch>
   <patch>
     <title>6.2.0</title>
-<desc>
-Indisponivel
+<desc>Indisponivel
 </desc>
   </patch>
 </node>
