@@ -1,17 +1,14 @@
 <node>
   <patch>
-    <title>Some Title</title>
+    <title>1</title>
     <desc>Some Desc</desc>
-    <link>https://SomeUrl.com</link>
   </patch>
   <patch>
-    <title>Some Title</title>
+    <title>2</title>
     <desc>Some Desc</desc>
-    <link>https://SomeUrl.com</link>
   </patch>
   <patch>
-    <title>Some Title</title>
+    <title>3</title>
     <desc>Some Desc</desc>
-    <link>https://SomeUrl.com</link>
   </patch>
 </node>
