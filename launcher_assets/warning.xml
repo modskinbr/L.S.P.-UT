@@ -1,6 +1,11 @@
-<node/>
+<node>
   <warning>
     <title>Aviso</title>
-    <desc>Teste</desc>
+<desc>- 1 Linha
+- 2 Linha
+- 3 Linha
+- 4 Linha
+Att. Equipe L.S.P. UT
+</desc>
   </warning>
 </node>
