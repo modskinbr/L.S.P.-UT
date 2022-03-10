@@ -1,49 +1,40 @@
 <node>
   <patch>
-    <title>6.2.2</title>
-<desc>Novidades:
- - Heimeldinger
- - Abelhianna
- - Nunu e Mellump
- - BZZZiggs
-      
-Bugs Corrigidos ( Chromas ):
- - Renata: Almirante
- - Ekko: Fogolume
- - Shen: Lâmina do Trovão
- - Kassadin: Lâmina do Trovão
- - Qiyana: Lâmina do Trovão
-    </desc>
-  </patch>
-  <patch>
-    <title>6.2.1</title>
-<desc>Novidades:
- - Qiyana: Lâmina do Trovão
- - Kassadin: Lâmina do Trovão
- - Shen: Lâmina do Trovão
- - Ekko: Fogolume ( 2.0 )
- - Renata Glasc: Almirante
-
-Campeão Novo:
- - Renata Glasc
-</desc>
-  </patch>
-  <patch>
-    <title>Teste</title>
+    <title>« 6.2.2 »</title>
 <desc>              « Novidades »
 
- ➤ Heimeldinger
- ➤ Abelhianna
- ➤ Nunu e Mellump
- ➤ BZZZiggs
+➤ Heimeldinger
+➤ Abelhianna
+➤ Nunu e Mellump
+➤ BZZZiggs
 
               « Correções »
 
- ➤ Renata - Almirante
- ➤ Ekko - Fogolume ( 2.0 )
- ➤ Qiyana - Lâmina do Trovão
- ➤ Kassadin - Lâmina do Trovão
- ➤ Shen - Lâmina do Trovão
+➤ Renata - Almirante
+➤ Ekko - Fogolume ( 2.0 )
+➤ Qiyana - Lâmina do Trovão
+➤ Kassadin - Lâmina do Trovão
+➤ Shen - Lâmina do Trovão
+</desc>
+  </patch>
+  <patch>
+    <title>« 6.2.1 »</title>
+<desc>              « Novidades »
+
+➤ Qiyana - Lâmina do Trovão
+➤ Kassadin - Lâmina do Trovão
+➤ Shen - Lâmina do Trovão
+➤ Ekko - Fogolume ( 2.0 )
+➤ Renata Glasc: Almirante
+
+              « Campeão Novo »
+
+➤ Renata Glasc
+</desc>
+  </patch>
+  <patch>
+    <title>« 6.2.0 »</title>
+<desc>              « Indisponivel »
 </desc>
   </patch>
 </node>
