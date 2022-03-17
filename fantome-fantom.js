@@ -404,6 +404,7 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("sequence_img", ID09.Sequencia_Image);
         localStorage.setItem("ranked_mitico_img", ID09.Ranked_Image);
         localStorage.setItem("cargo_img", ID09.Cargo_Image);
+    }
     else if (username == "Nando_#7813" && password == "51450" || username == "Nando" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
