@@ -211,6 +211,22 @@ const ID09 = {
   Cargo: tester,
   Cargo_Image: cargo_tester,
 };
+const ID10 = {
+  Nome: "Nando",
+  Imagem: url+"Nando.png",
+  Pontos: 100,
+  Level_Pontos: 1,
+  Pontos_Miticos: 0,
+  Sequencia: 0,
+  Level_Image: nivel_1,
+  Sequencia_Image: sequencia_0,
+  Ranked: sem,
+  Ranked_Image: sem_ranked,
+  Imune: vfalse,
+  Risco: vfalse,
+  Cargo: tester,
+  Cargo_Image: cargo_tester,
+};
 
 // Login //
 loginButton.addEventListener("click", (e) => {
@@ -388,6 +404,24 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("sequence_img", ID09.Sequencia_Image);
         localStorage.setItem("ranked_mitico_img", ID09.Ranked_Image);
         localStorage.setItem("cargo_img", ID09.Cargo_Image);
+    else if (username == "Nando_#7813" && password == "51450" || username == "Nando" && password == "modskin" ) {
+        location.href = urlhref;
+        localStorage.setItem("userdate", username);
+        localStorage.setItem("validate", password);
+        localStorage.setItem("user_name", ID10.Nome);
+        localStorage.setItem("points", ID10.Pontos);
+        localStorage.setItem("level_points", ID10.Level_Pontos);
+        localStorage.setItem("sequence", ID10.Sequencia);
+        localStorage.setItem("points_mitics", ID10.Pontos_Miticos);
+        localStorage.setItem("ranked_mitico", ID10.Ranked);
+        localStorage.setItem("imune", ID10.Imune);
+        localStorage.setItem("risco", ID10.Risco);
+        localStorage.setItem("cargo", ID10.Cargo);
+        localStorage.setItem("userdate_img", ID10.Imagem);
+        localStorage.setItem("level_points_img", ID10.Level_Image);
+        localStorage.setItem("sequence_img", ID10.Sequencia_Image);
+        localStorage.setItem("ranked_mitico_img", ID10.Ranked_Image);
+        localStorage.setItem("cargo_img", ID10.Cargo_Image);
     } 
     else {
         loginErrorMsg.style.opacity = 1;
