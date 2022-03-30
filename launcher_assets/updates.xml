@@ -1,5 +1,26 @@
 <node>
   <patch>
+    <title>« 6.3.0 »</title>
+<desc>              « Novidades »
+
+➤ Sylas Lobo de Batalha
+➤ Jinx Felina de Batalha
+➤ Jinx Felina de Batalha (Prestigio)
+➤ Riven Coelha de Batalha Prime
+➤ Vayne Morcego de Batalha
+➤ Miss Fortune Coelha de Batalha
+➤ 19 Skins de Prestigio - 2022
+➤ Atualização para Art Kassadin 
+
+              « Correções »
+
+➤ Layout do Botão de Ativar Skins
+➤ Layout do ModSkin
+➤ Lista de Skins/Chromas que se tornam invisiveis
+➤ Botão de Rolagem
+</desc>
+  </patch>
+  <patch>
     <title>« 6.2.2 »</title>
 <desc>              « Novidades »
 
@@ -30,11 +51,6 @@
               « Campeão Novo »
 
 ➤ Renata Glasc
-</desc>
-  </patch>
-  <patch>
-    <title>« 6.2.0 »</title>
-<desc>              « Indisponivel »
 </desc>
   </patch>
 </node>
