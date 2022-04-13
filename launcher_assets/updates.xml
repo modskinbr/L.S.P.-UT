@@ -1,5 +1,16 @@
 <node>
   <patch>
+    <title>« 6.3.1 »</title>
+<desc>              « Novidades »
+
+➤ Ahri - Arcana
+➤ Hecarim - Arcana
+➤ Rakan - Arcana
+➤ Ryze - Arcana
+➤ Xayah - Arcana
+</desc>
+  </patch>
+  <patch>
     <title>« 6.3.0 »</title>
 <desc>              « Novidades »
 
@@ -36,21 +47,6 @@
 ➤ Qiyana - Lâmina do Trovão
 ➤ Kassadin - Lâmina do Trovão
 ➤ Shen - Lâmina do Trovão
-</desc>
-  </patch>
-  <patch>
-    <title>« 6.2.1 »</title>
-<desc>              « Novidades »
-
-➤ Qiyana - Lâmina do Trovão
-➤ Kassadin - Lâmina do Trovão
-➤ Shen - Lâmina do Trovão
-➤ Ekko - Fogolume ( 2.0 )
-➤ Renata Glasc: Almirante
-
-              « Campeão Novo »
-
-➤ Renata Glasc
 </desc>
   </patch>
 </node>
