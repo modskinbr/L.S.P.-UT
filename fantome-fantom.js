@@ -263,6 +263,22 @@ const ID12 = {
   Cargo: tester,
   Cargo_Image: cargo_tester,
 };
+const ID13 = {
+  Nome: "Igor",
+  Imagem: url+"Kizumi.png",
+  Pontos: "Aguardando...",
+  Level_Pontos: imune,
+  Pontos_Miticos: imune,
+  Sequencia: imune,
+  Level_Image: sem_nivel,
+  Sequencia_Image: sequencia_0,
+  Ranked: imune,
+  Ranked_Image: sem_ranked,
+  Imune: vtrue,
+  Risco: vfalse,
+  Cargo: tester,
+  Cargo_Image: cargo_tester,
+};
 
 // Login //
 loginButton.addEventListener("click", (e) => {
@@ -497,6 +513,25 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("sequence_img", ID12.Sequencia_Image);
         localStorage.setItem("ranked_mitico_img", ID12.Ranked_Image);
         localStorage.setItem("cargo_img", ID12.Cargo_Image);
+    } 
+    else if (username == "!Kizumi#9129" && password == "58267" || username == "Kizumi" && password == "modskin" ) {
+        location.href = urlhref;
+        localStorage.setItem("userdate", username);
+        localStorage.setItem("validate", password);
+        localStorage.setItem("user_name", ID13.Nome);
+        localStorage.setItem("points", ID13.Pontos);
+        localStorage.setItem("level_points", ID13.Level_Pontos);
+        localStorage.setItem("sequence", ID13.Sequencia);
+        localStorage.setItem("points_mitics", ID13.Pontos_Miticos);
+        localStorage.setItem("ranked_mitico", ID13.Ranked);
+        localStorage.setItem("imune", ID13.Imune);
+        localStorage.setItem("risco", ID13.Risco);
+        localStorage.setItem("cargo", ID13.Cargo);
+        localStorage.setItem("userdate_img", ID13.Imagem);
+        localStorage.setItem("level_points_img", ID13.Level_Image);
+        localStorage.setItem("sequence_img", ID13.Sequencia_Image);
+        localStorage.setItem("ranked_mitico_img", ID13.Ranked_Image);
+        localStorage.setItem("cargo_img", ID13.Cargo_Image);
     } 
     else {
         loginErrorMsg.style.opacity = 1;
