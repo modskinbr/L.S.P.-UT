@@ -1,5 +1,20 @@
 <node>
   <patch>
+    <title>« 6.3.2 »</title>
+<desc>              « Novidades »
+
+➤ Aatrox Eclipse Lunar
+➤ Senna Eclipse Lunar
+➤ Senna Eclipse Lunar (Prestigio)
+➤ Gangplank, O Traidor
+➤ Sejuani Eclipse Solar
+➤ Sivir Eclipse Solar
+➤ Kayle Devoradora Do Sol
+➤ Yasuo Lobo do Mar
+
+</desc>
+  </patch>
+  <patch>
     <title>« 6.3.1 »</title>
 <desc>              « Novidades »
 
@@ -29,24 +44,6 @@
 ➤ Layout do ModSkin
 ➤ Lista de Skins/Chromas que se tornam invisiveis
 ➤ Botão de Rolagem
-</desc>
-  </patch>
-  <patch>
-    <title>« 6.2.2 »</title>
-<desc>              « Novidades »
-
-➤ Heimeldinger
-➤ Abelhianna
-➤ Nunu e Mellump
-➤ BZZZiggs
-
-              « Correções »
-
-➤ Renata - Almirante
-➤ Ekko - Fogolume ( 2.0 )
-➤ Qiyana - Lâmina do Trovão
-➤ Kassadin - Lâmina do Trovão
-➤ Shen - Lâmina do Trovão
 </desc>
   </patch>
 </node>
