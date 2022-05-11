@@ -1,50 +1,29 @@
 <node>
   <patch>
+    <title>« 6.3.3 »</title>
+<desc>              « News »
+
+➤ High Noon Katarina
+➤ High Noon Leona
+➤ High Noon Talon
+➤ High Noon Varus
+➤ High Noon Mordekaiser
+
+➤ EDG Aphelios
+➤ EDG Viego
+➤ EDG Graves
+➤ EDG Yuumi
+➤ EDG Zoe
+</desc>
+  </patch>
+  <patch>
+    <title>« 6.3.2 »</title>
+<desc>              « Server Unavailable »
+</desc>
+  </patch>
+  <patch>
     <title>« 6.3.1 »</title>
-<desc>              « News »
-➤ Arcana Ahri
-➤ Arcana Hecarim
-➤ Arcana Rakan
-➤ Arcana Ryze
-➤ Arcana Xayah
-</desc>
-  </patch>
-  <patch>
-    <title>« 6.3.0 »</title>
-<desc>              « Unavailable »
-</desc>
-  </patch>
-  <patch>
-    <title>« 6.2.2 »</title>
-<desc>              « News »
-
-➤ Heimerstinger
-➤ Orbeeanna
-➤ Nunu and Beelump
-➤ BZZZiggs
-
-              « Corrections »
-
-➤ Renata - Admiral
-➤ Ekko - Firelight ( 2.0 )
-➤ Qiyana - Shockblade
-➤ Kassadin - Shockblade
-➤ Shen - Shockblade
-</desc>
-  </patch>
-  <patch>
-    <title>« 6.2.1 »</title>
-<desc>              « News »
-
-➤ Qiyana - Shockblade
-➤ Kassadin - Shockblade
-➤ Shen - Shockblade
-➤ Ekko - Firelight ( 2.0 )
-➤ Renata Glasc: Admiral
-
-              « New Champion »
-
-➤ Renata Glasc
+<desc>              « Server Unavailable »
 </desc>
   </patch>
 </node>
