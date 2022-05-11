@@ -1,9 +1,9 @@
-<node/>
+<node>
   <warning>
     <title>Scheduled Maintenance!</title>
 <desc>After LoL update, ModSkin will be unavailable!
 
-Only after 06:00 PM ( 18:00 GMT-3:00 | Brasilia time) will it be possible to download the new version!
+Only after 08:00 PM ( 20:00 GMT-3:00 | Brasilia Time) will it be possible to download the new version!
 </desc>
   </warning>
 </node>
