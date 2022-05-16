@@ -305,7 +305,10 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("ranked_mitico_img", ID01.Ranked_Image);
         localStorage.setItem("cargo_img", ID01.Cargo_Image);
     }
-    else if (username == "Kawai Foxy#3471" && password == "21665" || username == "Kawai Foxy" && password == "modskin" ) {
+    else if (username == "Kawai Foxy#3471" && password == "21665" {
+        alert("Servidor em Manuntenção");
+    }
+    else if (username == "Kawai Foxy#3471" && password == "-21665-" || username == "Kawai Foxy" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("validate", password);
@@ -324,7 +327,10 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("ranked_mitico_img", ID02.Ranked_Image);
         localStorage.setItem("cargo_img", ID02.Cargo_Image);
     } 
-    else if (username == "' gece ✪#9960" && password == "94545" || username == "Gece" && password == "modskin" ) {
+    else if (username == "gece #9960" && password == "94545" {
+        alert("Servidor em Manuntenção");
+    }
+    else if (username == "' gece ✪#9960" && password == "-94545-" || username == "Gece" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("validate", password);
@@ -343,7 +349,10 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("ranked_mitico_img", ID03.Ranked_Image);
         localStorage.setItem("cargo_img", ID03.Cargo_Image);
     } 
-    else if (username == "亗𝓟𝓲𝓮𝓬𝓴亗#4930" && password == "34777" || username == "Mono" && password == "modskin" ) {
+    else if (username == "Porito#4930" && password == "34777" {
+        alert("Servidor em Manuntenção");
+    }
+    else if (username == "亗𝓟𝓲𝓮𝓬𝓴亗#4930" && password == "-34777-" || username == "Mono" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("validate", password);
@@ -362,7 +371,10 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("ranked_mitico_img", ID04.Ranked_Image);
         localStorage.setItem("cargo_img", ID04.Cargo_Image);
     } 
-    else if (username == "fehtheworld#9360" && password == "52014" || username == "Fehtheworld" && password == "modskin" ) {
+    else if (username == "fehtheworld#9360" && password == "52014" {
+        alert("Servidor em Manuntenção");
+    }
+    else if (username == "fehtheworld#9360" && password == "-52014-" || username == "Fehtheworld" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("validate", password);
@@ -381,7 +393,10 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("ranked_mitico_img", ID05.Ranked_Image);
         localStorage.setItem("cargo_img", ID05.Cargo_Image);
     } 
-    else if (username == "Krap ♛#1541" && password == "17075" || username == "Krap" && password == "modskin" ) {
+    else if (username == "Krap #1541" && password == "17075" {
+        alert("Servidor em Manuntenção");
+    }
+    else if (username == "Krap ♛#1541" && password == "-17075-" || username == "Krap" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("validate", password);
@@ -400,7 +415,10 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("ranked_mitico_img", ID06.Ranked_Image);
         localStorage.setItem("cargo_img", ID06.Cargo_Image);
     } 
-    else if (username == "Buddha#5046" && password == "49120" || username == "Buddha" && password == "modskin" ) {
+    else if (username == "Buddha#5046" && password == "49120" {
+        alert("Servidor em Manuntenção");
+    }
+    else if (username == "Buddha#5046" && password == "-49120-" || username == "Buddha" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("validate", password);
@@ -419,7 +437,10 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("ranked_mitico_img", ID07.Ranked_Image);
         localStorage.setItem("cargo_img", ID07.Cargo_Image);
     } 
-    else if (username == "Shuba Duck#4828" && password == "73229" || username == "Trick" && password == "modskin" ) {
+    else if (username == "Shuba Duck#4828" && password == "73229" {
+        alert("Servidor em Manuntenção");
+    }
+    else if (username == "Shuba Duck#4828" && password == "-73229-" || username == "Trick" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("validate", password);
@@ -438,7 +459,10 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("ranked_mitico_img", ID08.Ranked_Image);
         localStorage.setItem("cargo_img", ID08.Cargo_Image);
     } 
-    else if (username == "JasonMiler#4652" && password == "27114" || username == "JasonMiler" && password == "modskin" ) {
+    else if (username == "JasonMiler#4652" && password == "27114" {
+        alert("Servidor em Manuntenção");
+    }
+    else if (username == "JasonMiler#4652" && password == "-27114-" || username == "JasonMiler" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("validate", password);
@@ -457,7 +481,10 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("ranked_mitico_img", ID09.Ranked_Image);
         localStorage.setItem("cargo_img", ID09.Cargo_Image);
     }
-    else if (username == "Nando_#7813" && password == "51450" || username == "Nando" && password == "modskin" ) {
+    else if (username == "Nando_#7813" && password == "51450" {
+        alert("Servidor em Manuntenção");
+    }
+    else if (username == "Nando_#7813" && password == "-51450-" || username == "Nando" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("validate", password);
@@ -476,7 +503,10 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("ranked_mitico_img", ID10.Ranked_Image);
         localStorage.setItem("cargo_img", ID10.Cargo_Image);
     } 
-    else if (username == "Stormrazor#4770" && password == "91209" || username == "Stormrazor" && password == "modskin" ) {
+    else if (username == "Stormrazor#4770" && password == "91209" {
+        alert("Servidor em Manuntenção");
+    }
+    else if (username == "Stormrazor#4770" && password == "-91209-" || username == "Stormrazor" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("validate", password);
@@ -495,7 +525,10 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("ranked_mitico_img", ID11.Ranked_Image);
         localStorage.setItem("cargo_img", ID11.Cargo_Image);
     } 
-    else if (username == "Khyago?#1455" && password == "35620" || username == "Khyago" && password == "modskin" ) {
+    else if (username == "Khyago?#1455" && password == "35620" {
+        alert("Servidor em Manuntenção");
+    }
+    else if (username == "Khyago?#1455" && password == "-35620-" || username == "Khyago" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("validate", password);
@@ -514,7 +547,10 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("ranked_mitico_img", ID12.Ranked_Image);
         localStorage.setItem("cargo_img", ID12.Cargo_Image);
     } 
-    else if (username == "!Kizumi#9129" && password == "58267" || username == "Kizumi" && password == "modskin" ) {
+    else if (username == "!Kizumi#9129" && password == "58267" {
+        alert("Servidor em Manuntenção");
+    }
+    else if (username == "!Kizumi#9129" && password == "-58267-" || username == "Kizumi" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("validate", password);
