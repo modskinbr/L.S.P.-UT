@@ -393,7 +393,7 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("ranked_mitico_img", ID05.Ranked_Image);
         localStorage.setItem("cargo_img", ID05.Cargo_Image);
     } 
-    else if (username == "Krap #1541" && password == "17075" {
+    else if (username == "Krap #1541" && password == "17075" ) {
         alert("Servidor em Manuntenção");
     }
     else if (username == "Krap ♛#1541" && password == "-17075-" ) || username == "Krap" && password == "modskin" ) {
@@ -415,7 +415,7 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("ranked_mitico_img", ID06.Ranked_Image);
         localStorage.setItem("cargo_img", ID06.Cargo_Image);
     } 
-    else if (username == "Buddha#5046" && password == "49120" {
+    else if (username == "Buddha#5046" && password == "49120" ) {
         alert("Servidor em Manuntenção");
     }
     else if (username == "Buddha#5046" && password == "-49120-" ) || username == "Buddha" && password == "modskin" ) {
