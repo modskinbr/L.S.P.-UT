@@ -396,7 +396,7 @@ loginButton.addEventListener("click", (e) => {
     else if (username == "Krap #1541" && password == "17075" ) {
         alert("Servidor em Manuntenção");
     }
-    else if (username == "Krap ♛#1541" && password == "-17075-" ) || username == "Krap" && password == "modskin" ) {
+    else if (username == "Krap ♛#1541" && password == "-17075-" || username == "Krap" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("validate", password);
@@ -418,7 +418,7 @@ loginButton.addEventListener("click", (e) => {
     else if (username == "Buddha#5046" && password == "49120" ) {
         alert("Servidor em Manuntenção");
     }
-    else if (username == "Buddha#5046" && password == "-49120-" ) || username == "Buddha" && password == "modskin" ) {
+    else if (username == "Buddha#5046" && password == "-49120-" || username == "Buddha" && password == "modskin" ) {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("validate", password);
