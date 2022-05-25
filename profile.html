@@ -15,7 +15,7 @@ jQuery(document).ready(function() {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Painel - Bug Report</title>
+    <title>Painel - Tester</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap-admin.css" rel="stylesheet">
@@ -148,7 +148,7 @@ pw {
 }
 
 </style>
-
+ 
     <div id="wrapper">
 
       <!-- Sidebar -->
@@ -161,12 +161,24 @@ pw {
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav side-nav">
-            <li><a href="testers-logged.html"><i class="fa fa-mug-saucer"></i> Painel</a></li>
+            <li class="active"><a><i class="fa fa-mug-saucer"></i> Painel</a></li>
             <li><a href="testers.html"><i class="fa fa-bug"></i> Bug Report</a></li>
-      	    <li class="active"><a><i class="fa fa-user"></i> Perfil</a></li>
+      	    <li><a href="profile.html"><i class="fa fa-user"></i> Perfil</a></li>
           </ul>
 
-<script>
+	 <script>
+      function showing() {
+        const pop = document.getElementById("popstyle");
+        const visibled = pop.style.visibility;
+        if (visibled == "hidden") {
+        pop.style.visibility = "visible";
+        }
+        if (visibled == "visible") {
+        pop.style.visibility = "hidden";
+        }
+}
+            </script>
+              <script>
 window.onload = function profile() {
 		const user = localStorage["userdate"];
 		const usuario = localStorage["user_name"];
@@ -383,13 +395,7 @@ window.onload = function profile() {
 			</div>
 		</div>
 	</div>
-<script>
-function logout() {
-	localStorage.clear();
-	location.href = "https://modskinbr.github.io/L.S.P.-UT/experimental-beta.html";
-}
-	</script>
-<discord><div><div><div style="margin: -102px 0px 0px 147px;background: #031416;border-radius: 57px;font-family: cursive;width: 23px;height: 23px;"><i onclick="openForm()" style="color: white;cursor: pointer;" class="fa fa-upload"></i></div></div></div></discord>
+
 <discord><div><div><div style="margin: 15px 0px 0px 0px;background: dimgray;border-radius: 57px;font-family: cursive;"><p onclick="logout()" style="color: white;cursor: pointer;">Sair</p></div></div></div></discord>		      </div>
 		    </div>
           </div>
@@ -398,21 +404,35 @@ function logout() {
         </div><!-- /.navbar-collapse -->
       </nav>
 
-<script>
-function openForm(){
-  document.getElementById("mina-holder").style.visibility = "visible";
-}
-function closeForm() {
-  document.getElementById("mina-holder").style.visibility = "hidden";
-}
-function opensite() {
-location.href = "https://modskinbr.github.io/L.S.P.-UT/bate-papo.html"
-}
-</script>
+      <div id="page-wrapper">
 
-    <script src="js/bootstrap-admin.js"></script>
-    <script src="js/tablesorter/jquery.tablesorter.js"></script>
-    <script src="js/tablesorter/tables.js"></script>
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Painel <small>Estatisticas do ModSkin</small></h1>
+            <ol class="breadcrumb">
+              <li class="active"><i class="fa fa-star"></i> Informações</li>
+            </ol>
+            <div class="alert alert-success alert-dismissable">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              Bem-Vindo a <strong>Area do Tester</strong> Aqui voce ira acompanhar varias informaçoes do ModSkin, seus status e outras atualizaçaoes. Neste momento, informamos que a pagina ainda esta em desenvolvimento, e pedimos que seja paciente. Obg pela Atenção 
+            </div>
+          </div>
+        </div><!-- /.row -->
 
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-clock"></i> - </h3>
+              </div>
+              <div class="panel-body">
+		<div class="list-group"><a class="list-group-item">
+                 <i class="fa fa-file-zipper"></i> - </a></div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.row -->
+
+      <script src="js/bootstrap-admin.js"></script>
   </body>
 </html>
