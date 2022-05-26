@@ -1,5 +1,22 @@
 <node>
   <patch>
+    <title>« 6.4.0 »</title>
+<desc>              « Novidades »
+
+➤ Samira - Velho Oeste
+➤ Saion - Velho Oeste
+➤ Tahm Kench - Velho Oeste
+➤ Twitch - Velho Oeste
+➤ Viktor - Velho Oeste
+➤ Cromas Dourados para Akali
+
+              « Correções »
+
+ ➤ Bard: Bardo.
+ ➤ MonkeyKing: Wukong.
+</desc>
+  </patch>
+  <patch>
     <title>« 6.3.3 »</title>
 <desc>              « Novidades »
 
@@ -29,17 +46,6 @@
 ➤ Kayle Devoradora Do Sol
 ➤ Yasuo Lobo do Mar
 
-</desc>
-  </patch>
-  <patch>
-    <title>« 6.3.1 »</title>
-<desc>              « Novidades »
-
-➤ Ahri - Arcana
-➤ Hecarim - Arcana
-➤ Rakan - Arcana
-➤ Ryze - Arcana
-➤ Xayah - Arcana
 </desc>
   </patch>
 </node>
