@@ -80,7 +80,7 @@ const ID01 = {
   Pontos_Miticos: "0",
   Elo: sem_elo,
   Elo_Image: rank_0,
-  Destaque: "0",
+  Destaque: sem,
   Destaque_Image: destaque_0,
   Fragmentos: 0,
   Fragmentos_Estelares: 0,
@@ -89,6 +89,27 @@ const ID01 = {
   Parceria: "Nenhuma",
   Cargo: dev,
   Cargo_Image: dev_img,
+  Risco: vfalse,
+  Imune: vfalse,
+};
+const ID02 = {
+  Nome: "Victor",
+  Imagem: url+"02.png",
+  Pontos: "30",
+  Rank: "Rank 1",
+  Rank_Image: rank_1,
+  Pontos_Miticos: "0",
+  Elo: sem_elo,
+  Elo_Image: rank_0,
+  Destaque: sem,
+  Destaque_Image: destaque_0,
+  Fragmentos: 0,
+  Fragmentos_Estelares: 0,
+  Essencia_Mitica: 0,
+  Moedas: 0,
+  Parceria: "TAIKUNDROME",
+  Cargo: tester,
+  Cargo_Image: tester_img,
   Risco: vfalse,
   Imune: vfalse,
 };
@@ -122,6 +143,30 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("data17", ID01.Cargo_Image);
         localStorage.setItem("data18", ID01.Risco);
         localStorage.setItem("data19", ID01.Imune);
+    }
+    if (username == "taikunxx3" && password == "taik9348") {
+        location.href = urlhref;
+        localStorage.setItem("userdate", username);
+        localStorage.setItem("validate", password);
+        localStorage.setItem("data1", ID02.Nome);
+        localStorage.setItem("data2", ID02.Imagem);
+        localStorage.setItem("data3", ID02.Pontos);
+        localStorage.setItem("data4", ID02.Rank);
+        localStorage.setItem("data5", ID02.Rank_Image);
+        localStorage.setItem("data6", ID02.Pontos_Miticos);
+        localStorage.setItem("data7", ID02.Elo);
+        localStorage.setItem("data8", ID02.Elo_Image);
+        localStorage.setItem("data9", ID02.Destaque);
+        localStorage.setItem("data10", ID02.Destaque_Image);
+        localStorage.setItem("data11", ID02.Fragmentos);
+        localStorage.setItem("data12", ID02.Fragmentos_Estelares);
+        localStorage.setItem("data13", ID02.Essencia_Mitica);
+        localStorage.setItem("data14", ID02.Moedas);
+        localStorage.setItem("data15", ID02.Parceria);
+        localStorage.setItem("data16", ID02.Cargo);
+        localStorage.setItem("data17", ID02.Cargo_Image);
+        localStorage.setItem("data18", ID02.Risco);
+        localStorage.setItem("data19", ID02.Imune);
     }
     else {
         loginErrorMsg.style.opacity = 1;
