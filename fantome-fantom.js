@@ -144,7 +144,7 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("data18", ID01.Risco);
         localStorage.setItem("data19", ID01.Imune);
     }
-    if (username == "taikunxx3" && password == "taik9348") {
+    else if (username == "taikunxx3" && password == "taik9348") {
         location.href = urlhref;
         localStorage.setItem("userdate", username);
         localStorage.setItem("validate", password);
