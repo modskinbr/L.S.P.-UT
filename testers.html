@@ -178,6 +178,17 @@ pw {
             <li><a href="testers-logged.html"><i class="fa fa-user"></i> Painel</a></li>
       	    <li class="active"><a><i class="fa fa-bug"></i> Bug Report</a></li>
           </ul>
+
+              <script>
+window.onload = function profile() {
+		const cargo = localStorage["cargo"];
+	if ( cargo !== tester ) {
+		location.href = "https://modskinbr.github.io/L.S.P.-UT/testers-logged.html";
+	} else {
+		document.getElementById("body").style.visibility = "visible";
+	}
+}
+              </script>
 		    </div>
           </div>
             </li>
