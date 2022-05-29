@@ -241,7 +241,12 @@ pw {
 				<div style="font-size: 14px">Boas-Vindas</div><div style="color: rgb(97 137 0);font-family: monospace;" id="username">User</div>
 			</div>
 		</div>
-              <div><div style="margin: 5px 0px -12px 0px;text-align: center;font-family: cursive;"><p onclick="logout()" style="color: #a7a7a7;cursor: pointer;">Sair</p></div></div></div>
+              <div><div style="margin: 5px 0px -12px 0px;text-align: center;font-family: cursive;"><script>
+function logout() {
+	localStorage.clear();
+	location.href = "https://modskinbr.github.io/L.S.P.-UT/experimental-beta.html";
+}
+	</script><p onclick="logout()" style="color: #a7a7a7;cursor: pointer;">Sair</p></div></div></div>
               <div class="panel-body">
 		<div style="text-align: center;visibility: hidden;" id="risco">
 			<img src="image/banco_de_dados/Alerta.png" style="height: 30px;"><div style="margin-bottom: 10px;">
