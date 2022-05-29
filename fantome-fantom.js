@@ -42,7 +42,8 @@ var designer_img = "image/banco_de_dados/Designer.png";
 var vfalse = "hidden";
 var vtrue = "revert"
 var imune = "(∾)"
-var sem = "Sem";
+var sem_elo = "Sem Elo";
+var sem = "Sem"
 
 // Elos
 var ferro = "Ferro";
@@ -73,11 +74,11 @@ var url = "image/Profile/"
 const ID01 = {
   Nome: "Lucas",
   Imagem: url+"01.png",
-  Pontos: "0",
-  Rank: "Rank 0",
-  Rank_Image: rank_0,
+  Pontos: "30",
+  Rank: "Rank 1",
+  Rank_Image: rank_1,
   Pontos_Miticos: "0",
-  Elo: ferro,
+  Elo: sem_elo,
   Elo_Image: rank_0,
   Destaque: "0",
   Destaque_Image: destaque_0,
