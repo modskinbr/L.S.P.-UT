@@ -139,6 +139,40 @@ const ID02 = {
   Tarefas: "0",
   Verificacoes: "0",
 };
+const ID03 = {
+  Nome: "Adne",
+  Imagem: url+"03.png",
+  Pontos: "30",
+  Rank: "Rank 1",
+  Rank_Image: rank_1,
+  Pontos_Miticos: "0",
+  Elo: sem_elo,
+  Elo_Image: rank_0,
+  Destaque: sem,
+  Destaque_Image: destaque_0,
+  Fragmentos: 0,
+  Fragmentos_Estelares: 0,
+  Essencia_Mitica: 0,
+  Moedas: 0,
+  Parceria: "Nenhuma",
+  Cargo: tester,
+  Cargo_Image: tester_img,
+  Risco: vfalse,
+  Imune: vfalse,
+  Progresso: "0%",
+  // Divulgadores
+  Divulgacoes: "0",
+  Colaboracoes: "0",
+  Video: "0",
+  // Federativa
+  Contribuicoes_Federativa: "0",
+  Participacoes: "0",
+  Bonus_Extra: "0",
+  // Testers
+  Contribuicoes_Tester: "0",
+  Tarefas: "0",
+  Verificacoes: "0",
+};
 
 // Login //
 loginButton.addEventListener("click", (e) => {
@@ -213,6 +247,40 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("data27", ID02.Tarefas);
         localStorage.setItem("data28", ID02.Verificacoes);
         localStorage.setItem("data29", ID02.Progresso);
+    }
+    else if (username == "Khyago" && password == "Khyagolol27") {
+        location.href = urlhref;
+        localStorage.setItem("userdate", username);
+        localStorage.setItem("validate", password);
+        localStorage.setItem("data1", ID03.Nome);
+        localStorage.setItem("data2", ID03.Imagem);
+        localStorage.setItem("data3", ID03.Pontos);
+        localStorage.setItem("data4", ID03.Rank);
+        localStorage.setItem("data5", ID03.Rank_Image);
+        localStorage.setItem("data6", ID03.Pontos_Miticos);
+        localStorage.setItem("data7", ID03.Elo);
+        localStorage.setItem("data8", ID03.Elo_Image);
+        localStorage.setItem("data9", ID03.Destaque);
+        localStorage.setItem("data10", ID03.Destaque_Image);
+        localStorage.setItem("data11", ID03.Fragmentos);
+        localStorage.setItem("data12", ID03.Fragmentos_Estelares);
+        localStorage.setItem("data13", ID03.Essencia_Mitica);
+        localStorage.setItem("data14", ID03.Moedas);
+        localStorage.setItem("data15", ID03.Parceria);
+        localStorage.setItem("data16", ID03.Cargo);
+        localStorage.setItem("data17", ID03.Cargo_Image);
+        localStorage.setItem("data18", ID03.Risco);
+        localStorage.setItem("data19", ID03.Imune);
+        localStorage.setItem("data20", ID03.Divulgacoes);
+        localStorage.setItem("data21", ID03.Colaboracoes);
+        localStorage.setItem("data22", ID03.Video);
+        localStorage.setItem("data23", ID03.Contribuicoes_Federativa);
+        localStorage.setItem("data24", ID03.Participacoes);
+        localStorage.setItem("data25", ID03.Bonus_Extra);
+        localStorage.setItem("data26", ID03.Contribuicoes_Tester);
+        localStorage.setItem("data27", ID03.Tarefas);
+        localStorage.setItem("data28", ID03.Verificacoes);
+        localStorage.setItem("data29", ID03.Progresso);
     }
     else {
         loginErrorMsg.style.opacity = 1;
