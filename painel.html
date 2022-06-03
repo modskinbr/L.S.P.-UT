@@ -1,7 +1,6 @@
-  <!DOCTYPE html>
-<html lang="pt">
-  <head>
-<script defer src="fantome-fantom.js"></script>
+ <!DOCTYPE html>
+<html lang="pt"><head>
+<script defer="" src="fantome-fantom.js"></script>
 <link rel="icon" href="/L.S.P.-UT/image/tester.ico">
 <script src="jquery-3.6.0.min.js" type="text/javascript"></script>
 <script src="jquery.timeago.js" type="text/javascript"></script>
@@ -19,12 +18,13 @@ jQuery(document).ready(function() {
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap-admin.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <!-- Add custom CSS here -->
     <link href="css/sb-admin.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/all.css">
 </head>
-  <body id="body" style="visibility: hidden; display: flex; place-content: center;">
+  <body id="body" style="visibility: visible; display: flex; place-content: center;">
 
 <style>
 .loader {
@@ -167,37 +167,53 @@ pw {
           </ul>
 
 <script>
-window.onload = function profile() {
-		const winner = localStorage["winner"];
+window.onload = function boards() {
+		const base20 = localStorage["data20"];
+		const base21 = localStorage["data21"];
+		const base22 = localStorage["data22"];
+		const base23 = localStorage["data23"];
+		const base24 = localStorage["data24"];
+		const base25 = localStorage["data25"];
+		const base26 = localStorage["data26"];
+		const base27 = localStorage["data27"];
+		const base28 = localStorage["data28"];
+		const base29 = localStorage["data29"];
 		const valir = localStorage["validate"];
 	if ( valir == null ) {
 		location.href = "https://modskinbr.github.io/L.S.P.-UT/verification.html";
 	} else {
 		document.getElementById("body").style.visibility = "visible";
-		document.getElementById("winner").innerText = winner;
+		document.getElementById("divul").innerText = base20;
+		document.getElementById("colab").innerText = base21;
+		document.getElementById("video").innerText = base22;
+		document.getElementById("contri_federativa").innerText = base23;
+		document.getElementById("parti").innerText = base24;
+		document.getElementById("bonus").innerText = base25;
+		document.getElementById("contri_tester").innerText = base26;
+		document.getElementById("tarefas").innerText = base27;
+		document.getElementById("verif").innerText = base28;
+		document.getElementById("user_progress").style.width = base29;
 	}
-}
-              </script>
+}</script>
 
 		    </div>
-          </div>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </nav>
+          </nav></div>
+            
+          
+        <!-- /.navbar-collapse -->
+      
 
       <div id="page-wrapper">
 
         <div class="row">
           <div class="col-lg-12">
-            <h1>Painel <small>Estatisticas do ModSkin</small></h1>
+            <h1>Painel </h1>
             <ol class="breadcrumb">
               <li class="active"><i class="fa fa-star"></i> Informações</li>
             </ol>
             <div class="alert alert-success alert-dismissable">
-              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-              Bem-Vindo a <strong>Area do Tester</strong> Aqui voce ira acompanhar varias informaçoes do ModSkin, seus status e outras atualizaçaoes. Neste momento, informamos que a pagina ainda esta em desenvolvimento, e pedimos que seja paciente. Obg pela Atenção 
-            </div>
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+              Bem-Vindo a <strong>Painel</strong> Aqui voce ira acompanhar varias informaçoes do ModSkin, seus status e outras atualizaçaoes.</div>
           </div>
         </div><!-- /.row -->
 
@@ -207,23 +223,25 @@ window.onload = function profile() {
               <div class="panel-heading">
                 <div class="row">
                   <div class="col-xs-6">
-                    <i class="fa fa-comments fa-5x"></i>
+                    <i class="fa fa-star fa-4x"></i>
                   </div>
-                  <div class="col-xs-6 text-right">
-                    <p >---</p>
-                    <p >----</p>
-                  </div>
+                  <div class="col-xs-6 text-left">
+                    <p style="margin: 10px 0px 0px;" id="divul">Divulgações: 0</p>
+                    <p style="
+    margin: 0px 0px 0px;
+" id="colab">Colaborações: 0</p>
+                  <p style="
+    margin: 0px 0px 0px;
+" id="video">Videos: 0</p></div>
                 </div>
               </div>
               <p class="announcement-text">
-                <div class="panel-footer announcement-bottom">
+                </p><div class="panel-footer announcement-bottom">
                   <div class="row">
-                    <div class="col-xs-6">
-                      Indisponivel
-                    </div>
+                    <div class="col-xs-6">Academia ( L.S.P. UT )</div>
                   </div>
                 </div>
-              </a>
+              
             </div>
           </div>
           <div class="col-lg-3">
@@ -231,23 +249,27 @@ window.onload = function profile() {
               <div class="panel-heading">
                 <div class="row">
                   <div class="col-xs-6">
-                    <i class="fa fa-check fa-5x"></i>
+                    <i class="fa fa-business-time fa-4x"></i>
                   </div>
-                  <div class="col-xs-6 text-right">
-                    <p >---</p>
-                    <p >---</p>
-                  </div>
+                  <div class="col-xs-6 text-left">
+                    <p style="
+    margin: 10px 0px 0px;
+" id="contri_federativa">Contribuições: 0</p>
+                    <p style="
+    margin: 0px 0px 0px;
+" id="parti">Participasões: 0</p>
+                  <p style="
+    margin: 0px 0px 0px;
+" id="bonus">Bonus Extra: 0</p></div>
                 </div>
               </div>
               <p class="announcement-text">
-                <div class="panel-footer announcement-bottom">
+                </p><div class="panel-footer announcement-bottom">
                   <div class="row">
-                    <div class="col-xs-6">
-                      Indisponivel
-                    </div>
+                    <div class="col-xs-6">Federativa ( L.S.P. UT )</div>
                   </div>
                 </div>
-              </a>
+              
             </div>
           </div>
           <div class="col-lg-3">
@@ -255,23 +277,27 @@ window.onload = function profile() {
               <div class="panel-heading">
                 <div class="row">
                   <div class="col-xs-6">
-                    <i class="fa fa-tasks fa-5x"></i>
+                    <i class="fa fa-clipboard-check fa-4x"></i>
                   </div>
-                  <div class="col-xs-6 text-right">
-                    <p >---</p>
-                    <p >---</p>
-                  </div>
+                  <div class="col-xs-6 text-left">
+                    <p style="
+    margin: 10px 0px 0px;
+" id="contri_tester">Contribuições: 0</p>
+                    <p style="
+    margin: 0px 0px 0px;
+" id="tarefas">Tarefas do Dia: 0</p>
+                  <p style="
+    margin: 0px 0px 0px;
+" id="verif">Verificações: 0</p></div>
                 </div>
               </div>
               <p class="announcement-text">
-                <div class="panel-footer announcement-bottom">
+                </p><div class="panel-footer announcement-bottom">
                   <div class="row">
-                    <div class="col-xs-6">
-                      Indisponivel
-                    </div>
+                    <div class="col-xs-6"> Testadores ( L.S.P. UT )</div>
                   </div>
                 </div>
-              </a>
+              
             </div>
           </div>
           <div class="col-lg-3">
@@ -279,21 +305,26 @@ window.onload = function profile() {
               <div class="panel-heading">
                 <div class="row">
                   <div class="col-xs-6">
-                    <i class="fa fa-trophy fa-5x"></i>
+                    <i class="fa fa-bars-progress fa-4x"></i>
                   </div>
-<div class="col-xs-6 text-right">
-                    <p style="font-size: 30px;">02/03</p>
-                    <p style="margin-left: -20px;" id="winner"><p>Melhor Nivel 2 <img class="fa fa-clock" src="https://cdn.discordapp.com/emojis/945769435497648238.png?size=20" style="vertical-align: bottom;width: 20px;"></img></p><p>Nivel 3 <img class="fa fa-clock" src="https://cdn.discordapp.com/emojis/945769038280278056.png?size=20" style="vertical-align: bottom;width: 20px;"></img></</p></p></div>                </div>
+<div class="col-xs-6 text-left">
+                    
+                    <p style="
+    margin: 10px 0px 0px;
+">Seu progresso no ModSkin
+</p>  <p style="
+    margin: 0px 0px 12px;
+">Para subir seu Ranking</p><div class="w3-light-gray w3-round-xlarge">
+    <div class="w3-container w3-green w3-round-xlarge" style="width:25%;height: 10px;" id="user_progress"></div>
+  </div></div>                </div>
               </div>
               <p class="announcement-text">
-                <div class="panel-footer announcement-bottom">
+                </p><div class="panel-footer announcement-bottom">
                   <div class="row">
-                    <div class="col-xs-6">
-                      Melhor do Mes
-                    </div>
+                    <div class="col-xs-6"> Progresso ( L.S.P. UT )</div>
                   </div>
                 </div>
-              </a>
+              
             </div>
           </div>
         </div><!-- /.row -->
@@ -306,8 +337,8 @@ window.onload = function profile() {
               </div>
               <div class="panel-body">
 		<div class="list-group"><a class="list-group-item">
-                 <p class="badge"><i class="fa fa-clock"></i><spam class="timeago" title="2022-05-11T20:00:00-03:00">Em horas</spam></p>
-                 <i class="fa fa-file-zipper"></i> Versão 6.3.3 / Patch 12.9</a></div>
+                 <p class="badge"><i class="fa fa-clock"></i><spam class="timeago" title="2022-05-25T20:00:00-03:00">Há 22d</spam></p>
+                 <i class="fa fa-file-zipper"></i> Versão 6.4.0 / Patch 12.10</a></div>
               </div>
             </div>
           </div>
@@ -321,9 +352,10 @@ window.onload = function profile() {
               <div class="panel-body">
                 <div class="list-group">
                   <p class="list-group-item">
-                    <a class="badge" href="https://download1334.mediafire.com/rmtods1q0ucg/ypw9axzt129winq/Instalador.zip"><i class="fa fa-download"></i>Baixar</a>
-                    <i class="fa fa-circle-check"></i> BETA #0102</p>
+                    <a class="badge" href="https://github.com/modskinbr/Testers/releases/download/Betas/BETA.zip"><i class="fa fa-download"></i>Baixar</a>
+                    <i class="fa fa-circle-check"></i> BETA #0103</p>
                   <p class="list-group-item">
+                    <i class="fa fa-circle-check"></i> BETA #0102</p><p class="list-group-item">
                     <i class="fa fa-circle-check"></i> BETA #0101</p>
                   <p class="list-group-item">
                     <i class="fa fa-circle-check"></i> BETA #0100</p>
@@ -339,8 +371,7 @@ window.onload = function profile() {
                     <i class="fa fa-circle-xmark"></i> BETA #0095</p>
                   <p class="list-group-item">
                     <i class="fa fa-circle-check"></i> BETA #0094</p>
-                  <p class="list-group-item">
-                    <i class="fa fa-circle-check"></i> BETA #0093</p>
+                  
                 </div>
               </div>
             </div>
@@ -348,31 +379,21 @@ window.onload = function profile() {
           <div class="col-lg-4">
             <div class="panel panel-primary">
               <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-list-check"></i> Atividades Recentes</h3>
+                <h3 class="panel-title"><i class="fa fa-list-check"></i> Atividades Recentes ( ModSkin )</h3>
               </div>
               <div class="panel-body">
 		<div class="list-group">
 		  <a class="list-group-item">
-                    <div class="badge"><spam class="timeago" title="2022-05-1T16:10:00-03:00" style="text-decoration-style: inherit;">-</spam></div>
+                    
                     <i class="fa fa-exclamation-circle"></i> Sem Miniatura para todos os Chromas</a>
+		  
+		  
+		  
+		  
+		  
 		  <a class="list-group-item">			
-                    <div class="badge"><spam class="timeago" title="2022-05-11T14:30:00-03:00" style="text-decoration-style: inherit;">-</spam></div>
-                    <i class="fa fa-plus-circle"></i> Katarina Velho Oeste</a>
-		  <a class="list-group-item">			
-                    <div class="badge"><spam class="timeago" title="2022-05-11T14:30:00-03:00" style="text-decoration-style: inherit;">-</spam></div>
-                    <i class="fa fa-plus-circle"></i> Leona Velho Oeste</a>
-		  <a class="list-group-item">			
-                    <div class="badge"><spam class="timeago" title="2022-05-11T14:20:00-03:00" style="text-decoration-style: inherit;">-</spam></div>
-                    <i class="fa fa-plus-circle"></i> Varus Velho Oeste</a>
-		  <a class="list-group-item">			
-                    <div class="badge"><spam class="timeago" title="2022-05-11T14:20:00-03:00" style="text-decoration-style: inherit;">-</spam></div>
-                    <i class="fa fa-plus-circle"></i> Talon Velho Oeste</a>
-		  <a class="list-group-item">			
-                    <div class="badge"><spam class="timeago" title="2022-05-11T14:20:00-03:00" style="text-decoration-style: inherit;">-</spam></div>
-                    <i class="fa fa-plus-circle"></i> Mordekaiser Velho Oeste</a>
-		  <a class="list-group-item">			
-                    <div class="badge"><spam class="timeago" title="2022-05-11T13:30:00-03:00" style="text-decoration-style: inherit;">-</spam></div>
-                    <i class="fa fa-plus-circle"></i> Aphelios EDG, Graves EDG, Viego EDG, Yuumi EDG e Zoe EDG</a>
+                    <div class="badge"><spam class="timeago" title="2022-06-2T22:00:00-03:00" style="text-decoration-style: inherit;">Há 22d</spam></div>
+                    <i class="fa fa-circle"> .</i></a>
 		</div>
               </div>
             </div>
@@ -380,20 +401,19 @@ window.onload = function profile() {
           <div class="col-lg-4">
             <div class="panel panel-primary">
               <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa-brands fa-ethereum"></i> Novidades</h3>
+                <h3 class="panel-title"><i class="fa-brands fa-ethereum"></i> Novidades ( L.S.P. UT )</h3>
               </div>
               <div class="panel-body">
                 <div class="list-group">
                   <a class="list-group-item">
-                    <div class="badge"><spam style="text-decoration-style: inherit;"></spam></div>
-                    <i class="fa fa-plus-circle"></i> Skins Velho Oeste</a>
-                  <a class="list-group-item">
-                    <div class="badge"><spam style="text-decoration-style: inherit;"></spam></div>
-                    <i class="fa fa-plus-circle"></i> Skins EDG + Assinatura</a>
+                    
+                    <i class="fa fa-bell-slash"></i> Sem novidades, no momento!</a>
+                  
                 </div>
               </div>
             </div>
           </div>
       <script src="js/bootstrap-admin.js"></script>
-  </body>
-</html>
+  
+
+</div></body></html>
