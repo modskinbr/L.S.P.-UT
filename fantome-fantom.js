@@ -91,6 +91,19 @@ const ID01 = {
   Cargo_Image: dev_img,
   Risco: vfalse,
   Imune: vfalse,
+  Progresso: "0%",
+  // Divulgadores
+  Divulgacoes: "0",
+  Colaboracoes: "0",
+  Video: "0",
+  // Federativa
+  Contribuicoes_Federativa: "0",
+  Participacoes: "0",
+  Bonus_Extra: "0",
+  // Testers
+  Contribuicoes_Tester: "0",
+  Tarefas: "0",
+  Verificacoes: "0",
 };
 const ID02 = {
   Nome: "Victor",
@@ -112,6 +125,19 @@ const ID02 = {
   Cargo_Image: tester_img,
   Risco: vfalse,
   Imune: vfalse,
+  Progresso: "0%",
+  // Divulgadores
+  Divulgacoes: "0",
+  Colaboracoes: "0",
+  Video: "0",
+  // Federativa
+  Contribuicoes_Federativa: "0",
+  Participacoes: "0",
+  Bonus_Extra: "0",
+  // Testers
+  Contribuicoes_Tester: "0",
+  Tarefas: "0",
+  Verificacoes: "0",
 };
 
 // Login //
@@ -143,6 +169,16 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("data17", ID01.Cargo_Image);
         localStorage.setItem("data18", ID01.Risco);
         localStorage.setItem("data19", ID01.Imune);
+        localStorage.setItem("data20", ID01.Divulgacoes);
+        localStorage.setItem("data21", ID01.Colaboracoes);
+        localStorage.setItem("data22", ID01.Video);
+        localStorage.setItem("data23", ID01.Contribuicoes_Federativa);
+        localStorage.setItem("data24", ID01.Participacoes);
+        localStorage.setItem("data25", ID01.Bonus_Extra);
+        localStorage.setItem("data26", ID01.Contribuicoes_Tester);
+        localStorage.setItem("data27", ID01.Tarefas);
+        localStorage.setItem("data28", ID01.Verificacoes);
+        localStorage.setItem("data29", ID01.Progresso);
     }
     else if (username == "taikunxx3" && password == "taik9348") {
         location.href = urlhref;
@@ -167,6 +203,16 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("data17", ID02.Cargo_Image);
         localStorage.setItem("data18", ID02.Risco);
         localStorage.setItem("data19", ID02.Imune);
+        localStorage.setItem("data20", ID02.Divulgacoes);
+        localStorage.setItem("data21", ID02.Colaboracoes);
+        localStorage.setItem("data22", ID02.Video);
+        localStorage.setItem("data23", ID02.Contribuicoes_Federativa);
+        localStorage.setItem("data24", ID02.Participacoes);
+        localStorage.setItem("data25", ID02.Bonus_Extra);
+        localStorage.setItem("data26", ID02.Contribuicoes_Tester);
+        localStorage.setItem("data27", ID02.Tarefas);
+        localStorage.setItem("data28", ID02.Verificacoes);
+        localStorage.setItem("data29", ID02.Progresso);
     }
     else {
         loginErrorMsg.style.opacity = 1;
