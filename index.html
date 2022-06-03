@@ -1,5 +1,50 @@
 <html lang="pt">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    min-width: 560px;
+    border-radius: 20px;
+    padding: 6px;
+    font-size: 16px;
+    border: none;
+    margin: 0px 0px 30px;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 560px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin-top: -20px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
 <script src="jquery-3.6.0.min.js" type="text/javascript"></script>
 <script src="jquery.timeago.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -277,20 +322,37 @@ Para arrumar basta seguir estes passos:<br>— 1 . Feche o ModSkin ( Caso esteja
                                                 padding: 10px;
                                             }
                                         </style>
-                                        <a style="visibility: hidden; position: absolute;">
-                                            c {
-                                                color: red;
-                                                border-radius: 12px;
-                                                background-color: black;
-                                                padding: 10px;
-                                            }
-                                        </a>
                                         <c>Versão 6.4.0</c>
-                                        <a id="link_download3" href="https://github.com/modskinbr/Lastests/releases/latest/download/Instalador.zip" target="_blank">
-                                            <button style="min-width: 350px;margin: 20px;background-color: cadetblue;color: darkslategrey;" type="button" class="btn my-btn" id="name_button_download3">
-                                                <span class="glyphicon glyphicon-save"></span> Baixar Última Versão
-                                            </button>
-                                        </a><br>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Downloads</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="https://github.com/modskinbr/Lastests/releases/latest/download/Instalador.zip">Normal - Pesado ( Mais Conteudo )</a>
+    <a href="#">Faster - Rapido ( Indisponivel )</a>
+    <a href="#">PROLatest - Sem clicar em nada, uso rapido e simples ( Indisponivel )</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
                                         <div class="alert alert-info">
                                             Entre em contato via discord para obter suporte em caso de bugs e erros! : <a href="https://discord.gg/6FbvJy3rY8" target="_blank">Click Aqui</a>
                                             <br><b>Este app é seguro e não causa banimentos, a menos que seja reportado!
