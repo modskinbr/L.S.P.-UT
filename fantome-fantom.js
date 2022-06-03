@@ -173,6 +173,74 @@ const ID03 = {
   Tarefas: "0",
   Verificacoes: "0",
 };
+const ID04 = {
+  Nome: "Pedro",
+  Imagem: url+"04.png",
+  Pontos: "30",
+  Rank: "Rank 1",
+  Rank_Image: rank_1,
+  Pontos_Miticos: "0",
+  Elo: sem_elo,
+  Elo_Image: rank_0,
+  Destaque: sem,
+  Destaque_Image: destaque_0,
+  Fragmentos: 0,
+  Fragmentos_Estelares: 0,
+  Essencia_Mitica: 0,
+  Moedas: 0,
+  Parceria: "Nenhuma",
+  Cargo: mod,
+  Cargo_Image: mod_img,
+  Risco: vfalse,
+  Imune: vfalse,
+  Progresso: "0%",
+  // Divulgadores
+  Divulgacoes: "0",
+  Colaboracoes: "0",
+  Video: "0",
+  // Federativa
+  Contribuicoes_Federativa: "0",
+  Participacoes: "0",
+  Bonus_Extra: "0",
+  // Testers
+  Contribuicoes_Tester: "0",
+  Tarefas: "0",
+  Verificacoes: "0",
+};
+const ID05 = {
+  Nome: "Gustavo",
+  Imagem: url+"05.png",
+  Pontos: "30",
+  Rank: "Rank 1",
+  Rank_Image: rank_1,
+  Pontos_Miticos: "0",
+  Elo: sem_elo,
+  Elo_Image: rank_0,
+  Destaque: sem,
+  Destaque_Image: destaque_0,
+  Fragmentos: 0,
+  Fragmentos_Estelares: 0,
+  Essencia_Mitica: 0,
+  Moedas: 0,
+  Parceria: "Nenhuma",
+  Cargo: mod,
+  Cargo_Image: mod_img,
+  Risco: vfalse,
+  Imune: vfalse,
+  Progresso: "0%",
+  // Divulgadores
+  Divulgacoes: "0",
+  Colaboracoes: "0",
+  Video: "0",
+  // Federativa
+  Contribuicoes_Federativa: "0",
+  Participacoes: "0",
+  Bonus_Extra: "0",
+  // Testers
+  Contribuicoes_Tester: "0",
+  Tarefas: "0",
+  Verificacoes: "0",
+};
 
 // Login //
 loginButton.addEventListener("click", (e) => {
@@ -281,6 +349,74 @@ loginButton.addEventListener("click", (e) => {
         localStorage.setItem("data27", ID03.Tarefas);
         localStorage.setItem("data28", ID03.Verificacoes);
         localStorage.setItem("data29", ID03.Progresso);
+    }
+    else if (username == "jake" && password == "bananinhadoroblox") {
+        location.href = urlhref;
+        localStorage.setItem("userdate", username);
+        localStorage.setItem("validate", password);
+        localStorage.setItem("data1", ID04.Nome);
+        localStorage.setItem("data2", ID04.Imagem);
+        localStorage.setItem("data3", ID04.Pontos);
+        localStorage.setItem("data4", ID04.Rank);
+        localStorage.setItem("data5", ID04.Rank_Image);
+        localStorage.setItem("data6", ID04.Pontos_Miticos);
+        localStorage.setItem("data7", ID04.Elo);
+        localStorage.setItem("data8", ID04.Elo_Image);
+        localStorage.setItem("data9", ID04.Destaque);
+        localStorage.setItem("data10", ID04.Destaque_Image);
+        localStorage.setItem("data11", ID04.Fragmentos);
+        localStorage.setItem("data12", ID04.Fragmentos_Estelares);
+        localStorage.setItem("data13", ID04.Essencia_Mitica);
+        localStorage.setItem("data14", ID04.Moedas);
+        localStorage.setItem("data15", ID04.Parceria);
+        localStorage.setItem("data16", ID04.Cargo);
+        localStorage.setItem("data17", ID04.Cargo_Image);
+        localStorage.setItem("data18", ID04.Risco);
+        localStorage.setItem("data19", ID04.Imune);
+        localStorage.setItem("data20", ID04.Divulgacoes);
+        localStorage.setItem("data21", ID04.Colaboracoes);
+        localStorage.setItem("data22", ID04.Video);
+        localStorage.setItem("data23", ID04.Contribuicoes_Federativa);
+        localStorage.setItem("data24", ID04.Participacoes);
+        localStorage.setItem("data25", ID04.Bonus_Extra);
+        localStorage.setItem("data26", ID04.Contribuicoes_Tester);
+        localStorage.setItem("data27", ID04.Tarefas);
+        localStorage.setItem("data28", ID04.Verificacoes);
+        localStorage.setItem("data29", ID04.Progresso);
+    }
+    else if (username == "imnotchinna" && password == "shintaro433") {
+        location.href = urlhref;
+        localStorage.setItem("userdate", username);
+        localStorage.setItem("validate", password);
+        localStorage.setItem("data1", ID05.Nome);
+        localStorage.setItem("data2", ID05.Imagem);
+        localStorage.setItem("data3", ID05.Pontos);
+        localStorage.setItem("data4", ID05.Rank);
+        localStorage.setItem("data5", ID05.Rank_Image);
+        localStorage.setItem("data6", ID05.Pontos_Miticos);
+        localStorage.setItem("data7", ID05.Elo);
+        localStorage.setItem("data8", ID05.Elo_Image);
+        localStorage.setItem("data9", ID05.Destaque);
+        localStorage.setItem("data10", ID05.Destaque_Image);
+        localStorage.setItem("data11", ID05.Fragmentos);
+        localStorage.setItem("data12", ID05.Fragmentos_Estelares);
+        localStorage.setItem("data13", ID05.Essencia_Mitica);
+        localStorage.setItem("data14", ID05.Moedas);
+        localStorage.setItem("data15", ID05.Parceria);
+        localStorage.setItem("data16", ID05.Cargo);
+        localStorage.setItem("data17", ID05.Cargo_Image);
+        localStorage.setItem("data18", ID05.Risco);
+        localStorage.setItem("data19", ID05.Imune);
+        localStorage.setItem("data20", ID05.Divulgacoes);
+        localStorage.setItem("data21", ID05.Colaboracoes);
+        localStorage.setItem("data22", ID05.Video);
+        localStorage.setItem("data23", ID05.Contribuicoes_Federativa);
+        localStorage.setItem("data24", ID05.Participacoes);
+        localStorage.setItem("data25", ID05.Bonus_Extra);
+        localStorage.setItem("data26", ID05.Contribuicoes_Tester);
+        localStorage.setItem("data27", ID05.Tarefas);
+        localStorage.setItem("data28", ID05.Verificacoes);
+        localStorage.setItem("data29", ID05.Progresso);
     }
     else {
         loginErrorMsg.style.opacity = 1;
