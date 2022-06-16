@@ -336,7 +336,48 @@
     background-position: center;
 ">
               
-              <div class="panel-body"><iframe src="https://livecounts.io/embed/twitch-live-follower-counter/blossonsakura" style="height: 80px;border-radius: 18px 18px 0px 0px;pointer-events: none;max-width: -webkit-fill-available;min-width: -webkit-fill-available;" frameborder="0"></iframe><div class="panel-footer" style="
+              <div class="panel-body"><style>.tooltip {
+    position: relative;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    z-index: 1;
+    transition: opacity .6s;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-top {
+    right: -101px;
+    top: -62px;
+}
+
+.tooltip-top::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+</style>
+
+<div class="tooltip">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gold_Star.svg/1024px-Gold_Star.svg.png" style="width: 25px;position: absolute;right: -13px;top: -11px;">
+<span class="tooltiptext tooltip-top">Este Streamer esta marcado como favorito!</span>
+</div>
+<iframe src="https://livecounts.io/embed/twitch-live-follower-counter/blossonsakura" style="height: 80px;border-radius: 18px 18px 0px 0px;pointer-events: none;max-width: -webkit-fill-available;min-width: -webkit-fill-available;" frameborder="0"></iframe><div class="panel-footer" style="
     background-color: #121212;
     border-radius: 0px 0px 20px 20px;
     border-color: deepskyblue;
