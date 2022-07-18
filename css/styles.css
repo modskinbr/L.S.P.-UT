@@ -488,6 +488,10 @@ progress {
   display: none !important;
 }
 
+.blocked {
+  pointer-events: none;
+}
+
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
