@@ -89,26 +89,26 @@
 }
 
 .alertup {
-    color: white;
     padding: 18px 35px 8px 14px;
-    background-color: darkgray;
-    border: 1px solid gray;
-    border-radius: 4px;
-    height: 60px;
+    background-color: #212529;
+    border: 3px solid #4d6570;
+    border-radius: 100px;
+    height: 100px;
     text-align: center;
 }
 
 .alertup, .ftsz-4 {
-    font-size: 18px;
-    color: white;
+    font-size: 22px;
+    color: #fffff1;
     
 }
 
 .alertup, .ftsz-1 {
-    font-size: 12px;
-    color: lightgray;
+    font-size: 14px;
+    color: #a3a3a3;
+    margin-top: -12px;
+    font-weight: bold;
 }
-
 
 body {
   margin: 0;
