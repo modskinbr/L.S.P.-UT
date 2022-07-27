@@ -77,6 +77,39 @@
   }
 }
 
+.message {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.inner-message {
+    margin: 0 auto;
+}
+
+.alertup {
+    color: white;
+    padding: 18px 35px 8px 14px;
+    background-color: darkgray;
+    border: 1px solid gray;
+    border-radius: 4px;
+    height: 60px;
+    text-align: center;
+}
+
+.alertup, .ftsz-4 {
+    font-size: 18px;
+    color: white;
+    
+}
+
+.alertup, .ftsz-1 {
+    font-size: 12px;
+    color: lightgray;
+}
+
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
