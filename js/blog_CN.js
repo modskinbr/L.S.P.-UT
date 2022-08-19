@@ -46,7 +46,7 @@
       localeTitle: true,
       cutoff: 0,
       strings: {
-        prefixAgo: "发布于",
+        prefixAgo: "发布了",
         prefixFromNow: "在",
         suffixAgo: "",
         suffixFromNow: "",
