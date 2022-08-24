@@ -79,9 +79,9 @@
 
 .message {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    bottom: 0%;
+    left: 0%;
+    width: 0%;
 }
 
 .inner-message {
@@ -89,24 +89,24 @@
 }
 
 .alertup {
-    padding: 18px 35px 8px 14px;
-    background-color: #212529;
-    border: 3px solid #4d6570;
-    border-radius: 100px;
+    padding: 7px;
+    background-color: rgb(33 37 41);
+    border: 2px solid #a7823f;
+    border-radius: 20px;
     text-align: center;
+    width: 500px;
 }
 
 .alertup, .ftsz-4 {
     font-size: 22px;
-    color: #fffff1;
+    color: #a7823f;
     
 }
 
 .alertup, .ftsz-1 {
     font-size: 14px;
-    color: #a3a3a3;
+    color: #909294;
     margin-top: -12px;
-    font-weight: bold;
 }
 
 body {
