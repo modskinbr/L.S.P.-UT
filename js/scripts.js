@@ -7,7 +7,7 @@
 // Use this file to add JavaScript to your project
 
 window.addEventListener('load', function() {
-	var vs = "6.8.0";
+	var vs = "6.9.0";
 	var versionid = document.getElementById("version");
 	versionid.innerHTML = vs;
     console.log( vs + versionid )
