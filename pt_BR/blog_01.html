@@ -109,26 +109,25 @@
                                 <div class="card bg-light">
                                     <div class="card-body">
                                         <!-- Comment form-->
-										<div class="commentbox"></div>
-										<script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-										<script>
-										commentBox('5715387446460416-proj', {
-											className: 'commentbox', // the class of divs to look for
-											defaultBoxId: 'commentbox', // the default ID to associate to the div
-											tlcParam: 'tlc', // used for identifying links to comments on your page
-											sortOrder: 'newest', // specify the default comment sort order ("best", "newest", "oldest")
-											subtextColor: null, // default grey
-											/**
-											* Fires once the plugin loads its comments.
-											* May fire multiple times in its lifetime.
-											* 
-											* @param {number} count
-											*/
-											onCommentCount(count) {
-
-												}
-											});
-										</script>
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://modskin.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                                     </div>
                                 </div>
                             </section>
@@ -147,6 +146,7 @@
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+		<script id="dsq-count-scr" src="//modskin.disqus.com/count.js" async></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
