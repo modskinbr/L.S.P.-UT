@@ -8,14 +8,9 @@
 
 window.addEventListener('load', function() {
 	var vs = "7.0.0";
-	var dat1 = "2022-09-08T20:00:00-03:00";
-	var dat2 = "2022-09-08T16:30:00-03:00";
 	var versionid = document.getElementById("version");
-	var complet = document.getElementById("d1"); 
-	var fast = document.getElementById("d2");
 	
 	versionid.innerHTML = vs;
-	fast.title = dat2;
-	complet.title = dat1;
-    console.log( vs + versionid )
+    console.log( vs + versionid + fast + dat2 )
+
 })
