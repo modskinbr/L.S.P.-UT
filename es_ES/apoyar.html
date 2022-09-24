@@ -26,18 +26,7 @@
                             <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca</a></li>
                             <li class="nav-item"><a class="nav-link" href="hall.html">Salón de la fama</a></li>
                             <li class="nav-item"><a class="nav-link" href="faq.html">Preguntas frecuentes</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" role="button" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                    <li><a class="dropdown-item" href="apoyar.html">Apoyar</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" role="button" data-bs-toggle="dropdown" aria-expanded="false">Idioma</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
-                                    <li><a class="dropdown-item" href="../translate.html">Traducir</a></li>
-                                </ul>
-                            </li>
+                            <li class="nav-item"><a class="nav-link" href="apoyar.html">Apoyar</a></li>
                         </ul>
                     </div>
                 </div>
@@ -56,7 +45,7 @@
                                 <div class="card-body p-5">
                                     <div class="small text-uppercase fw-bold text-muted">Gratis</div>
                                     <div class="mb-3">
-                                        <span class="display-4 fw-bold">R$0,00</span>
+                                        <span class="display-4 fw-bold">€ 0,00</span>
                                     </div>
                                     <ul class="list-unstyled mb-4">
                                         <li class="mb-2">
@@ -108,7 +97,7 @@
                                         Popular
                                     </div>
                                     <div class="mb-3">
-                                        <span class="display-4 fw-bold">R$1,00</span>
+                                        <span class="display-4 fw-bold">€ 1,00</span>
                                     </div>
                                     <ul class="list-unstyled mb-4">
                                         <li class="mb-2">
@@ -148,7 +137,7 @@
                                             Cliente personalizado
                                         </li>
                                     </ul>
-                                    <div class="d-grid"><a class="btn btn-primary" href="https://nubank.com.br/pagar/10nt28/G1OgieWsTe">Escolher</a></div>
+                                    <div class="d-grid"><a class="btn btn-primary" onclick="OpenPopupCenter('https://www.paypal.com/donate/?hosted_button_id=W7D42BW9TWDKL', '', 800, 600);">Elegir</a></div>
                                 </div>
                             </div>
                         </div>
@@ -158,7 +147,7 @@
                                 <div class="card-body p-5">
                                     <div class="small text-uppercase fw-bold text-muted">VIP</div>
                                     <div class="mb-3">
-                                        <span class="display-4 fw-bold">R$5,00</span>
+                                        <span class="display-4 fw-bold">€ 5,00</span>
                                     </div>
                                     <ul class="list-unstyled mb-4">
                                         <li class="mb-2">
@@ -198,7 +187,7 @@
                                             Cliente personalizado
                                         </li>
                                     </ul>
-                                    <div class="d-grid"><a class="btn btn-primary" href="https://nubank.com.br/pagar/10nt28/4mCkoLzZ6C">Escolher</a></div>
+                                    <div class="d-grid"><a class="btn btn-primary" onclick="OpenPopupCenter('https://www.paypal.com/donate/?hosted_button_id=6GYLXBGJBZZ4S', '', 800, 600);">Elegir</a></div>
                                 </div>
                             </div>
                         </div>
@@ -218,6 +207,13 @@
             </section>
         </main>
         <!-- Footer-->
+		<script>
+			function OpenPopupCenter(pageURL, title, w, h) {
+				var left = (screen.width - w) / 2;
+				var top = (screen.height - h) / 4;  // for 25% - devide by 4  |  for 33% - devide by 3
+				var targetWin = window.open(pageURL, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+			} 
+		</script>
         <footer class="bg-dark py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-center flex-column flex-sm-row">
