@@ -78,10 +78,9 @@
 }
 
 .message {
-    position: fixed;
-    bottom: 0%;
-    left: 0%;
-    width: 0%;
+	position: absolute;
+    width: -webkit-fill-available;
+	bottom: 5%;
 }
 
 .inner-message {
@@ -89,12 +88,12 @@
 }
 
 .alertup {
-    padding: 7px;
+    padding: 7px 0px 1px 0px;
     background-color: rgb(33 37 41);
-    border: 2px solid #a7823f;
-    border-radius: 20px;
+    border-top: 5px solid #a7823f;
+    border-radius: 100% 100% 0px 0px;
     text-align: center;
-    width: 500px;
+    width: auto;
 }
 
 .alertup, .ftsz-4 {
