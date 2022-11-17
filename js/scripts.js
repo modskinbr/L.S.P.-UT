@@ -1,5 +1,5 @@
 window.addEventListener('load', function() {
-	var vs = "7.6.0";
+	var vs = "7.7.0";
 	var estxt = "⌛";
 	var notext = "🚫";
 	var versionid = document.getElementById("version");
