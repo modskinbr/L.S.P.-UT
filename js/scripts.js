@@ -32,4 +32,5 @@ window.addEventListener('load', function() {
 		btntext02.classList.remove("btn-primary")
 		btntext02.classList.add("btn-dark")
 		btntext02.classList.add("blocked")
+	}
 })
