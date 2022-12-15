@@ -1,11 +1,11 @@
 window.addEventListener('load', function() {
-	var in = "7.7.0";
+	var v = "7.7.0";
 	var on = "⌛";
 	var off = "🚫";
 	var versionid = document.getElementById("version");
 	var btntext01 = document.getElementById("btn-text01");
 	var btntext02 = document.getElementById("btn-text02");
-	versionid.innerHTML = in;
+	versionid.innerHTML = v;
 	
 	var AreInUpdate = false;
 	var NoUnavailable = false;
