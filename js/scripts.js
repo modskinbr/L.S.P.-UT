@@ -8,7 +8,7 @@ window.addEventListener('load', function() {
 	versionid.innerHTML = in;
 	
 	var AreInUpdate = false;
-	var NoUnavailable = true;
+	var NoUnavailable = false;
 	var NoAllUnavailable = true;
 	
 	if ( AreInUpdate === true ) {
