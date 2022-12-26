@@ -1,5 +1,5 @@
 window.addEventListener('load', function() {
-	var v = "-.-.-";
+	var v = "7.1.0";
 	var on = "⌛";
 	var off = "🚫";
 	var versionid = document.getElementById("version");
@@ -8,8 +8,8 @@ window.addEventListener('load', function() {
 	versionid.innerHTML = v;
 	
 	var AreInUpdate = false;
-	var NoUnavailable = false;
-	var NoAllUnavailable = true;
+	var NoUnavailable = true;
+	var NoAllUnavailable = false;
 	
 	if ( AreInUpdate === true ) {
 		btntext01.innerText = on;
